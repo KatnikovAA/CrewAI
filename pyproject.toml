@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=77,<83"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "travel-planner"
+version = "0.1.0"
+description = "Учебный планировщик путешествий с CrewAI"
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai==1.15.28",
+    "crewai-tools==1.15.28",
+    "tavily-python==0.8.5",
+    "pydantic==2.12.5",
+    "beautifulsoup4==4.15.0",
+    "requests==2.34.2",
+    "python-dotenv==1.2.4",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

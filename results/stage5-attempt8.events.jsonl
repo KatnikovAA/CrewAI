@@ -1,0 +1,48 @@
+{"type": "run_started", "task": null, "timestamp": "2026-10-15T09:45:26.299297+00:00", "max_llm_calls": 24}
+{"type": "task_started", "task": "research", "timestamp": "2026-10-15T09:45:26.574890+00:00", "context_received": {}}
+{"type": "llm_request", "task": "research", "timestamp": "2026-10-15T09:45:26.911060+00:00", "number": 1, "context_received": {}}
+{"type": "llm_response", "task": null, "timestamp": "2026-10-15T09:45:29.303392+00:00", "http_status": 200, "finish_reason": "tool_calls", "completion_tokens": 141}
+{"type": "tool_started", "task": "research", "timestamp": "2026-10-15T09:45:29.311099+00:00", "tool": "internet_search"}
+{"type": "tool_started", "task": "research", "timestamp": "2026-10-15T09:45:29.311099+00:00", "tool": "internet_search"}
+{"type": "tool_completed", "task": "research", "timestamp": "2026-10-15T09:45:30.925609+00:00", "tool": "internet_search", "status": "ok", "from_cache": false, "urls": ["https://kzn.kassir.ru/muzei/kreml", "https://kazan-kremlin.ru/rezhim-raboty", "https://kuda-kazan.ru/place/kazanskij-kreml", "https://sutochno.ru/sj/kazanskiy-kreml", "https://kazan-kremlin.ru"]}
+{"type": "tool_completed", "task": "research", "timestamp": "2026-10-15T09:45:30.929719+00:00", "tool": "internet_search", "status": "ok", "from_cache": false, "urls": ["https://www.putevka.com/trip/russia/kazan/kazanskij-kreml", "https://kuda-kazan.ru/place/kazanskij-kreml", "https://russpass.ru/place/6053ed064e19ad00190d815a", "https://to-kazan.ru/blog/place/kazanskiy-kreml", "https://kazanecc.ru/dostoprimechatelnosti/kazanskiy-kreml-v-kazani"]}
+{"type": "llm_request", "task": "research", "timestamp": "2026-10-15T09:45:30.934781+00:00", "number": 2, "context_received": {}}
+{"type": "llm_response", "task": null, "timestamp": "2026-10-15T09:45:32.445812+00:00", "http_status": 200, "finish_reason": "tool_calls", "completion_tokens": 113}
+{"type": "tool_started", "task": "research", "timestamp": "2026-10-15T09:45:32.448368+00:00", "tool": "website_reader"}
+{"type": "tool_started", "task": "research", "timestamp": "2026-10-15T09:45:32.448368+00:00", "tool": "website_reader"}
+{"type": "tool_completed", "task": "research", "timestamp": "2026-10-15T09:45:32.667458+00:00", "tool": "website_reader", "status": "ok", "from_cache": false, "source_url": "https://kazan-kremlin.ru/rezhim-raboty", "requested_url": "https://kazan-kremlin.ru/rezhim-raboty", "text_length": 2782}
+{"type": "tool_completed", "task": "research", "timestamp": "2026-10-15T09:45:32.982385+00:00", "tool": "website_reader", "status": "ok", "from_cache": false, "source_url": "https://kazan-kremlin.ru/prices-and-benefits?slug=czeny-i-lgoty", "requested_url": "https://kazan-kremlin.ru/czeny-i-lgoty", "text_length": 32517}
+{"type": "llm_request", "task": "research", "timestamp": "2026-10-15T09:45:32.987541+00:00", "number": 3, "context_received": {}}
+{"type": "llm_response", "task": null, "timestamp": "2026-10-15T09:45:40.112305+00:00", "http_status": 200, "finish_reason": "stop", "completion_tokens": 1658}
+{"type": "task_completed", "task": "research", "timestamp": "2026-10-15T09:45:40.122626+00:00"}
+{"type": "task_started", "task": "budget", "timestamp": "2026-10-15T09:45:40.511845+00:00", "context_received": {"research": true}}
+{"type": "llm_request", "task": "budget", "timestamp": "2026-10-15T09:45:40.523306+00:00", "number": 4, "context_received": {"research": true}}
+{"type": "llm_response", "task": null, "timestamp": "2026-10-15T09:45:44.065243+00:00", "http_status": 200, "finish_reason": "tool_calls", "completion_tokens": 356}
+{"type": "tool_started", "task": "budget", "timestamp": "2026-10-15T09:45:44.067806+00:00", "tool": "internet_search"}
+{"type": "tool_started", "task": "budget", "timestamp": "2026-10-15T09:45:44.068320+00:00", "tool": "internet_search"}
+{"type": "tool_completed", "task": "budget", "timestamp": "2026-10-15T09:45:45.841407+00:00", "tool": "internet_search", "status": "ok", "from_cache": false, "urls": ["https://www.tutu.ru/poezda/Moskva/Kazan", "https://www.rupoezd.ru/raspisanie-poezdov-moskva-kazan", "https://www.tutu.ru/poezda/Moskva/vokzal_Kazan", "https://poezda.biletyplus.ru/bilety/moskva/kazan", "https://www.ufs-online.ru/kupit-zhd-bilety/moskva/kazan"]}
+{"type": "tool_completed", "task": "budget", "timestamp": "2026-10-15T09:45:45.990538+00:00", "tool": "internet_search", "status": "ok", "from_cache": false, "urls": ["https://rasp.yandex.ru/plane/moscow--kazan", "https://avia.tutu.ru/f/Moskva/Kazan", "https://www.flypobeda.ru/flights/MOW/KZN", "https://www.aviasales.ru/routes/mow/kzn", "https://nordwindairlines.ru/ru/flight/MOW/KZN"]}
+{"type": "llm_request", "task": "budget", "timestamp": "2026-10-15T09:45:45.994157+00:00", "number": 5, "context_received": {"research": true}}
+{"type": "llm_response", "task": null, "timestamp": "2026-10-15T09:45:49.253552+00:00", "http_status": 200, "finish_reason": "tool_calls", "completion_tokens": 345}
+{"type": "tool_started", "task": "budget", "timestamp": "2026-10-15T09:45:49.256355+00:00", "tool": "internet_search"}
+{"type": "tool_started", "task": "budget", "timestamp": "2026-10-15T09:45:49.256355+00:00", "tool": "internet_search"}
+{"type": "tool_completed", "task": "budget", "timestamp": "2026-10-15T09:45:49.835395+00:00", "tool": "internet_search", "status": "ok", "from_cache": false, "urls": ["https://hotel.tutu.ru/c_russia/kazan", "https://ostrovok.ru/hotel/russia/kazan", "https://kazan.sutochno.ru/hotels", "https://101hotels.com/main/cities/kazan", "https://www.tripadvisor.ru/HotelsList-Kazan-zfp34291859.html"]}
+{"type": "tool_completed", "task": "budget", "timestamp": "2026-10-15T09:45:51.486893+00:00", "tool": "internet_search", "status": "ok", "from_cache": false, "urls": ["https://www.aviasales.ru/routes/kzn/mow", "https://ru.trip.com/hot/kzn-mow", "https://rasp.yandex.ru/plane/kazan--moscow", "https://avia.tutu.ru/f/Kazan/Moskva", "https://www.flypobeda.ru/flights/KZN/MOW"]}
+{"type": "llm_request", "task": "budget", "timestamp": "2026-10-15T09:45:51.491468+00:00", "number": 6, "context_received": {"research": true}}
+{"type": "llm_response", "task": null, "timestamp": "2026-10-15T09:46:03.509883+00:00", "http_status": 200, "finish_reason": "tool_calls", "completion_tokens": 1827}
+{"type": "tool_started", "task": "budget", "timestamp": "2026-10-15T09:46:03.511430+00:00", "tool": "trip_cost_calculator"}
+{"type": "tool_completed", "task": "budget", "timestamp": "2026-10-15T09:46:03.511942+00:00", "tool": "trip_cost_calculator", "status": "ok", "from_cache": false, "total": "25800", "currency": "RUB", "budget": "60000", "over_budget": "0", "amounts": ["14800", "5000", "6000", "0"]}
+{"type": "llm_request", "task": "budget", "timestamp": "2026-10-15T09:46:03.517066+00:00", "number": 7, "context_received": {"research": true}}
+{"type": "llm_response", "task": null, "timestamp": "2026-10-15T09:46:15.588650+00:00", "http_status": 200, "finish_reason": "stop", "completion_tokens": 1687}
+{"type": "task_completed", "task": "budget", "timestamp": "2026-10-15T09:46:15.595781+00:00"}
+{"type": "task_started", "task": "itinerary", "timestamp": "2026-10-15T09:46:16.035740+00:00", "context_received": {"research": true, "budget": true}}
+{"type": "llm_request", "task": "itinerary", "timestamp": "2026-10-15T09:46:16.046139+00:00", "number": 8, "context_received": {"research": true, "budget": true}}
+{"type": "llm_response", "task": null, "timestamp": "2026-10-15T09:46:18.351002+00:00", "http_status": 200, "finish_reason": "tool_calls", "completion_tokens": 362}
+{"type": "tool_started", "task": "itinerary", "timestamp": "2026-10-15T09:46:18.353504+00:00", "tool": "trip_cost_calculator"}
+{"type": "tool_completed", "task": "itinerary", "timestamp": "2026-10-15T09:46:18.353504+00:00", "tool": "trip_cost_calculator", "status": "ok", "from_cache": false, "total": "25800", "currency": "RUB", "budget": "60000.00", "over_budget": "0", "amounts": ["14800", "5000", "6000", "0"]}
+{"type": "llm_request", "task": "itinerary", "timestamp": "2026-10-15T09:46:18.357648+00:00", "number": 9, "context_received": {"research": true, "budget": true}}
+{"type": "llm_response", "task": null, "timestamp": "2026-10-15T09:46:24.195289+00:00", "http_status": 200, "finish_reason": "stop", "completion_tokens": 1184}
+{"type": "validation_failed", "task": "itinerary", "timestamp": "2026-10-15T09:46:24.201526+00:00", "issues": [], "fenced": false, "raw_chars": 2579}
+{"type": "task_failed", "task": "itinerary", "timestamp": "2026-10-15T09:46:24.202042+00:00", "error": "task_execution_failed"}
+{"type": "run_failed", "task": null, "timestamp": "2026-10-15T09:46:24.212218+00:00", "error": "execution_failed", "error_type": "Exception", "causes": ["Exception"], "frames": [{"file": "runner.py", "line": 260, "function": "_worker_inner"}, {"file": "crew.py", "line": 1056, "function": "kickoff"}, {"file": "crew.py", "line": 1524, "function": "_run_sequential_process"}, {"file": "crew.py", "line": 1628, "function": "_execute_tasks"}, {"file": "task.py", "line": 593, "function": "execute_sync"}, {"file": "task.py", "line": 963, "function": "_execute_core"}, {"file": "task.py", "line": 903, "function": "_execute_core"}, {"file": "task.py", "line": 1388, "function": "_invoke_guardrail_function"}]}
+{"type": "run_failed", "task": null, "error": "execution_failed"}

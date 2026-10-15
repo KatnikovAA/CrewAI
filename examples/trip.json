@@ -1,0 +1,10 @@
+{
+  "departure_city": "Москва",
+  "destination": "Казань",
+  "start_date": "2026-11-14",
+  "end_date": "2026-11-15",
+  "budget": "60000.00",
+  "currency": "RUB",
+  "travelers": 2,
+  "interests": ["архитектура"]
+}

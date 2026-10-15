@@ -1,0 +1,755 @@
+{
+  "status": "failed",
+  "trip": {
+    "departure_city": "Москва",
+    "destination": "Казань",
+    "start_date": "2026-11-14",
+    "end_date": "2026-11-15",
+    "budget": "60000.00",
+    "currency": "RUB",
+    "travelers": 2,
+    "interests": [
+      "архитектура"
+    ]
+  },
+  "final": null,
+  "tasks": {
+    "research": {
+      "places": [
+        {
+          "id": "kazan-kremlin",
+          "name": "Музей-заповедник «Казанский Кремль» (архитектурный ансамбль, Казань)",
+          "description": {
+            "kind": "fact",
+            "sources": [
+              "https://kazan-kremlin.ru/",
+              "https://www.tutu.ru/geo/rossiya/kazan/article/kazanskij-kreml_sight"
+            ],
+            "note": "Существование объекта и статус музея-заповедника/ЮНЕСКО подтверждены официальным сайтом; архитектурный состав (мечеть Кул-Шариф, башня Сююмбике, Благовещенский собор) — по материалам RUSSPASS (https://russpass.ru/place/6053ed064e19ad00190d815a).",
+            "text": "Историко-архитектурный комплекс, объект ЮНЕСКО: мечеть Кул-Шариф, башня Сююмбике, Благовещенский собор, музеи; ключевая точка для интереса «архитектура». Для осмотра закладывают 3–4 часа."
+          },
+          "conditions": {
+            "kind": "fact",
+            "sources": [
+              "https://www.tutu.ru/geo/rossiya/kazan/article/kazanskij-kreml_sight",
+              "https://kuda-kazan.ru/place/kazanskij-kreml"
+            ],
+            "note": "Вторичные источники; правила доступа на 14–15.11.2026 не подтверждены, возможны ограничения и особый режим в отдельные даты — проверять на kazan-kremlin.ru перед поездкой.",
+            "text": "Вход на территорию свободный; музеи, мечеть и собор — по отдельным билетам. В первый вторник месяца и 18 мая (День музеев) вход в музеи бесплатный."
+          },
+          "hours": {
+            "kind": "fact",
+            "sources": [
+              "https://www.tutu.ru/geo/rossiya/kazan/article/kazanskij-kreml_sight",
+              "https://kuda-kazan.ru/place/kazanskij-kreml"
+            ],
+            "note": "Данные вторичных источников; актуальность на ноябрь 2026 не подтверждена. Кассы музеев закрываются раньше закрытия (до 17:30, в пятницу до 19:30 по kuda-kazan.ru).",
+            "text": "Территория: через Спасскую башню — круглосуточно; через Тайницкую башню 1 октября–30 апреля с 8:00 до 18:00. Кул-Шариф и Благовещенский собор 9:00–19:30. Музеи: пн–чт, сб–вс 10:00–18:00, пт 11:00–20:00."
+          },
+          "price": {
+            "kind": "fact",
+            "sources": [
+              "https://www.tutu.ru/geo/rossiya/kazan/article/kazanskij-kreml_sight"
+            ],
+            "note": "Вход на территорию — бесплатно (0 RUB за человека); единый билет во все музеи по данным tutu.ru — 1500 RUB за человека, отдельные объекты — от 150 RUB (tutu.ru); RUSSPASS указывает «от 250 ₽» (https://russpass.ru/place/6053ed064e19ad00190d815a). Цены на ноябрь 2026 не подтверждены.",
+            "amount": "0",
+            "currency": "RUB"
+          }
+        },
+        {
+          "id": "hram-vseh-religiy",
+          "name": "Вселенский храм (Храм всех религий), Казань, ул. Старо-Аракчинская, 4",
+          "description": {
+            "kind": "fact",
+            "sources": [
+              "https://xn--80adjapgfgof0bee3d.xn--p1ai/"
+            ],
+            "note": "Описание по официальному сайту объекта; объект находится в пос. Старое Аракчино, вдали от центра.",
+            "text": "Международный культурный центр духовного единения, построен братьями Хановыми; комплекс зданий с куполами и башнями, совмещающий элементы православной, католической, мусульманской, иудейской, буддийской и других традиций. Службы не ведутся, ближе к музею культуры. Залы: языческий, православный, египетский, католический (концертный), зал Шивы, исламский и др.; храм продолжает строиться."
+          },
+          "conditions": {
+            "kind": "fact",
+            "sources": [
+              "https://xn--80adjapgfgof0bee3d.xn--p1ai/"
+            ],
+            "note": "По официальному сайту; наличие экскурсовода без предварительной брони не гарантировано. Телефон +7 987 002-39-95, hramvseh@mail.ru. Отдельные зоны (зал Ислама) могут быть на стадии строительства.",
+            "text": "Открыт для посещения ежедневно по входному билету; есть мастер-классы и занятия йогой; бесплатная парковка. Экскурсия с гидом — при наличии свободных экскурсоводов или по предварительной договорённости."
+          },
+          "hours": {
+            "kind": "fact",
+            "sources": [
+              "https://xn--80adjapgfgof0bee3d.xn--p1ai/"
+            ],
+            "note": "Указано на официальном сайте; сторонние ресурсы дают иные интервалы (например, 10:00–18:00/10:00–19:00 на putevka.com, 8:00–20:00 на to-kazan.ru), расхождение не разрешено — уточнять по телефону. Часы на 14–15.11.2026 не подтверждены.",
+            "text": "Ежедневно с 9:00 до 18:00."
+          },
+          "price": {
+            "kind": "fact",
+            "sources": [
+              "https://xn--80adjapgfgof0bee3d.xn--p1ai/"
+            ],
+            "note": "Цены официального сайта: взрослый билет 300 RUB за человека, детский 200 RUB за человека. Экскурсия для группы до 10 человек — 1300 RUB за группу (по сайту). Иные суммы на сторонних сайтах (например, 100 RUB на putevka.com) не подтверждены официально; цены на ноябрь 2026 не гарантированы.",
+            "amount": "300",
+            "currency": "RUB"
+          }
+        }
+      ],
+      "uncertainties": [
+        "Расписания транспорта Москва–Казань и обратно на 14–15.11.2026 не исследованы: время отправления/возвращения не подтверждено (обозначать как допущение, требующее проверки).",
+        "Цены и часы работы взяты из источников на 2024–2025 гг.; актуальность на 14–15.11.2026 не подтверждена, требуется проверка на официальных сайтах перед поездкой.",
+        "Официальные страницы kazan-kremlin.ru/visit/, /visitors/prices/ и /visitors/hours/ вернули HTTP 404 — цены и режим Кремля подтверждены только вторичными источниками (tutu.ru, kuda-kazan.ru, russpass.ru).",
+        "По Храму всех религий часы работы в источниках расходятся (9:00–18:00 на официальном сайте против 8:00–20:00 и 10:00–19:00 на сторонних), цена 100 RUB на putevka.com не подтверждена официально.",
+        "Бюджет 60000 RUB на 2 человек не проверялся на достаточность: стоимость дороги и проживания не исследованы."
+      ]
+    }
+  },
+  "events": [
+    {
+      "type": "run_started",
+      "task": null,
+      "timestamp": "2026-10-15T09:42:48.215617+00:00",
+      "max_llm_calls": 24
+    },
+    {
+      "type": "task_started",
+      "task": "research",
+      "timestamp": "2026-10-15T09:42:48.545844+00:00",
+      "context_received": {}
+    },
+    {
+      "type": "llm_request",
+      "task": "research",
+      "timestamp": "2026-10-15T09:42:48.878113+00:00",
+      "number": 1,
+      "context_received": {}
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T09:42:50.373371+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 134
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T09:42:50.381082+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T09:42:50.382115+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T09:42:50.996138+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://russpass.ru/place/6053ed064e19ad00190d815a",
+        "https://kzn.ticketstour.ru/ehkskursiya-v-kazanskij-kreml",
+        "https://to-kazan.ru/blog/place/kazanskiy-kreml",
+        "https://www.tutu.ru/geo/rossiya/kazan/article/kazanskij-kreml_sight",
+        "https://kuda-kazan.ru/place/kazanskij-kreml"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T09:42:52.276746+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://xn--80adjapgfgof0bee3d.xn--p1ai",
+        "https://www.putevka.com/tatarstan/kazan/sight/khram-vsekh-religiy",
+        "https://to-kazan.ru/blog/place/hram-vseh-religiy",
+        "https://tripse.ru/journal/hram-vseh-religij-v-kazani-kak-dobratsya",
+        "https://kazantrip.ru/excursions/xram-vsex-religii-s-poseshheniem"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "research",
+      "timestamp": "2026-10-15T09:42:52.281386+00:00",
+      "number": 2,
+      "context_received": {}
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T09:42:54.954483+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 161
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T09:42:55.016077+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T09:42:55.016077+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T09:42:55.300604+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://xn--80adjapgfgof0bee3d.xn--p1ai/",
+      "requested_url": "https://xn--80adjapgfgof0bee3d.xn--p1ai/",
+      "text_length": 16149
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T09:42:55.945836+00:00",
+      "tool": "website_reader",
+      "status": "error",
+      "from_cache": false,
+      "source_url": "https://kazan-kremlin.ru/visit/",
+      "requested_url": "https://kazan-kremlin.ru/visit/",
+      "text_length": 0
+    },
+    {
+      "type": "llm_request",
+      "task": "research",
+      "timestamp": "2026-10-15T09:42:55.950989+00:00",
+      "number": 3,
+      "context_received": {}
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T09:42:57.692315+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 150
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T09:42:57.693397+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T09:42:58.075916+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://kazan-kremlin.ru/",
+      "requested_url": "https://kazan-kremlin.ru/",
+      "text_length": 4491
+    },
+    {
+      "type": "llm_request",
+      "task": "research",
+      "timestamp": "2026-10-15T09:42:58.079940+00:00",
+      "number": 4,
+      "context_received": {}
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T09:43:00.148662+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 253
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T09:43:00.150874+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T09:43:00.150874+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T09:43:00.444636+00:00",
+      "tool": "website_reader",
+      "status": "error",
+      "from_cache": false,
+      "source_url": "https://kazan-kremlin.ru/visitors/prices/",
+      "requested_url": "https://kazan-kremlin.ru/visitors/prices/",
+      "text_length": 0
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T09:43:01.057111+00:00",
+      "tool": "website_reader",
+      "status": "error",
+      "from_cache": false,
+      "source_url": "https://kazan-kremlin.ru/visitors/hours/",
+      "requested_url": "https://kazan-kremlin.ru/visitors/hours/",
+      "text_length": 0
+    },
+    {
+      "type": "llm_request",
+      "task": "research",
+      "timestamp": "2026-10-15T09:43:01.062747+00:00",
+      "number": 5,
+      "context_received": {}
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T09:43:28.087719+00:00",
+      "http_status": 200,
+      "finish_reason": "stop",
+      "completion_tokens": 2270
+    },
+    {
+      "type": "task_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T09:43:28.098104+00:00"
+    },
+    {
+      "type": "task_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:43:28.539764+00:00",
+      "context_received": {
+        "research": true
+      }
+    },
+    {
+      "type": "llm_request",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:43:28.550964+00:00",
+      "number": 6,
+      "context_received": {
+        "research": true
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T09:43:31.058231+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 329
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:43:31.060295+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:43:31.060295+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:43:32.923584+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://poezda.biletyplus.ru/bilety/moskva/kazan",
+        "https://rasp.yandex.ru/train/moscow--kazan",
+        "https://www.ufs-online.ru/kupit-zhd-bilety/moskva/kazan",
+        "https://www.tutu.ru/poezda/Moskva/vokzal_Kazan",
+        "https://www.tutu.ru/poezda/Moskva/Kazan"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:43:33.193394+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://rasp.yandex.ru/plane/moscow--kazan",
+        "https://www.aviasales.ru/routes/mow/kzn",
+        "https://avia.tutu.ru/f/Moskva/Kazan",
+        "https://www.flypobeda.ru/flights/MOW/KZN",
+        "https://nordwindairlines.ru/ru/flight/MOW/KZN"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:43:33.199125+00:00",
+      "number": 7,
+      "context_received": {
+        "research": true
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T09:43:38.929683+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 1035
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:43:38.931784+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:43:38.932300+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:43:40.710309+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://www.tbank.ru/travel/flights/routes/KZN/MOW",
+        "https://rasp.yandex.ru/plane/kazan--moscow",
+        "https://avia.tutu.ru/f/Kazan/Moskva",
+        "https://www.aviasales.ru/routes/kzn/mow",
+        "https://nordwindairlines.ru/ru/flight/KZN/MOW"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:43:41.536456+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://nowtrip.ru/hotels/places/russia/kazan",
+        "https://hotel.tutu.ru/c_russia/kazan",
+        "https://ostrovok.ru/hotel/russia/kazan",
+        "https://101hotels.com/main/cities/kazan/double",
+        "https://kazan.sutochno.ru/hotels"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:43:41.541590+00:00",
+      "number": 8,
+      "context_received": {
+        "research": true
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T09:43:53.077610+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 2092
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:43:53.080202+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:43:53.080202+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:43:54.496957+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://rasp.yandex.ru/plane/kazan--moscow",
+      "requested_url": "https://rasp.yandex.ru/plane/kazan--moscow",
+      "text_length": 5701
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:43:55.021822+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://aeroexpressbusiness.ru/tariffs",
+        "https://travel2moscow.com/transport/aeroexpress-v-moskve-2026-raspisanie-cena-biletov",
+        "https://aeroexpress.ru",
+        "https://aeroexpress.ru/aero/prices.html",
+        "https://aeroexpress.ru/aero/press/news20101873.html"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:43:55.027991+00:00",
+      "number": 9,
+      "context_received": {
+        "research": true
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T09:43:59.826731+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 674
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:43:59.829466+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:43:59.829466+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:44:00.125879+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://hotel.tutu.ru/c_russia/kazan/",
+      "requested_url": "https://hotel.tutu.ru/c_russia/kazan",
+      "text_length": 12024
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:44:01.056906+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://rasp.yandex.ru/plane/moscow--kazan",
+      "requested_url": "https://rasp.yandex.ru/plane/moscow--kazan",
+      "text_length": 5909
+    },
+    {
+      "type": "llm_request",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:44:01.064244+00:00",
+      "number": 10,
+      "context_received": {
+        "research": true
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T09:44:08.039010+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 1360
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:44:08.040550+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:44:08.041061+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:44:08.402421+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://avia.tutu.ru/f/Kazan/Moskva/",
+      "requested_url": "https://avia.tutu.ru/f/Kazan/Moskva",
+      "text_length": 9882
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:44:09.817949+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://malyegorodarossii.ru/kazan/avtobusy-kazan/raspisanie-avtobusa-197-kazan.php",
+        "https://bus.tutu.ru/raspisanie/gorod_Kazan/gorod_Bolshie-Kabany_1331126",
+        "https://xn--24-jlcxbqgdssj.xn--p1ai/%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C/%D0%B0%D0%B2%D1%82%D0%BE%D0%B1%D1%83%D1%81/197-2",
+        "https://yandex.ru/maps/43/kazan/routes/bus_197/796d617073626d313a2f2f7472616e7369742f6c696e653f69643d32303739373735383133266c6c3d34392e32323933363925324335352e363737353831266e616d653d31393726723d313230303026747970653d627573",
+        "https://tatarstan24.tv/news/25045.passazhiry-ocenili-novye-avtobusy-na-marshrute-197"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:44:09.824684+00:00",
+      "number": 11,
+      "context_received": {
+        "research": true
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T09:44:21.537875+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 2445
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:44:21.539935+00:00",
+      "tool": "trip_cost_calculator"
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:44:21.539935+00:00",
+      "tool": "trip_cost_calculator",
+      "status": "ok",
+      "from_cache": false,
+      "total": "27278",
+      "currency": "RUB",
+      "budget": "60000.00",
+      "over_budget": "0",
+      "amounts": [
+        "4938",
+        "5800",
+        "2600",
+        "340",
+        "5000",
+        "5000",
+        "3000",
+        "600"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:44:21.546604+00:00",
+      "number": 12,
+      "context_received": {
+        "research": true
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T09:44:37.154162+00:00",
+      "http_status": 200,
+      "finish_reason": "length",
+      "completion_tokens": 4000
+    },
+    {
+      "type": "validation_failed",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:44:37.190953+00:00",
+      "issues": [
+        {
+          "location": [],
+          "code": "json_invalid"
+        }
+      ],
+      "fenced": false,
+      "raw_chars": 8326
+    },
+    {
+      "type": "task_failed",
+      "task": "budget",
+      "timestamp": "2026-10-15T09:44:37.191462+00:00",
+      "error": "task_execution_failed"
+    },
+    {
+      "type": "run_failed",
+      "task": null,
+      "timestamp": "2026-10-15T09:44:37.203457+00:00",
+      "error": "execution_failed",
+      "error_type": "Exception",
+      "causes": [
+        "Exception"
+      ],
+      "frames": [
+        {
+          "file": "runner.py",
+          "line": 225,
+          "function": "_worker_inner"
+        },
+        {
+          "file": "crew.py",
+          "line": 1056,
+          "function": "kickoff"
+        },
+        {
+          "file": "crew.py",
+          "line": 1524,
+          "function": "_run_sequential_process"
+        },
+        {
+          "file": "crew.py",
+          "line": 1628,
+          "function": "_execute_tasks"
+        },
+        {
+          "file": "task.py",
+          "line": 593,
+          "function": "execute_sync"
+        },
+        {
+          "file": "task.py",
+          "line": 963,
+          "function": "_execute_core"
+        },
+        {
+          "file": "task.py",
+          "line": 903,
+          "function": "_execute_core"
+        },
+        {
+          "file": "task.py",
+          "line": 1388,
+          "function": "_invoke_guardrail_function"
+        }
+      ]
+    },
+    {
+      "type": "run_failed",
+      "task": null,
+      "error": "execution_failed"
+    }
+  ],
+  "checks": {},
+  "error": "execution_failed",
+  "worker_stopped": true
+}

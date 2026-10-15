@@ -12,3 +12,12 @@ dist/
 .pytest_cache/
 # Служебное хранилище CrewAI остаётся на компьютере.
 .crewai/
+
+# Frontend dependencies and local builds.
+frontend/node_modules/
+frontend/dist/
+
+# Desktop launcher state and local logs.
+.launcher/
+# Local streaming run diagnostics.
+*.diagnostics.jsonl

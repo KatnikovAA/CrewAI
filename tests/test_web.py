@@ -35,3 +35,11 @@ class ReaderTests(unittest.TestCase):
         fetch.side_effect = None
         fetch.return_value = (b"%PDF", "application/pdf", "https://example.com")
         self.assertEqual(WebsiteReaderTool().run(website_url="https://example.com")["error_code"], "unsupported_content")
+
+    @patch("travel_planner.tools.web.safe_get_bounded")
+    def test_long_page_is_bounded_and_truncation_explicit(self, fetch):
+        fetch.return_value = (b'<html><main>'+b'A'*20000+b'</main></html>', 'text/html', 'https://example.com')
+        result = WebsiteReaderTool(max_text_chars=6000).run(website_url='https://example.com')
+        self.assertEqual(len(result['text']),6000)
+        self.assertTrue(result['truncated'])
+        self.assertEqual(result['original_text_chars'],20000)

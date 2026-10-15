@@ -1,0 +1,30 @@
+{
+  "place_count": 24,
+  "categories": [
+    "architecture",
+    "food",
+    "museum",
+    "shopping"
+  ],
+  "places_per_day": [
+    0,
+    5,
+    5,
+    5,
+    5,
+    4,
+    0
+  ],
+  "trip_id": "c81222ee1e204e71b3ff60e2cb7ab2e8",
+  "success": true,
+  "result_http": 200,
+  "checks": {
+    "task_order": true,
+    "context_sent_to_llm": true,
+    "required_tools": true,
+    "structured_results": true,
+    "contracts": true,
+    "calculator_amounts": true
+  },
+  "duration_seconds": 184.2
+}

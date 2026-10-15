@@ -1,0 +1,1076 @@
+{
+  "status": "success",
+  "trip": {
+    "departure_city": "Москва",
+    "destination": "Минск",
+    "start_date": "2026-10-19",
+    "end_date": "2026-10-25",
+    "budget": "100000",
+    "currency": "RUB",
+    "travelers": 2,
+    "interests": [
+      "Музеи",
+      "вкусно покушать и архитектура и ТЦ"
+    ]
+  },
+  "final": {
+    "days": [
+      {
+        "date": "2026-10-19",
+        "place_ids": [
+          "histmuseum-minsk"
+        ],
+        "schedule": {
+          "kind": "estimate",
+          "sources": [
+            "https://histmuseum.by/informacziya-dlya-posetitelej/",
+            "https://rasp.yandex.ru/train/moscow--minsk"
+          ],
+          "note": "Время посещения — оценка; выходной день музея источником не подтверждён, нужна проверка по телефону.",
+          "text": "Прибытие 13:24, заселение; музей ориентировочно 15:30–18:00 (касса до 18:30)."
+        },
+        "movements": {
+          "kind": "estimate",
+          "sources": [
+            "https://rasp.yandex.ru/train/moscow--minsk",
+            "https://www.sravni.ru/text/poezd-moskva-siti-minsk-raspisanie-ceny-vremya-v-puti"
+          ],
+          "note": "Расписание «Ласточки» 717М требует проверки перед покупкой; запас на вокзал — допущение.",
+          "text": "Отправление из Москвы (Белорусский вокзал) 06:18, прибытие в Минск 13:24; быть на вокзале ~05:30, от вокзала до отеля ~30 мин."
+        }
+      },
+      {
+        "date": "2026-10-20",
+        "place_ids": [
+          "warmuseum-minsk"
+        ],
+        "schedule": {
+          "kind": "estimate",
+          "sources": [
+            "https://www.warmuseum.by/posetitelyam/rezhim-raboty-i-stoimost/"
+          ],
+          "note": "20.10.2026 — третий вторник, льготный день по источнику; часы посещения — допущение.",
+          "text": "Музей истории ВОВ открыт Вт–Вс 10:00–19:00 (вход до 18:30), посещение ориентировочно 10:30–14:00."
+        },
+        "movements": {
+          "kind": "estimate",
+          "sources": [
+            "https://www.warmuseum.by/posetitelyam/rezhim-raboty-i-stoimost/"
+          ],
+          "note": "Адрес пр. Победителей, 8; способ и время проезда — допущение, тарифы не подтверждены.",
+          "text": "Проезд по городу до пр. Победителей, 8, ориентировочно 30–40 мин."
+        }
+      },
+      {
+        "date": "2026-10-21",
+        "place_ids": [],
+        "schedule": {
+          "kind": "estimate",
+          "sources": [],
+          "note": "Конкретных мест нет: гастрономия, архитектура и ТЦ не исследованы.",
+          "text": "Свободный день без подтверждённых активностей."
+        },
+        "movements": {
+          "kind": "estimate",
+          "sources": [],
+          "note": "Маршруты по городу — допущение, подтверждённых данных нет.",
+          "text": "Перемещения по городу по желанию, ориентировочно без выезда за пределы Минска."
+        }
+      },
+      {
+        "date": "2026-10-22",
+        "place_ids": [],
+        "schedule": {
+          "kind": "estimate",
+          "sources": [],
+          "note": "Конкретных мест нет: интересы «вкусно покушать, архитектура, ТЦ» не исследованы.",
+          "text": "Свободный день без подтверждённых активностей."
+        },
+        "movements": {
+          "kind": "estimate",
+          "sources": [],
+          "note": "Маршруты по городу — допущение.",
+          "text": "Перемещения по городу по желанию."
+        }
+      },
+      {
+        "date": "2026-10-23",
+        "place_ids": [],
+        "schedule": {
+          "kind": "estimate",
+          "sources": [],
+          "note": "Конкретных мест нет.",
+          "text": "Свободный день без подтверждённых активностей."
+        },
+        "movements": {
+          "kind": "estimate",
+          "sources": [],
+          "note": "Маршруты по городу — допущение.",
+          "text": "Перемещения по городу по желанию."
+        }
+      },
+      {
+        "date": "2026-10-24",
+        "place_ids": [],
+        "schedule": {
+          "kind": "estimate",
+          "sources": [],
+          "note": "Конкретных мест нет; последняя ночь в отеле.",
+          "text": "Свободный день без подтверждённых активностей."
+        },
+        "movements": {
+          "kind": "estimate",
+          "sources": [],
+          "note": "Маршруты по городу — допущение.",
+          "text": "Перемещения по городу по желанию."
+        }
+      },
+      {
+        "date": "2026-10-25",
+        "place_ids": [],
+        "schedule": {
+          "kind": "estimate",
+          "sources": [
+            "https://www.tutu.ru/poezda/Minsk/Moskva",
+            "https://poezda.biletyplus.ru/poezd/lastochka/minsk/moskva"
+          ],
+          "note": "Расписание обратной «Ласточки» 718Б требует проверки; выезд из отеля и запас — допущение.",
+          "text": "Выезд из отеля ориентировочно к 14:00, быть на вокзале ~14:50."
+        },
+        "movements": {
+          "kind": "estimate",
+          "sources": [
+            "https://www.tutu.ru/poezda/Minsk/Moskva",
+            "https://rasp.yandex.ru/train/moscow--minsk"
+          ],
+          "note": "Возвращение внутри end_date; время и посадка требуют проверки перед покупкой.",
+          "text": "Отправление из Минска 15:49, прибытие в Москву (Белорусский вокзал) 23:01, в пути 7 ч 12 мин."
+        }
+      }
+    ],
+    "currency": "RUB",
+    "known_total": "72200",
+    "complete": false,
+    "budget_status": "undetermined",
+    "over_budget": "0",
+    "sources": [
+      "https://101hotels.com/belarus/minsk",
+      "https://histmuseum.by/informacziya-dlya-posetitelej/",
+      "https://ostrovok.ru/hotel/belarus/minsk",
+      "https://poezda.biletyplus.ru/poezd/lastochka/minsk/moskva",
+      "https://rasp.yandex.ru/train/moscow--minsk",
+      "https://www.sravni.ru/text/poezd-moskva-siti-minsk-raspisanie-ceny-vremya-v-puti",
+      "https://www.tutu.ru/poezda/Minsk/Moskva",
+      "https://www.warmuseum.by/posetitelyam/rezhim-raboty-i-stoimost/"
+    ],
+    "caveats": [
+      "Смета неполная: билеты в музеи (15,00 и 20,00 BYN) и городской транспорт не пересчитаны в RUB, курсы не применялись — статус бюджета undetermined, превышение не доказано.",
+      "Известный подытог 72 200 RUB ниже бюджета 100 000 RUB при остатке 27 800 RUB, но это только по трём оценкам (транспорт, жильё, питание).",
+      "Цены билетов динамические, бронь отеля не подтверждена; нужна проверка перед покупкой.",
+      "19.10.2026 — понедельник: музей истории ВОВ закрыт, национальный исторический музей назначен на этот день, его выходной источником не подтверждён.",
+      "Акция «Единый билет» 25,00 BYN действовала 02.06–31.07.2026, её действие в октябре 2026 не подтверждено.",
+      "Дни 21–24.10 без подтверждённых мест: запросы про гастрономию, архитектуру и ТЦ не исследованы.",
+      "Если появятся расходы сверх трёх известных статей (музеи, городской транспорт), маршрут и смету нужно пересмотреть."
+    ]
+  },
+  "tasks": {
+    "research": {
+      "places": [
+        {
+          "id": "histmuseum-minsk",
+          "name": "Национальный исторический музей Республики Беларусь",
+          "description": {
+            "kind": "fact",
+            "sources": [
+              "https://histmuseum.by/informacziya-dlya-posetitelej/"
+            ],
+            "note": "Основная историко-краеведческая экспозиция и временные выставки; адрес ул. К. Маркса, 12.",
+            "text": "Музей с постоянной экспозицией из ряда выставочных проектов, временными выставками, экскурсиями и занятиями, включая филиал «Музей природы и экологии»."
+          },
+          "conditions": {
+            "kind": "fact",
+            "sources": [
+              "https://histmuseum.by/informacziya-dlya-posetitelej/"
+            ],
+            "note": "Экскурсии, занятия и игры заказывают заранее по телефону; в тексте источника бесплатное посещение в последнюю среду месяца — только для организованных групп учащихся по записи.",
+            "text": "Бесплатный вход: участники и инвалиды ВОВ, воины-интернационалисты, срочнослужащие, инвалиды, дошкольники, дети-сироты, сотрудники музеев Беларуси."
+          },
+          "hours": {
+            "kind": "fact",
+            "sources": [
+              "https://histmuseum.by/informacziya-dlya-posetitelej/"
+            ],
+            "note": "Выходные дни в источнике не указаны — требуется проверка по телефону +375 (17) 365-48-27.",
+            "text": "Музей работает 10:00–19:00, касса и вход для посетителей 10:00–18:30."
+          },
+          "price": {
+            "kind": "fact",
+            "sources": [
+              "https://histmuseum.by/informacziya-dlya-posetitelej/"
+            ],
+            "note": "Взрослый билет на демонстрацию всех экспозиций и выставок (без филиала «Музей природы и экологии»), за человека; акция «Единый билет» за 25,00 BYN указана для периода 02.06–31.07.2026, её действие в октябре 2026 не подтверждено.",
+            "amount": "15.00",
+            "currency": "BYN"
+          }
+        },
+        {
+          "id": "warmuseum-minsk",
+          "name": "Белорусский государственный музей истории Великой Отечественной войны",
+          "description": {
+            "kind": "fact",
+            "sources": [
+              "https://www.warmuseum.by/posetitelyam/rezhim-raboty-i-stoimost/"
+            ],
+            "note": "Адрес пр. Победителей, 8; постоянная экспозиция дополнена залом «Музей для детей», квестами и тематическими экскурсиями.",
+            "text": "Крупный военно-исторический музей с залами техники и вооружения, лекциями, квестами и детскими программами."
+          },
+          "conditions": {
+            "kind": "fact",
+            "sources": [
+              "https://www.warmuseum.by/posetitelyam/rezhim-raboty-i-stoimost/"
+            ],
+            "note": "Обзорные и тематические экскурсии проводятся за отдельную плату с группы плюс входные билеты; заказ по телефонам +375 (17) 203-07-92, +375 (29) 144-07-92.",
+            "text": "Бесплатно: дети до 7 лет, ветераны ВОВ, инвалиды, узники концлагерей, жители блокадного Ленинграда, срочнослужащие и курсанты 1–2 курсов, дети-инвалиды и сопровождающие; каждый третий вторник — льготный день; последняя среда месяца — бесплатно для учащихся по записи."
+          },
+          "hours": {
+            "kind": "fact",
+            "sources": [
+              "https://www.warmuseum.by/posetitelyam/rezhim-raboty-i-stoimost/"
+            ],
+            "note": "В предпраздничные дни работа сокращается на 1 час; режим в госпраздники публикуется накануне.",
+            "text": "Вт–Вс 10:00–19:00 (касса и вход до 18:30), понедельник — выходной."
+          },
+          "price": {
+            "kind": "fact",
+            "sources": [
+              "https://www.warmuseum.by/posetitelyam/rezhim-raboty-i-stoimost/"
+            ],
+            "note": "Взрослый билет на постоянную экспозицию, за человека; в льготный день 13,00 BYN; аудиогид 10,00 BYN.",
+            "amount": "20.00",
+            "currency": "BYN"
+          }
+        }
+      ],
+      "uncertainties": [
+        "19.10.2026 — понедельник: музей истории ВОВ закрыт; для национального исторического музея день отдыха источником не подтверждён.",
+        "Действие акции «Единый билет» 25,00 BYN в октябре 2026 не подтверждено (в источнике период 02.06–31.07.2026).",
+        "Условия и цены касаются посещения Минска; транспорт Москва—Минск, жильё и укладывание в бюджет 100000 RUB на 2 человек не проверялись, курсы валют не применялись.",
+        "Запросы про гастрономию, архитектуру и ТЦ не исследованы; данных о них в ответе нет."
+      ]
+    },
+    "budget": {
+      "currency": "RUB",
+      "expenses": [
+        {
+          "kind": "estimate",
+          "sources": [
+            "https://rasp.yandex.ru/train/moscow--minsk",
+            "https://www.tutu.ru/poezda/Minsk/Moskva",
+            "https://www.sravni.ru/text/poezd-moskva-siti-minsk-raspisanie-ceny-vremya-v-puti"
+          ],
+          "note": "Состав: 2 билета «Ласточка» туда 19.10 (оценка 2100 ₽/чел.) плюс 2 билета обратно 25.10 (оценка 3500 ₽/чел.); минимальные тарифы источников 1901–1905 ₽, цены динамические — проверять на даты.",
+          "id": "transport",
+          "category": "transport",
+          "name": "Поезд Москва—Минск и обратно, 2 чел.",
+          "amount": "11200",
+          "place_ids": []
+        },
+        {
+          "kind": "estimate",
+          "sources": [
+            "https://ostrovok.ru/hotel/belarus/minsk",
+            "https://101hotels.com/belarus/minsk"
+          ],
+          "note": "Оценка 6 ночей × 5500 ₽ за номер на двоих; диапазон источников ~2 900–11 700 ₽/ночь, бронь не подтверждена.",
+          "id": "lodging",
+          "category": "lodging",
+          "name": "Отель в Минске, 6 ночей, номер на двоих",
+          "amount": "33000",
+          "place_ids": []
+        },
+        {
+          "kind": "estimate",
+          "sources": [],
+          "note": "Оценка 2 чел. × 7 дней × 2000 ₽/чел./день; подтверждённых цен нет.",
+          "id": "food",
+          "category": "food",
+          "name": "Питание, 7 дней на 2 чел.",
+          "amount": "28000",
+          "place_ids": []
+        },
+        {
+          "kind": "unknown",
+          "sources": [
+            "https://histmuseum.by/informacziya-dlya-posetitelej/",
+            "https://www.warmuseum.by/posetitelyam/rezhim-raboty-i-stoimost/"
+          ],
+          "note": "Взрослые билеты 15,00 BYN (исторический музей) и 20,00 BYN (музей истории ВОВ); конвертация BYN→RUB не выполнялась, поэтому сумма неизвестна.",
+          "id": "activities",
+          "category": "activities",
+          "name": "Билеты в музеи (2 места)",
+          "amount": null,
+          "place_ids": [
+            "histmuseum-minsk",
+            "warmuseum-minsk"
+          ]
+        },
+        {
+          "kind": "unknown",
+          "sources": [],
+          "note": "Тарифы в BYN без подтверждённого источника; без конвертации сумма неизвестна.",
+          "id": "local-transport",
+          "category": "other",
+          "name": "Городской транспорт Минска",
+          "amount": null,
+          "place_ids": []
+        }
+      ],
+      "known_total": "72200",
+      "complete": false,
+      "logistics": [
+        {
+          "kind": "fact",
+          "sources": [
+            "https://rasp.yandex.ru/train/moscow--minsk",
+            "https://www.sravni.ru/text/poezd-moskva-siti-minsk-raspisanie-ceny-vremya-v-puti"
+          ],
+          "note": "Расписание и время местное, требуется проверка перед покупкой.",
+          "text": "Туда 19.10: «Ласточка» 717М Москва (Белорусский вокзал) 06:18 — Минск-Пасс. 13:24, в пути 7 ч 06 мин, дневная поездка с прибытием в полдень."
+        },
+        {
+          "kind": "fact",
+          "sources": [
+            "https://www.tutu.ru/poezda/Minsk/Moskva",
+            "https://poezda.biletyplus.ru/poezd/lastochka/minsk/moskva"
+          ],
+          "note": "Ночные поезда не выбирались: для 7 дней достаточно дневных «Ласточек».",
+          "text": "Обратно 25.10: «Ласточка» 718Б Минск-Пасс. 15:49 — Москва (Белорусский вокзал) 23:01, в пути 7 ч 12 мин, возвращение внутри end_date."
+        }
+      ],
+      "assumptions": [
+        "Цены билетов динамические; в смету заложены оценки 2100 ₽ туда и 3500 ₽ обратно за человека, требуется проверка.",
+        "6 ночей (20–24.10 и ночь 19.10) в отеле среднего класса, номер на двоих, ~5500 ₽/ночь.",
+        "Питание оценено в 2000 ₽ на человека в день по 7 дням.",
+        "Музей истории ВОВ закрыт по понедельникам 19.10; посещение планируется на 20–24.10, билеты в BYN не пересчитаны."
+      ]
+    },
+    "itinerary": {
+      "days": [
+        {
+          "date": "2026-10-19",
+          "place_ids": [
+            "histmuseum-minsk"
+          ],
+          "schedule": {
+            "kind": "estimate",
+            "sources": [
+              "https://histmuseum.by/informacziya-dlya-posetitelej/",
+              "https://rasp.yandex.ru/train/moscow--minsk"
+            ],
+            "note": "Время посещения — оценка; выходной день музея источником не подтверждён, нужна проверка по телефону.",
+            "text": "Прибытие 13:24, заселение; музей ориентировочно 15:30–18:00 (касса до 18:30)."
+          },
+          "movements": {
+            "kind": "estimate",
+            "sources": [
+              "https://rasp.yandex.ru/train/moscow--minsk",
+              "https://www.sravni.ru/text/poezd-moskva-siti-minsk-raspisanie-ceny-vremya-v-puti"
+            ],
+            "note": "Расписание «Ласточки» 717М требует проверки перед покупкой; запас на вокзал — допущение.",
+            "text": "Отправление из Москвы (Белорусский вокзал) 06:18, прибытие в Минск 13:24; быть на вокзале ~05:30, от вокзала до отеля ~30 мин."
+          }
+        },
+        {
+          "date": "2026-10-20",
+          "place_ids": [
+            "warmuseum-minsk"
+          ],
+          "schedule": {
+            "kind": "estimate",
+            "sources": [
+              "https://www.warmuseum.by/posetitelyam/rezhim-raboty-i-stoimost/"
+            ],
+            "note": "20.10.2026 — третий вторник, льготный день по источнику; часы посещения — допущение.",
+            "text": "Музей истории ВОВ открыт Вт–Вс 10:00–19:00 (вход до 18:30), посещение ориентировочно 10:30–14:00."
+          },
+          "movements": {
+            "kind": "estimate",
+            "sources": [
+              "https://www.warmuseum.by/posetitelyam/rezhim-raboty-i-stoimost/"
+            ],
+            "note": "Адрес пр. Победителей, 8; способ и время проезда — допущение, тарифы не подтверждены.",
+            "text": "Проезд по городу до пр. Победителей, 8, ориентировочно 30–40 мин."
+          }
+        },
+        {
+          "date": "2026-10-21",
+          "place_ids": [],
+          "schedule": {
+            "kind": "estimate",
+            "sources": [],
+            "note": "Конкретных мест нет: гастрономия, архитектура и ТЦ не исследованы.",
+            "text": "Свободный день без подтверждённых активностей."
+          },
+          "movements": {
+            "kind": "estimate",
+            "sources": [],
+            "note": "Маршруты по городу — допущение, подтверждённых данных нет.",
+            "text": "Перемещения по городу по желанию, ориентировочно без выезда за пределы Минска."
+          }
+        },
+        {
+          "date": "2026-10-22",
+          "place_ids": [],
+          "schedule": {
+            "kind": "estimate",
+            "sources": [],
+            "note": "Конкретных мест нет: интересы «вкусно покушать, архитектура, ТЦ» не исследованы.",
+            "text": "Свободный день без подтверждённых активностей."
+          },
+          "movements": {
+            "kind": "estimate",
+            "sources": [],
+            "note": "Маршруты по городу — допущение.",
+            "text": "Перемещения по городу по желанию."
+          }
+        },
+        {
+          "date": "2026-10-23",
+          "place_ids": [],
+          "schedule": {
+            "kind": "estimate",
+            "sources": [],
+            "note": "Конкретных мест нет.",
+            "text": "Свободный день без подтверждённых активностей."
+          },
+          "movements": {
+            "kind": "estimate",
+            "sources": [],
+            "note": "Маршруты по городу — допущение.",
+            "text": "Перемещения по городу по желанию."
+          }
+        },
+        {
+          "date": "2026-10-24",
+          "place_ids": [],
+          "schedule": {
+            "kind": "estimate",
+            "sources": [],
+            "note": "Конкретных мест нет; последняя ночь в отеле.",
+            "text": "Свободный день без подтверждённых активностей."
+          },
+          "movements": {
+            "kind": "estimate",
+            "sources": [],
+            "note": "Маршруты по городу — допущение.",
+            "text": "Перемещения по городу по желанию."
+          }
+        },
+        {
+          "date": "2026-10-25",
+          "place_ids": [],
+          "schedule": {
+            "kind": "estimate",
+            "sources": [
+              "https://www.tutu.ru/poezda/Minsk/Moskva",
+              "https://poezda.biletyplus.ru/poezd/lastochka/minsk/moskva"
+            ],
+            "note": "Расписание обратной «Ласточки» 718Б требует проверки; выезд из отеля и запас — допущение.",
+            "text": "Выезд из отеля ориентировочно к 14:00, быть на вокзале ~14:50."
+          },
+          "movements": {
+            "kind": "estimate",
+            "sources": [
+              "https://www.tutu.ru/poezda/Minsk/Moskva",
+              "https://rasp.yandex.ru/train/moscow--minsk"
+            ],
+            "note": "Возвращение внутри end_date; время и посадка требуют проверки перед покупкой.",
+            "text": "Отправление из Минска 15:49, прибытие в Москву (Белорусский вокзал) 23:01, в пути 7 ч 12 мин."
+          }
+        }
+      ],
+      "currency": "RUB",
+      "known_total": "72200",
+      "complete": false,
+      "budget_status": "undetermined",
+      "over_budget": "0",
+      "sources": [
+        "https://101hotels.com/belarus/minsk",
+        "https://histmuseum.by/informacziya-dlya-posetitelej/",
+        "https://ostrovok.ru/hotel/belarus/minsk",
+        "https://poezda.biletyplus.ru/poezd/lastochka/minsk/moskva",
+        "https://rasp.yandex.ru/train/moscow--minsk",
+        "https://www.sravni.ru/text/poezd-moskva-siti-minsk-raspisanie-ceny-vremya-v-puti",
+        "https://www.tutu.ru/poezda/Minsk/Moskva",
+        "https://www.warmuseum.by/posetitelyam/rezhim-raboty-i-stoimost/"
+      ],
+      "caveats": [
+        "Смета неполная: билеты в музеи (15,00 и 20,00 BYN) и городской транспорт не пересчитаны в RUB, курсы не применялись — статус бюджета undetermined, превышение не доказано.",
+        "Известный подытог 72 200 RUB ниже бюджета 100 000 RUB при остатке 27 800 RUB, но это только по трём оценкам (транспорт, жильё, питание).",
+        "Цены билетов динамические, бронь отеля не подтверждена; нужна проверка перед покупкой.",
+        "19.10.2026 — понедельник: музей истории ВОВ закрыт, национальный исторический музей назначен на этот день, его выходной источником не подтверждён.",
+        "Акция «Единый билет» 25,00 BYN действовала 02.06–31.07.2026, её действие в октябре 2026 не подтверждено.",
+        "Дни 21–24.10 без подтверждённых мест: запросы про гастрономию, архитектуру и ТЦ не исследованы.",
+        "Если появятся расходы сверх трёх известных статей (музеи, городской транспорт), маршрут и смету нужно пересмотреть."
+      ]
+    }
+  },
+  "rejected": {},
+  "events": [
+    {
+      "type": "run_started",
+      "task": null,
+      "timestamp": "2026-10-15T15:59:13.633634+00:00",
+      "max_llm_calls": 24
+    },
+    {
+      "type": "task_started",
+      "task": "research",
+      "timestamp": "2026-10-15T15:59:15.100538+00:00",
+      "context_received": {}
+    },
+    {
+      "type": "llm_request",
+      "task": "research",
+      "timestamp": "2026-10-15T15:59:15.443620+00:00",
+      "number": 1,
+      "context_received": {}
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T15:59:19.080078+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 126
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T15:59:19.087583+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T15:59:19.088083+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T15:59:21.421603+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://www.tuda-suda.by/countries/europe/belarus/minsk/trc-galleria-minsk",
+        "https://galleria-minsk.by",
+        "https://www.be-in.ru/mall/3523-galleria-mall",
+        "https://www.instagram.com/galleriaminsk?hl=en",
+        "https://yandex.ru/maps/org/galleria_minsk/1338341926"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T15:59:22.217564+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://www.sputnik8.com/ru/minsk/sights/muzey-respubliki-belarus/info",
+        "https://www.warmuseum.by/posetitelyam/rezhim-raboty-i-stoimost",
+        "https://yandex.ru/maps/org/natsionalny_istoricheskiy_muzey_respubliki_belarus/1156264654",
+        "https://histmuseum.by/informacziya-dlya-posetitelej",
+        "https://artmuseum.by/ru/services"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "research",
+      "timestamp": "2026-10-15T15:59:22.222067+00:00",
+      "number": 2,
+      "context_received": {}
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T15:59:26.104130+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 158
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T15:59:26.106133+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T15:59:26.106633+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T15:59:27.931548+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://www.warmuseum.by:443/posetitelyam/rezhim-raboty-i-stoimost/",
+      "requested_url": "https://www.warmuseum.by/posetitelyam/rezhim-raboty-i-stoimost",
+      "text_length": 16101
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T15:59:28.097871+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://histmuseum.by/informacziya-dlya-posetitelej/",
+      "requested_url": "https://histmuseum.by/informacziya-dlya-posetitelej",
+      "text_length": 5954
+    },
+    {
+      "type": "llm_request",
+      "task": "research",
+      "timestamp": "2026-10-15T15:59:28.102759+00:00",
+      "number": 3,
+      "context_received": {}
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T15:59:38.789492+00:00",
+      "http_status": 200,
+      "finish_reason": "stop",
+      "completion_tokens": 2497
+    },
+    {
+      "type": "task_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T15:59:38.799547+00:00"
+    },
+    {
+      "type": "task_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:59:39.254543+00:00",
+      "context_received": {
+        "research": true
+      }
+    },
+    {
+      "type": "llm_request",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:59:39.265487+00:00",
+      "number": 4,
+      "context_received": {
+        "research": true
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T15:59:41.902014+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 179
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:59:41.904575+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:59:41.904575+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:59:43.766799+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://biletyplus.by/raspisanie/moskva-mow/minsk-msq",
+        "https://uniticket.by/aviabilety/moscow/minsk",
+        "https://www.tbank.ru/travel/flights/routes/MOW/MSQ",
+        "https://rasp.yandex.ru/plane/moscow--minsk",
+        "https://avia.tutu.ru/f/Moskva/Minsk"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:59:44.065731+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://www.sravni.ru/text/poezd-moskva-siti-minsk-raspisanie-ceny-vremya-v-puti",
+        "https://www.tutu.ru/poezda/Moskva/Minsk",
+        "https://rasp.yandex.ru/train/moscow--minsk",
+        "https://rasp.yandex.ru/train/moscow-belorusskaya--minsk-passazhirskiy",
+        "https://www.ufs-online.ru/kupit-zhd-bilety/moskva/minsk"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:59:44.070235+00:00",
+      "number": 5,
+      "context_received": {
+        "research": true
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T15:59:50.659916+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 421
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:59:50.661918+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:59:50.662418+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:59:50.950311+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://www.sravni.ru/text/poezd-moskva-siti-minsk-raspisanie-ceny-vremya-v-puti/",
+      "requested_url": "https://www.sravni.ru/text/poezd-moskva-siti-minsk-raspisanie-ceny-vremya-v-puti",
+      "text_length": 25445
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:59:51.444936+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://rasp.yandex.ru/train/moscow--minsk",
+      "requested_url": "https://rasp.yandex.ru/train/moscow--minsk",
+      "text_length": 6385
+    },
+    {
+      "type": "llm_request",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:59:51.449948+00:00",
+      "number": 6,
+      "context_received": {
+        "research": true
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T16:00:11.032179+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 231
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:00:11.034681+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:00:11.034681+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:00:13.321882+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://poezda.biletyplus.ru/poezd/lastochka/minsk/moskva",
+        "https://sakvoyazhik.by/blog-dlya-puteshestvenika/skorostnye-poezda-lastochki-iz-minska-v-moskvu",
+        "https://poezda.ru/raspisanie-poezdov/minsk/moskva",
+        "https://www.tutu.ru/poezda/Minsk/Moskva",
+        "https://pass.rw.by/ru/route?from=%D0%9C%D0%B8%D0%BD%D1%81%D0%BA-%D0%9F%D0%B0%D1%81%D1%81%D0%B0%D0%B6%D0%B8%D1%80%D1%81%D0%BA%D0%B8%D0%B9&from_esr=&from_exp=&to=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0&to_esr=&to_exp=&date=everyday"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:00:13.518214+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://nowtrip.ru/hotels/places/belarus/minsk/center",
+        "https://101hotels.com/belarus/minsk",
+        "https://ostrovok.ru/hotel/belarus/minsk",
+        "https://minsk.sutochno.ru/hotels",
+        "https://www.youtube.com/watch?v=PSn0Z77KhAg&vl=en-US"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:00:13.524218+00:00",
+      "number": 7,
+      "context_received": {
+        "research": true
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T16:00:26.045230+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 1893
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:00:26.047731+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:00:26.047731+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:00:26.600680+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://www.tutu.ru/poezda/Minsk/Moskva/",
+      "requested_url": "https://www.tutu.ru/poezda/Minsk/Moskva",
+      "text_length": 10547
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:00:29.357958+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://poezda.biletyplus.ru/poezd/lastochka/minsk/moskva",
+      "requested_url": "https://poezda.biletyplus.ru/poezd/lastochka/minsk/moskva",
+      "text_length": 10529
+    },
+    {
+      "type": "llm_request",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:00:29.364099+00:00",
+      "number": 8,
+      "context_received": {
+        "research": true
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T16:00:43.140769+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 2230
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:00:43.142770+00:00",
+      "tool": "trip_cost_calculator"
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:00:43.142770+00:00",
+      "tool": "trip_cost_calculator",
+      "status": "ok",
+      "from_cache": false,
+      "total": "78000",
+      "currency": "RUB",
+      "budget": "100000",
+      "over_budget": "0",
+      "amounts": [
+        "12000",
+        "36000",
+        "30000"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:00:43.149276+00:00",
+      "number": 9,
+      "context_received": {
+        "research": true
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T16:00:48.753280+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 938
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:00:48.754781+00:00",
+      "tool": "trip_cost_calculator"
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:00:48.755281+00:00",
+      "tool": "trip_cost_calculator",
+      "status": "ok",
+      "from_cache": false,
+      "total": "72200",
+      "currency": "RUB",
+      "budget": "100000",
+      "over_budget": "0",
+      "amounts": [
+        "11200",
+        "33000",
+        "28000"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:00:48.761287+00:00",
+      "number": 10,
+      "context_received": {
+        "research": true
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T16:01:03.990762+00:00",
+      "http_status": 200,
+      "finish_reason": "stop",
+      "completion_tokens": 2895
+    },
+    {
+      "type": "task_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:01:04.179650+00:00"
+    },
+    {
+      "type": "task_started",
+      "task": "itinerary",
+      "timestamp": "2026-10-15T16:01:04.648117+00:00",
+      "context_received": {
+        "research": true,
+        "budget": true
+      }
+    },
+    {
+      "type": "llm_request",
+      "task": "itinerary",
+      "timestamp": "2026-10-15T16:01:04.657811+00:00",
+      "number": 11,
+      "context_received": {
+        "research": true,
+        "budget": true
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T16:01:23.690032+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 3195
+    },
+    {
+      "type": "tool_started",
+      "task": "itinerary",
+      "timestamp": "2026-10-15T16:01:23.691533+00:00",
+      "tool": "trip_cost_calculator"
+    },
+    {
+      "type": "tool_completed",
+      "task": "itinerary",
+      "timestamp": "2026-10-15T16:01:23.691533+00:00",
+      "tool": "trip_cost_calculator",
+      "status": "ok",
+      "from_cache": false,
+      "total": "72200",
+      "currency": "RUB",
+      "budget": "100000",
+      "over_budget": "0",
+      "amounts": [
+        "11200",
+        "33000",
+        "28000"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "itinerary",
+      "timestamp": "2026-10-15T16:01:23.695536+00:00",
+      "number": 12,
+      "context_received": {
+        "research": true,
+        "budget": true
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T16:01:36.382227+00:00",
+      "http_status": 200,
+      "finish_reason": "stop",
+      "completion_tokens": 2573
+    },
+    {
+      "type": "task_completed",
+      "task": "itinerary",
+      "timestamp": "2026-10-15T16:01:36.388743+00:00"
+    },
+    {
+      "type": "run_completed",
+      "task": null
+    }
+  ],
+  "checks": {
+    "task_order": true,
+    "context_sent_to_llm": true,
+    "required_tools": true,
+    "structured_results": true,
+    "contracts": true,
+    "calculator_amounts": true
+  },
+  "error": null,
+  "worker_stopped": true
+}

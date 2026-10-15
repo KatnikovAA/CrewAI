@@ -1,0 +1,892 @@
+{
+  "status": "failed",
+  "trip": {
+    "departure_city": "Москва",
+    "destination": "Минск",
+    "start_date": "2026-10-19",
+    "end_date": "2026-10-25",
+    "budget": "100000",
+    "currency": "RUB",
+    "travelers": 2,
+    "interests": [
+      "Музеи",
+      "вкусно покушать и архитектура и ТЦ"
+    ]
+  },
+  "final": null,
+  "tasks": {
+    "research": {
+      "places": [
+        {
+          "id": "minsk-art-museum",
+          "name": "Национальный художественный музей Республики Беларусь",
+          "description": {
+            "kind": "fact",
+            "sources": [
+              "https://travelbelka.ru/ekskursii/mesta/nacionalnyy-hudozhestvennyy-muzey-belarusi",
+              "https://artmuseum.by/ru"
+            ],
+            "note": "Сведения на сентябрь 2026; во время реконструкции часть залов закрыта.",
+            "text": "Главное художественное собрание страны: свыше 37 000 произведений, белорусское искусство, русская живопись XIX века, Европа и Восток."
+          },
+          "conditions": {
+            "kind": "fact",
+            "sources": [
+              "https://travelbelka.ru/ekskursii/mesta/nacionalnyy-hudozhestvennyy-muzey-belarusi"
+            ],
+            "note": "Главный вход на ул. Ленина, 20 закрыт на реконструкцию; вход и касса — ул. Карла Маркса, 24.",
+            "text": "Онлайн-продажи нет, билеты только в кассе; рюкзаки, зонты и вода — в гардероб, съёмка на телефон включена в билет."
+          },
+          "hours": {
+            "kind": "fact",
+            "sources": [
+              "https://travelbelka.ru/ekskursii/mesta/nacionalnyy-hudozhestvennyy-muzey-belarusi",
+              "https://artmuseum.by/ru"
+            ],
+            "note": "Источники расходятся: travelbelka — пн, ср, пт–вс 11:00–19:00, чт 13:00–21:00, вт выходной; artmuseum.by даёт вт–вс 11:00–19:00, пн выходной.",
+            "text": "Касса закрывается на 30 минут раньше закрытия; 19.10.2026 — понедельник, 20.10 — вторник, вероятный выходной."
+          },
+          "price": {
+            "kind": "fact",
+            "sources": [
+              "https://travelbelka.ru/ekskursii/mesta/nacionalnyy-hudozhestvennyy-muzey-belarusi"
+            ],
+            "note": "Взрослый билет в главный и выставочный корпуса (за человека); данные на сентябрь 2026, без конвертации.",
+            "amount": "20",
+            "currency": "BYN"
+          }
+        },
+        {
+          "id": "galleria-minsk",
+          "name": "ТРЦ Galleria Minsk",
+          "description": {
+            "kind": "fact",
+            "sources": [
+              "https://galleria-minsk.by/"
+            ],
+            "note": "Описание по официальному сайту ТРЦ.",
+            "text": "Торгово-развлекательный центр в центре Минска: более 130 магазинов, фудкорт и рестораны, площадка белорусских брендов Trend Park, обзорная площадка."
+          },
+          "conditions": {
+            "kind": "fact",
+            "sources": [
+              "https://galleria-minsk.by/"
+            ],
+            "note": "Официальный сайт сообщает часы по зонам и правила посещения; паркинг круглосуточный.",
+            "text": "Адрес: пр-т Победителей, 9; есть кафе и рестораны (в т.ч. белорусская кухня), фудкорт и супермаркет."
+          },
+          "hours": {
+            "kind": "fact",
+            "sources": [
+              "https://galleria-minsk.by/",
+              "https://yandex.ru/maps/org/galleria_minsk/1338341926"
+            ],
+            "note": "Данные официального сайта; часы отдельных заведений могут отличаться.",
+            "text": "Торговая галерея и фудкорт ежедневно 10:00–22:00, супермаркет 08:00–02:00, рестораны 10:00–23:00."
+          },
+          "price": {
+            "kind": "unknown",
+            "sources": [],
+            "note": "Плата за вход источником не указана; расходы зависят от магазинов и заведений.",
+            "amount": null,
+            "currency": null
+          }
+        }
+      ],
+      "uncertainties": [
+        "Цены и режим музея взяты из источника, обновлённого в сентябре 2026; к поездке 19–25.10.2026 их нужно перепроверить на artmuseum.by.",
+        "Реконструкция главного корпуса музея: часть залов и работ недоступны, сроки окончания не названы.",
+        "Часы работы музея в источниках различаются, включая день недели выходного.",
+        "Цена билета в ТРЦ Galleria Minsk и стоимость еды не подтверждены источником.",
+        "Расписание транспорта Москва — Минск и его цены не исследовались."
+      ]
+    },
+    "budget": {
+      "currency": "RUB",
+      "expenses": [
+        {
+          "kind": "estimate",
+          "sources": [
+            "https://www.tutu.ru/poezda/Moskva/Minsk",
+            "https://last-minsk.ru/"
+          ],
+          "note": "Состав: 4 билета «Ласточка» сидячий класс, ≈2100 ₽/чел. в одну сторону (tutu: от 1905 ₽ Москва→Минск; last-minsk: от 2108 ₽ Минск→Москва) = ≈8400 ₽ на 2 чел. туда-обратно. Цены — оценка до открытия продаж, без ночных поездов.",
+          "id": "transport",
+          "category": "transport",
+          "name": "Переезды Москва—Минск—Москва, 2 чел.",
+          "amount": "8400",
+          "place_ids": []
+        },
+        {
+          "kind": "estimate",
+          "sources": [
+            "https://ostrovok.ru/hotel/belarus/minsk",
+            "https://nowtrip.ru/hotels/places/belarus/minsk/center"
+          ],
+          "note": "6 ночей × ≈6000 ₽ за двухместный номер в центре (Ostrovok: от 3338 ₽; NowTrip: средняя ~10 500 ₽). Заезд 19.10, выезд 25.10.",
+          "id": "lodging",
+          "category": "lodging",
+          "name": "Отель в Минске, 6 ночей, 2 чел.",
+          "amount": "36000",
+          "place_ids": []
+        },
+        {
+          "kind": "estimate",
+          "sources": [
+            "https://howtrip.ru/ceny-v-minske-belarus",
+            "https://russian.tours/gde-poest-v-minske-kafe-restorany-i-ceny-na-edu"
+          ],
+          "note": "7 дней × 2 чел. × ≈1430 ₽/день ≈ 20 000 ₽; источники: завтрак от 25 BYN (≈625 ₽), обед от 30 BYN (≈750 ₽) на человека.",
+          "id": "food",
+          "category": "food",
+          "name": "Питание 2 чел., 7 дней",
+          "amount": "20000",
+          "place_ids": []
+        },
+        {
+          "kind": "unknown",
+          "sources": [
+            "https://artmuseum.by/ru/services",
+            "https://galleria-minsk.by/"
+          ],
+          "note": "Билет НХМ РБ — 20 BYN/взрослый (8 BYN главный корпус) в BYN, без конвертации сумма неизвестна; Galleria Minsk — вход свободный, траты внутри неизвестны.",
+          "id": "activities",
+          "category": "activities",
+          "name": "Музей и ТРЦ Galleria (2 чел.)",
+          "amount": null,
+          "place_ids": [
+            "minsk-art-museum",
+            "galleria-minsk"
+          ]
+        }
+      ],
+      "known_total": "64400",
+      "complete": false,
+      "logistics": [
+        {
+          "kind": "estimate",
+          "sources": [
+            "https://rasp.yandex.ru/train/moscow--minsk",
+            "https://last-minsk.ru/"
+          ],
+          "note": "Время в пути 7–8,5 ч; ночной поезд съедает день отдыха, поэтому не выбран.",
+          "text": "Туда 19.10 днём (717М 06:18–13:24), обратно 25.10 днём (718Б 15:50–23:01) — обе границы дат соблюдены; точное расписание проверить."
+        },
+        {
+          "kind": "estimate",
+          "sources": [
+            "https://galleria-minsk.by/",
+            "https://artmuseum.by/ru/services"
+          ],
+          "note": "Режим музея в источниках расходится (выходной вт или пн), нужна проверка даты.",
+          "text": "Внутри 19–25.10 остаётся 5 полных дней: музей, центр и Galleria — пешком/метро, отдельный городской транспорт не выделен."
+        }
+      ],
+      "assumptions": [
+        "Цены ж/д билетов оценочные; проверять при открытии продаж за 60 дней на 19.10 и 25.10.2026.",
+        "Номер на 2 гостей, 6 ночей (заезд 19.10, выезд 25.10).",
+        "Питание ≈1430 ₽ на человека в день, включая кафе белорусской кухни.",
+        "Суммы в BYN (музей, покупки в ТРЦ) не конвертированы, остаются неизвестными."
+      ]
+    }
+  },
+  "rejected": {},
+  "events": [
+    {
+      "type": "run_started",
+      "task": null,
+      "timestamp": "2026-10-15T15:37:17.551353+00:00",
+      "max_llm_calls": 24
+    },
+    {
+      "type": "task_started",
+      "task": "research",
+      "timestamp": "2026-10-15T15:37:17.869633+00:00",
+      "context_received": {}
+    },
+    {
+      "type": "llm_request",
+      "task": "research",
+      "timestamp": "2026-10-15T15:37:18.201103+00:00",
+      "number": 1,
+      "context_received": {}
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T15:37:23.572242+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 127
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T15:37:23.579749+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T15:37:23.580250+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T15:37:25.275192+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://www.kupibilet.ru/gid/belarus/minsk/galereia-minsk",
+        "https://yandex.ru/maps/org/galleria_minsk/1338341926",
+        "https://www.instagram.com/galleriaminsk?hl=en",
+        "https://galleria-minsk.by",
+        "https://www.tripadvisor.ru/Attraction_Review-g294448-d11952710-Reviews-Galleria_Minsk-Minsk_Minsk_Region.html"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T15:37:26.128182+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://belarus365.com/hudozhestvennyj-muzej-minska",
+        "https://travelbelka.ru/ekskursii/mesta/nacionalnyy-hudozhestvennyy-muzey-belarusi",
+        "https://artmuseum.by/ru",
+        "https://www.youtube.com/watch?v=fTR7TklPn48",
+        "https://www.instagram.com/reel/DSuZH_WiJCh"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "research",
+      "timestamp": "2026-10-15T15:37:26.133186+00:00",
+      "number": 2,
+      "context_received": {}
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T15:37:31.720736+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 260
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T15:37:31.723740+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T15:37:31.724240+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T15:37:32.114656+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://travelbelka.ru/ekskursii/mesta/nacionalnyy-hudozhestvennyy-muzey-belarusi/",
+      "requested_url": "https://travelbelka.ru/ekskursii/mesta/nacionalnyy-hudozhestvennyy-muzey-belarusi",
+      "text_length": 13901
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T15:37:32.452193+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://galleria-minsk.by/",
+      "requested_url": "https://galleria-minsk.by/",
+      "text_length": 13055
+    },
+    {
+      "type": "llm_request",
+      "task": "research",
+      "timestamp": "2026-10-15T15:37:32.457196+00:00",
+      "number": 3,
+      "context_received": {}
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T15:37:50.454474+00:00",
+      "http_status": 200,
+      "finish_reason": "stop",
+      "completion_tokens": 1578
+    },
+    {
+      "type": "task_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T15:37:50.464984+00:00"
+    },
+    {
+      "type": "task_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:37:50.943287+00:00",
+      "context_received": {
+        "research": true
+      }
+    },
+    {
+      "type": "llm_request",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:37:50.954761+00:00",
+      "number": 4,
+      "context_received": {
+        "research": true
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T15:37:53.027683+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 313
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:37:53.030254+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:37:53.030254+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:37:53.700523+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://poezda.biletyplus.ru/bilety/moskva/minsk",
+        "https://www.sravni.ru/text/poezd-moskva-siti-minsk-raspisanie-ceny-vremya-v-puti",
+        "https://www.tutu.ru/poezda/Moskva/Minsk",
+        "https://rasp.yandex.ru/train/moscow--minsk",
+        "https://www.onetwotrip.com/ru/poezda/moskva_minsk"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:37:56.703822+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://nowtrip.ru/hotels/places/belarus/minsk/center",
+        "https://ostrovok.ru/hotel/belarus/minsk",
+        "https://www.alean.ru/belarus/gostinitsy-v-belarusii/gostinitsy-v-belarusii-osenju/gostinitsy-v-belarusii-v-oktjabre",
+        "https://hotel-minsk.hotelsinminsk.com/en",
+        "https://www.marriott.com/en-us/hotels/mhpmc-minsk-marriott-hotel/overview"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:37:56.708326+00:00",
+      "number": 5,
+      "context_received": {
+        "research": true
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T15:38:04.095222+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 282
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:38:04.097223+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:38:04.097223+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:38:05.761553+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://russian.tours/gde-poest-v-minske-kafe-restorany-i-ceny-na-edu",
+        "https://howtrip.ru/ceny-v-minske-belarus",
+        "https://topbrand.media/jurnal/otdykh/5-luchshikh-restoranov-belorusskoy-kukhni-v-minske-gde-poprobovat-traditsionnuyu-belorusskuyu-kukhnyu",
+        "https://www.instagram.com/reel/DeZtnLIRD6s",
+        "https://www.instagram.com/reel/DXcCTUEiszl"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:38:05.797109+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://poezda.biletyplus.ru/poezd/lastochka/minsk/moskva",
+        "https://www.tutu.ru/poezda/Minsk/Moskva",
+        "https://rasp.yandex.by/lastochka/minsk--moscow",
+        "https://tickets-waiter-site.appspot.com/news/lastochka-minsk-moskva",
+        "https://sakvoyazhik.by/blog-dlya-puteshestvenika/skorostnye-poezda-lastochki-iz-minska-v-moskvu"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:38:05.802615+00:00",
+      "number": 6,
+      "context_received": {
+        "research": true
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T15:38:15.337421+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 1787
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:38:15.339515+00:00",
+      "tool": "trip_cost_calculator"
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:38:15.339515+00:00",
+      "tool": "trip_cost_calculator",
+      "status": "ok",
+      "from_cache": false,
+      "total": "73400",
+      "currency": "RUB",
+      "budget": "100000",
+      "over_budget": "0",
+      "amounts": [
+        "12000",
+        "41400",
+        "20000"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:38:15.345520+00:00",
+      "number": 7,
+      "context_received": {
+        "research": true
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T15:38:27.739595+00:00",
+      "http_status": 200,
+      "finish_reason": "stop",
+      "completion_tokens": 2260
+    },
+    {
+      "type": "validation_failed",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:38:27.745601+00:00",
+      "issues": [
+        {
+          "location": [
+            "expenses",
+            0,
+            "id_note"
+          ],
+          "code": "extra_forbidden",
+          "message": "Extra inputs are not permitted"
+        }
+      ],
+      "reason": "Смета не согласована со схемой, поездкой или исследованием",
+      "fenced": false,
+      "raw_chars": 2667,
+      "raw_json_valid": true,
+      "pydantic_present": false
+    },
+    {
+      "type": "llm_request",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:38:27.757035+00:00",
+      "number": 8,
+      "context_received": {
+        "research": false
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T15:38:30.643878+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 391
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:38:30.646379+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:38:30.646881+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:38:30.646881+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:38:30.646881+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:38:32.166527+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://last-minsk.ru",
+        "https://www.sravni.ru/text/poezd-moskva-siti-minsk-raspisanie-ceny-vremya-v-puti",
+        "https://www.tutu.ru/poezda/Moskva/Minsk",
+        "https://rasp.yandex.ru/train/moscow--minsk",
+        "https://pass.rw.by/ru/route?from=%D0%9C%D0%B8%D0%BD%D1%81%D0%BA-%D0%9F%D0%B0%D1%81%D1%81%D0%B0%D0%B6%D0%B8%D1%80%D1%81%D0%BA%D0%B8%D0%B9&from_esr=&from_exp=&to=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0&to_esr=&to_exp=&date=everyday"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:38:32.313562+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://www.tutu.ru/poezda/Moskva/Minsk",
+        "https://www.sravni.ru/text/poezd-moskva-siti-minsk-raspisanie-ceny-vremya-v-puti",
+        "https://rasp.yandex.ru/train/moscow--minsk",
+        "https://www.ufs-online.ru/raspisanie-poezdov/moskva/minsk",
+        "https://rasp.yandex.ru/train/moscow-belorusskaya--minsk-passazhirskiy"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:38:32.331639+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://www.belarus.by/ru/about-belarus/culture/national-art-museum",
+        "https://belarus365.com/hudozhestvennyj-muzej-minska",
+        "https://artmuseum.by/ru/services",
+        "https://travelagency.by/mesta/natsionalnyy-khudozhestvennyy-muzey-respubliki-belarus-minsk.html",
+        "https://travelbelka.ru/ekskursii/mesta/nacionalnyy-hudozhestvennyy-muzey-belarusi"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:38:32.344443+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://howtrip.ru/ceny-v-minske-belarus",
+        "https://russian.tours/gde-poest-v-minske-kafe-restorany-i-ceny-na-edu",
+        "https://www.relax.by/cat/ent/restorans",
+        "https://www.instagram.com/reel/C9vGjCUO55U",
+        "https://yandex.ru/maps/157/minsk/category/restaurant/184106394/filter/price_category/price_reasonable"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:38:32.349447+00:00",
+      "number": 9,
+      "context_received": {
+        "research": false
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T15:38:42.382353+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 1712
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:38:42.383854+00:00",
+      "tool": "trip_cost_calculator"
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:38:42.383854+00:00",
+      "tool": "trip_cost_calculator",
+      "status": "ok",
+      "from_cache": false,
+      "total": "64400",
+      "currency": "RUB",
+      "budget": "100000",
+      "over_budget": "0",
+      "amounts": [
+        "8400",
+        "36000",
+        "20000"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:38:42.389858+00:00",
+      "number": 10,
+      "context_received": {
+        "research": false
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T15:38:51.150745+00:00",
+      "http_status": 200,
+      "finish_reason": "stop",
+      "completion_tokens": 2036
+    },
+    {
+      "type": "task_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T15:38:51.158252+00:00"
+    },
+    {
+      "type": "task_started",
+      "task": "itinerary",
+      "timestamp": "2026-10-15T15:38:51.568693+00:00",
+      "context_received": {
+        "research": true,
+        "budget": true
+      }
+    },
+    {
+      "type": "llm_request",
+      "task": "itinerary",
+      "timestamp": "2026-10-15T15:38:51.580064+00:00",
+      "number": 11,
+      "context_received": {
+        "research": true,
+        "budget": true
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T15:39:02.473235+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 1823
+    },
+    {
+      "type": "tool_started",
+      "task": "itinerary",
+      "timestamp": "2026-10-15T15:39:02.474742+00:00",
+      "tool": "trip_cost_calculator"
+    },
+    {
+      "type": "tool_completed",
+      "task": "itinerary",
+      "timestamp": "2026-10-15T15:39:02.474742+00:00",
+      "tool": "trip_cost_calculator",
+      "status": "ok",
+      "from_cache": false,
+      "total": "64400",
+      "currency": "RUB",
+      "budget": "100000",
+      "over_budget": "0",
+      "amounts": [
+        "8400",
+        "36000",
+        "20000"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "itinerary",
+      "timestamp": "2026-10-15T15:39:02.478746+00:00",
+      "number": 12,
+      "context_received": {
+        "research": true,
+        "budget": true
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T15:39:16.068774+00:00",
+      "http_status": 200,
+      "finish_reason": "stop",
+      "completion_tokens": 2332
+    },
+    {
+      "type": "validation_failed",
+      "task": "itinerary",
+      "timestamp": "2026-10-15T15:39:16.103798+00:00",
+      "issues": [
+        {
+          "location": [
+            "days",
+            0,
+            "\u0000"
+          ],
+          "code": "extra_forbidden",
+          "message": "Extra inputs are not permitted"
+        },
+        {
+          "location": [
+            "days",
+            1,
+            "schedule"
+          ],
+          "code": "value_error",
+          "message": "Value error, unknown требует null; факт/оценка требуют текст"
+        },
+        {
+          "location": [
+            "days",
+            3,
+            "schedule"
+          ],
+          "code": "value_error",
+          "message": "Value error, unknown требует null; факт/оценка требуют текст"
+        },
+        {
+          "location": [
+            "days",
+            4,
+            "schedule"
+          ],
+          "code": "value_error",
+          "message": "Value error, unknown требует null; факт/оценка требуют текст"
+        },
+        {
+          "location": [
+            "days",
+            5,
+            "schedule"
+          ],
+          "code": "value_error",
+          "message": "Value error, unknown требует null; факт/оценка требуют текст"
+        }
+      ],
+      "reason": "Маршрут не согласован с датами, активностями, источниками или сметой",
+      "fenced": false,
+      "raw_chars": 4929,
+      "raw_json_valid": true,
+      "pydantic_present": false
+    },
+    {
+      "type": "task_failed",
+      "task": "itinerary",
+      "timestamp": "2026-10-15T15:39:16.104299+00:00",
+      "error": "task_execution_failed"
+    },
+    {
+      "type": "run_failed",
+      "task": null,
+      "timestamp": "2026-10-15T15:39:16.115777+00:00",
+      "error": "execution_failed",
+      "error_type": "Exception",
+      "causes": [
+        "Exception"
+      ],
+      "frames": [
+        {
+          "file": "runner.py",
+          "line": 315,
+          "function": "_worker_inner"
+        },
+        {
+          "file": "crew.py",
+          "line": 1056,
+          "function": "kickoff"
+        },
+        {
+          "file": "crew.py",
+          "line": 1524,
+          "function": "_run_sequential_process"
+        },
+        {
+          "file": "crew.py",
+          "line": 1628,
+          "function": "_execute_tasks"
+        },
+        {
+          "file": "task.py",
+          "line": 593,
+          "function": "execute_sync"
+        },
+        {
+          "file": "task.py",
+          "line": 963,
+          "function": "_execute_core"
+        },
+        {
+          "file": "task.py",
+          "line": 903,
+          "function": "_execute_core"
+        },
+        {
+          "file": "task.py",
+          "line": 1388,
+          "function": "_invoke_guardrail_function"
+        }
+      ]
+    },
+    {
+      "type": "run_failed",
+      "task": null,
+      "error": "execution_failed"
+    }
+  ],
+  "checks": {},
+  "error": "execution_failed",
+  "worker_stopped": true
+}

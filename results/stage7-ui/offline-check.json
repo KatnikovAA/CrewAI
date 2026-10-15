@@ -1,0 +1,23 @@
+{
+  "mode": "offline_browser",
+  "screens": [
+    "wide-form.png",
+    "narrow-error.png",
+    "narrow-loading.png",
+    "narrow-result.png",
+    "wide-result.png"
+  ],
+  "checks": [
+    "wide 1360 no overflow",
+    "keyboard navigation and visible focus",
+    "409 preserves form and money string",
+    "422 field error",
+    "narrow 390 no overflow",
+    "narrow result no overflow",
+    "wide result no overflow",
+    "queued/running/completed, restore, loading, incomplete budget and JSON download (mock API only)"
+  ],
+  "errors": [],
+  "posts": 2,
+  "success": true
+}

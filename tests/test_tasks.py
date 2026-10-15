@@ -118,7 +118,7 @@ class TaskTests(unittest.TestCase):
             task = tasks[key]
             self.assertIs(task.agent, self.agents[agent])
             self.assertIs(task.output_pydantic, schema)
-            self.assertEqual(task.guardrail_max_retries, 0)
+            self.assertEqual(task.guardrail_max_retries, 1 if key in ("research", "itinerary") else 0)
             self.assertTrue(task.description and task.expected_output)
             schema.model_json_schema()
         self.assertEqual(tasks["research"].context, [])
@@ -184,7 +184,9 @@ class TaskTests(unittest.TestCase):
         self.tasks["research"].output = raw
         self.tasks["budget"].output = self.output("budget", BudgetResult, budget_data())
         route = itinerary_data()
-        self.assertFalse(self.tasks["itinerary"].guardrail(self.output("itinerary", ItineraryResult, route))[0])
+        preserved = self.output("itinerary", ItineraryResult, route)
+        self.assertTrue(self.tasks["itinerary"].guardrail(preserved)[0])
+        self.assertIn("https://example.com/", set(map(str, preserved.pydantic.sources)))
         route["sources"] = ["https://example.com/"]
         self.assertTrue(self.tasks["itinerary"].guardrail(self.output("itinerary", ItineraryResult, route))[0])
 

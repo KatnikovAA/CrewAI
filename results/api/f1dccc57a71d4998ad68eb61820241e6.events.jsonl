@@ -1,0 +1,70 @@
+{"seq": 1, "timestamp": "2026-10-15T15:43:30.261177+00:00", "type": "queued", "task": null}
+{"seq": 2, "timestamp": "2026-10-15T15:43:35.263486+00:00", "type": "run_started", "task": null}
+{"seq": 3, "timestamp": "2026-10-15T15:43:35.538103+00:00", "type": "task_started", "task": "research"}
+{"seq": 4, "timestamp": "2026-10-15T15:43:35.874213+00:00", "type": "llm_request", "task": "research"}
+{"seq": 5, "timestamp": "2026-10-15T15:43:38.511683+00:00", "type": "llm_response", "task": null}
+{"seq": 6, "timestamp": "2026-10-15T15:43:38.511683+00:00", "type": "tool_started", "task": "research", "tool": "internet_search"}
+{"seq": 7, "timestamp": "2026-10-15T15:43:38.511683+00:00", "type": "tool_started", "task": "research", "tool": "internet_search"}
+{"seq": 8, "timestamp": "2026-10-15T15:43:40.319169+00:00", "type": "tool_completed", "task": "research", "tool": "internet_search", "status": "ok", "from_cache": false}
+{"seq": 9, "timestamp": "2026-10-15T15:43:40.585617+00:00", "type": "tool_completed", "task": "research", "tool": "internet_search", "status": "ok", "from_cache": false}
+{"seq": 10, "timestamp": "2026-10-15T15:43:40.590120+00:00", "type": "llm_request", "task": "research"}
+{"seq": 11, "timestamp": "2026-10-15T15:43:45.677684+00:00", "type": "llm_response", "task": null}
+{"seq": 12, "timestamp": "2026-10-15T15:43:45.680187+00:00", "type": "tool_started", "task": "research", "tool": "website_reader"}
+{"seq": 13, "timestamp": "2026-10-15T15:43:45.680187+00:00", "type": "tool_started", "task": "research", "tool": "website_reader"}
+{"seq": 14, "timestamp": "2026-10-15T15:43:46.520516+00:00", "type": "tool_completed", "task": "research", "tool": "website_reader", "status": "ok", "from_cache": false}
+{"seq": 15, "timestamp": "2026-10-15T15:43:47.134814+00:00", "type": "tool_completed", "task": "research", "tool": "website_reader", "status": "ok", "from_cache": false}
+{"seq": 16, "timestamp": "2026-10-15T15:43:47.139870+00:00", "type": "llm_request", "task": "research"}
+{"seq": 17, "timestamp": "2026-10-15T15:44:02.831471+00:00", "type": "llm_response", "task": null}
+{"seq": 18, "timestamp": "2026-10-15T15:44:02.840979+00:00", "type": "task_completed", "task": "research"}
+{"seq": 19, "timestamp": "2026-10-15T15:44:03.277326+00:00", "type": "task_started", "task": "budget"}
+{"seq": 20, "timestamp": "2026-10-15T15:44:03.289032+00:00", "type": "llm_request", "task": "budget"}
+{"seq": 21, "timestamp": "2026-10-15T15:44:09.715940+00:00", "type": "llm_response", "task": null}
+{"seq": 22, "timestamp": "2026-10-15T15:44:09.718443+00:00", "type": "tool_started", "task": "budget", "tool": "internet_search"}
+{"seq": 23, "timestamp": "2026-10-15T15:44:09.718942+00:00", "type": "tool_started", "task": "budget", "tool": "internet_search"}
+{"seq": 24, "timestamp": "2026-10-15T15:44:09.719443+00:00", "type": "tool_started", "task": "budget", "tool": "internet_search"}
+{"seq": 25, "timestamp": "2026-10-15T15:44:09.719943+00:00", "type": "tool_started", "task": "budget", "tool": "internet_search"}
+{"seq": 26, "timestamp": "2026-10-15T15:44:11.364923+00:00", "type": "tool_completed", "task": "budget", "tool": "internet_search", "status": "ok", "from_cache": false}
+{"seq": 27, "timestamp": "2026-10-15T15:44:11.641492+00:00", "type": "tool_completed", "task": "budget", "tool": "internet_search", "status": "ok", "from_cache": false}
+{"seq": 28, "timestamp": "2026-10-15T15:44:12.363333+00:00", "type": "tool_completed", "task": "budget", "tool": "internet_search", "status": "ok", "from_cache": false}
+{"seq": 29, "timestamp": "2026-10-15T15:44:12.479883+00:00", "type": "tool_completed", "task": "budget", "tool": "internet_search", "status": "ok", "from_cache": false}
+{"seq": 30, "timestamp": "2026-10-15T15:44:12.485982+00:00", "type": "llm_request", "task": "budget"}
+{"seq": 31, "timestamp": "2026-10-15T15:44:16.188764+00:00", "type": "llm_response", "task": null}
+{"seq": 32, "timestamp": "2026-10-15T15:44:16.191266+00:00", "type": "tool_started", "task": "budget", "tool": "internet_search"}
+{"seq": 33, "timestamp": "2026-10-15T15:44:16.191767+00:00", "type": "tool_started", "task": "budget", "tool": "website_reader"}
+{"seq": 34, "timestamp": "2026-10-15T15:44:16.191767+00:00", "type": "tool_started", "task": "budget", "tool": "internet_search"}
+{"seq": 35, "timestamp": "2026-10-15T15:44:16.553201+00:00", "type": "tool_completed", "task": "budget", "tool": "website_reader", "status": "ok", "from_cache": false}
+{"seq": 36, "timestamp": "2026-10-15T15:44:17.822052+00:00", "type": "tool_completed", "task": "budget", "tool": "internet_search", "status": "ok", "from_cache": false}
+{"seq": 37, "timestamp": "2026-10-15T15:44:19.757905+00:00", "type": "tool_completed", "task": "budget", "tool": "internet_search", "status": "ok", "from_cache": false}
+{"seq": 38, "timestamp": "2026-10-15T15:44:19.765914+00:00", "type": "llm_request", "task": "budget"}
+{"seq": 39, "timestamp": "2026-10-15T15:44:27.468710+00:00", "type": "llm_response", "task": null}
+{"seq": 40, "timestamp": "2026-10-15T15:44:27.471223+00:00", "type": "tool_started", "task": "budget", "tool": "internet_search"}
+{"seq": 41, "timestamp": "2026-10-15T15:44:27.471223+00:00", "type": "tool_started", "task": "budget", "tool": "internet_search"}
+{"seq": 42, "timestamp": "2026-10-15T15:44:29.318879+00:00", "type": "tool_completed", "task": "budget", "tool": "internet_search", "status": "ok", "from_cache": false}
+{"seq": 43, "timestamp": "2026-10-15T15:44:29.890055+00:00", "type": "tool_completed", "task": "budget", "tool": "internet_search", "status": "ok", "from_cache": false}
+{"seq": 44, "timestamp": "2026-10-15T15:44:29.898063+00:00", "type": "llm_request", "task": "budget"}
+{"seq": 45, "timestamp": "2026-10-15T15:44:45.621006+00:00", "type": "llm_response", "task": null}
+{"seq": 46, "timestamp": "2026-10-15T15:44:45.623009+00:00", "type": "tool_started", "task": "budget", "tool": "trip_cost_calculator"}
+{"seq": 47, "timestamp": "2026-10-15T15:44:45.623009+00:00", "type": "tool_completed", "task": "budget", "tool": "trip_cost_calculator", "status": "ok", "from_cache": false}
+{"seq": 48, "timestamp": "2026-10-15T15:44:45.629515+00:00", "type": "llm_request", "task": "budget"}
+{"seq": 49, "timestamp": "2026-10-15T15:45:00.955626+00:00", "type": "llm_response", "task": null}
+{"seq": 50, "timestamp": "2026-10-15T15:45:00.957126+00:00", "type": "tool_started", "task": "budget", "tool": "trip_cost_calculator"}
+{"seq": 51, "timestamp": "2026-10-15T15:45:00.957626+00:00", "type": "tool_completed", "task": "budget", "tool": "trip_cost_calculator", "status": "ok", "from_cache": false}
+{"seq": 52, "timestamp": "2026-10-15T15:45:00.964633+00:00", "type": "llm_request", "task": "budget"}
+{"seq": 53, "timestamp": "2026-10-15T15:45:12.156308+00:00", "type": "llm_response", "task": null}
+{"seq": 54, "timestamp": "2026-10-15T15:45:12.164315+00:00", "type": "validation_failed", "task": "budget"}
+{"seq": 55, "timestamp": "2026-10-15T15:45:12.175844+00:00", "type": "llm_request", "task": "budget"}
+{"seq": 56, "timestamp": "2026-10-15T15:45:13.683975+00:00", "type": "llm_response", "task": null}
+{"seq": 57, "timestamp": "2026-10-15T15:45:13.685477+00:00", "type": "tool_started", "task": "budget", "tool": "trip_cost_calculator"}
+{"seq": 58, "timestamp": "2026-10-15T15:45:13.685977+00:00", "type": "tool_completed", "task": "budget", "tool": "trip_cost_calculator", "status": "ok", "from_cache": false}
+{"seq": 59, "timestamp": "2026-10-15T15:45:13.689480+00:00", "type": "llm_request", "task": "budget"}
+{"seq": 60, "timestamp": "2026-10-15T15:45:18.054806+00:00", "type": "llm_response", "task": null}
+{"seq": 61, "timestamp": "2026-10-15T15:45:18.062313+00:00", "type": "task_completed", "task": "budget"}
+{"seq": 62, "timestamp": "2026-10-15T15:45:18.641186+00:00", "type": "task_started", "task": "itinerary"}
+{"seq": 63, "timestamp": "2026-10-15T15:45:18.651271+00:00", "type": "llm_request", "task": "itinerary"}
+{"seq": 64, "timestamp": "2026-10-15T15:45:33.159607+00:00", "type": "llm_response", "task": null}
+{"seq": 65, "timestamp": "2026-10-15T15:45:33.161109+00:00", "type": "tool_started", "task": "itinerary", "tool": "trip_cost_calculator"}
+{"seq": 66, "timestamp": "2026-10-15T15:45:33.161610+00:00", "type": "tool_completed", "task": "itinerary", "tool": "trip_cost_calculator", "status": "ok", "from_cache": false}
+{"seq": 67, "timestamp": "2026-10-15T15:45:33.165112+00:00", "type": "llm_request", "task": "itinerary"}
+{"seq": 68, "timestamp": "2026-10-15T15:45:46.760801+00:00", "type": "llm_response", "task": null}
+{"seq": 69, "timestamp": "2026-10-15T15:45:46.768308+00:00", "type": "task_completed", "task": "itinerary"}
+{"seq": 70, "timestamp": "2026-10-15T15:45:47.193889+00:00", "type": "run_completed", "task": null}

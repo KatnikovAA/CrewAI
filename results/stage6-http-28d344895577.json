@@ -1,0 +1,132 @@
+{
+  "real_execution": true,
+  "health_samples": [
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.016
+    },
+    {
+      "status": "failed",
+      "seconds": 0.0
+    }
+  ],
+  "polls": [
+    {
+      "status": "running",
+      "current_task": null,
+      "events_total": 1
+    },
+    {
+      "status": "running",
+      "current_task": null,
+      "events_total": 1
+    },
+    {
+      "status": "running",
+      "current_task": null,
+      "events_total": 1
+    },
+    {
+      "status": "running",
+      "current_task": "research",
+      "events_total": 4
+    },
+    {
+      "status": "running",
+      "current_task": "research",
+      "events_total": 4
+    },
+    {
+      "status": "failed",
+      "current_task": null,
+      "events_total": 8
+    }
+  ],
+  "accepted": {
+    "trip_id": "507cfb00618b4f0e90628ed3f7231717",
+    "status_url": "/trips/507cfb00618b4f0e90628ed3f7231717",
+    "result_url": "/trips/507cfb00618b4f0e90628ed3f7231717/result"
+  },
+  "post_seconds": 0.0,
+  "state": {
+    "trip_id": "507cfb00618b4f0e90628ed3f7231717",
+    "status": "failed",
+    "current_task": null,
+    "created_at": "2026-10-15T11:01:27.988802Z",
+    "started_at": "2026-10-15T11:01:27.988802Z",
+    "finished_at": "2026-10-15T11:01:36.733899Z",
+    "events": [
+      {
+        "seq": 1,
+        "timestamp": "2026-10-15T11:01:27.988802Z",
+        "type": "queued",
+        "task": null
+      },
+      {
+        "seq": 2,
+        "timestamp": "2026-10-15T11:01:32.955072Z",
+        "type": "run_started",
+        "task": null
+      },
+      {
+        "seq": 3,
+        "timestamp": "2026-10-15T11:01:33.218566Z",
+        "type": "task_started",
+        "task": "research"
+      },
+      {
+        "seq": 4,
+        "timestamp": "2026-10-15T11:01:33.674183Z",
+        "type": "llm_request",
+        "task": "research"
+      },
+      {
+        "seq": 5,
+        "timestamp": "2026-10-15T11:01:36.613569Z",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 6,
+        "timestamp": "2026-10-15T11:01:36.627348Z",
+        "type": "validation_failed",
+        "task": "research"
+      },
+      {
+        "seq": 7,
+        "timestamp": "2026-10-15T11:01:36.628351Z",
+        "type": "task_failed",
+        "task": "research"
+      },
+      {
+        "seq": 8,
+        "timestamp": "2026-10-15T11:01:36.639462Z",
+        "type": "run_failed",
+        "task": null
+      }
+    ],
+    "events_total": 8,
+    "error": {
+      "code": "execution_failed",
+      "message": "Команда не завершила проверенный маршрут."
+    }
+  },
+  "result_http_status": 409,
+  "server_stopped": true
+}

@@ -1,0 +1,58 @@
+{"seq": 1, "timestamp": "2026-10-15T16:37:06.420512+00:00", "type": "queued", "task": null}
+{"seq": 2, "timestamp": "2026-10-15T16:37:11.442174+00:00", "type": "run_started", "task": null}
+{"seq": 3, "timestamp": "2026-10-15T16:37:11.716907+00:00", "type": "task_started", "task": "research"}
+{"seq": 4, "timestamp": "2026-10-15T16:37:12.061044+00:00", "type": "llm_request", "task": "research"}
+{"seq": 5, "timestamp": "2026-10-15T16:37:14.687944+00:00", "type": "llm_response", "task": null}
+{"seq": 6, "timestamp": "2026-10-15T16:37:14.696951+00:00", "type": "tool_started", "task": "research", "tool": "internet_search"}
+{"seq": 7, "timestamp": "2026-10-15T16:37:14.696951+00:00", "type": "tool_started", "task": "research", "tool": "internet_search"}
+{"seq": 8, "timestamp": "2026-10-15T16:37:14.697453+00:00", "type": "tool_started", "task": "research", "tool": "internet_search"}
+{"seq": 9, "timestamp": "2026-10-15T16:37:14.697953+00:00", "type": "tool_started", "task": "research", "tool": "internet_search"}
+{"seq": 10, "timestamp": "2026-10-15T16:37:16.457966+00:00", "type": "tool_completed", "task": "research", "tool": "internet_search", "status": "ok", "from_cache": false}
+{"seq": 11, "timestamp": "2026-10-15T16:37:16.720360+00:00", "type": "tool_completed", "task": "research", "tool": "internet_search", "status": "ok", "from_cache": false}
+{"seq": 12, "timestamp": "2026-10-15T16:37:16.741420+00:00", "type": "tool_completed", "task": "research", "tool": "internet_search", "status": "ok", "from_cache": false}
+{"seq": 13, "timestamp": "2026-10-15T16:37:16.947780+00:00", "type": "tool_completed", "task": "research", "tool": "internet_search", "status": "ok", "from_cache": false}
+{"seq": 14, "timestamp": "2026-10-15T16:37:16.952783+00:00", "type": "llm_request", "task": "research"}
+{"seq": 15, "timestamp": "2026-10-15T16:37:20.442889+00:00", "type": "llm_response", "task": null}
+{"seq": 16, "timestamp": "2026-10-15T16:37:20.446892+00:00", "type": "tool_started", "task": "research", "tool": "website_reader"}
+{"seq": 17, "timestamp": "2026-10-15T16:37:20.446892+00:00", "type": "tool_started", "task": "research", "tool": "website_reader"}
+{"seq": 18, "timestamp": "2026-10-15T16:37:20.446892+00:00", "type": "tool_started", "task": "research", "tool": "website_reader"}
+{"seq": 19, "timestamp": "2026-10-15T16:37:20.447392+00:00", "type": "tool_started", "task": "research", "tool": "website_reader"}
+{"seq": 20, "timestamp": "2026-10-15T16:37:20.447392+00:00", "type": "tool_started", "task": "research", "tool": "website_reader"}
+{"seq": 21, "timestamp": "2026-10-15T16:37:20.447892+00:00", "type": "tool_started", "task": "research", "tool": "website_reader"}
+{"seq": 22, "timestamp": "2026-10-15T16:37:20.740338+00:00", "type": "tool_completed", "task": "research", "tool": "website_reader", "status": "error", "from_cache": false}
+{"seq": 23, "timestamp": "2026-10-15T16:37:21.060051+00:00", "type": "tool_completed", "task": "research", "tool": "website_reader", "status": "ok", "from_cache": false}
+{"seq": 24, "timestamp": "2026-10-15T16:37:21.061051+00:00", "type": "tool_completed", "task": "research", "tool": "website_reader", "status": "ok", "from_cache": false}
+{"seq": 25, "timestamp": "2026-10-15T16:37:21.124709+00:00", "type": "tool_completed", "task": "research", "tool": "website_reader", "status": "ok", "from_cache": false}
+{"seq": 26, "timestamp": "2026-10-15T16:37:21.161551+00:00", "type": "tool_completed", "task": "research", "tool": "website_reader", "status": "ok", "from_cache": false}
+{"seq": 27, "timestamp": "2026-10-15T16:37:21.759378+00:00", "type": "tool_completed", "task": "research", "tool": "website_reader", "status": "ok", "from_cache": false}
+{"seq": 28, "timestamp": "2026-10-15T16:37:21.765431+00:00", "type": "llm_request", "task": "research"}
+{"seq": 29, "timestamp": "2026-10-15T16:37:50.127376+00:00", "type": "llm_response", "task": null}
+{"seq": 30, "timestamp": "2026-10-15T16:37:50.139152+00:00", "type": "validation_failed", "task": "research"}
+{"seq": 31, "timestamp": "2026-10-15T16:37:50.150835+00:00", "type": "llm_request", "task": "research"}
+{"seq": 32, "timestamp": "2026-10-15T16:37:55.701190+00:00", "type": "llm_response", "task": null}
+{"seq": 33, "timestamp": "2026-10-15T16:37:55.703191+00:00", "type": "tool_started", "task": "research", "tool": "internet_search"}
+{"seq": 34, "timestamp": "2026-10-15T16:37:55.704692+00:00", "type": "tool_started", "task": "research", "tool": "internet_search"}
+{"seq": 35, "timestamp": "2026-10-15T16:37:55.705193+00:00", "type": "tool_started", "task": "research", "tool": "internet_search"}
+{"seq": 36, "timestamp": "2026-10-15T16:37:55.705193+00:00", "type": "tool_started", "task": "research", "tool": "internet_search"}
+{"seq": 37, "timestamp": "2026-10-15T16:37:57.648265+00:00", "type": "tool_completed", "task": "research", "tool": "internet_search", "status": "ok", "from_cache": false}
+{"seq": 38, "timestamp": "2026-10-15T16:37:57.748242+00:00", "type": "tool_completed", "task": "research", "tool": "internet_search", "status": "ok", "from_cache": false}
+{"seq": 39, "timestamp": "2026-10-15T16:37:57.803094+00:00", "type": "tool_completed", "task": "research", "tool": "internet_search", "status": "ok", "from_cache": false}
+{"seq": 40, "timestamp": "2026-10-15T16:37:57.810601+00:00", "type": "tool_completed", "task": "research", "tool": "internet_search", "status": "ok", "from_cache": false}
+{"seq": 41, "timestamp": "2026-10-15T16:37:57.816108+00:00", "type": "llm_request", "task": "research"}
+{"seq": 42, "timestamp": "2026-10-15T16:38:01.997491+00:00", "type": "llm_response", "task": null}
+{"seq": 43, "timestamp": "2026-10-15T16:38:02.000494+00:00", "type": "tool_started", "task": "research", "tool": "website_reader"}
+{"seq": 44, "timestamp": "2026-10-15T16:38:02.001495+00:00", "type": "tool_started", "task": "research", "tool": "website_reader"}
+{"seq": 45, "timestamp": "2026-10-15T16:38:02.001995+00:00", "type": "tool_started", "task": "research", "tool": "website_reader"}
+{"seq": 46, "timestamp": "2026-10-15T16:38:02.002495+00:00", "type": "tool_started", "task": "research", "tool": "website_reader"}
+{"seq": 47, "timestamp": "2026-10-15T16:38:02.002996+00:00", "type": "tool_started", "task": "research", "tool": "website_reader"}
+{"seq": 48, "timestamp": "2026-10-15T16:38:02.002996+00:00", "type": "tool_started", "task": "research", "tool": "website_reader"}
+{"seq": 49, "timestamp": "2026-10-15T16:38:02.231963+00:00", "type": "tool_completed", "task": "research", "tool": "website_reader", "status": "ok", "from_cache": false}
+{"seq": 50, "timestamp": "2026-10-15T16:38:02.365083+00:00", "type": "tool_completed", "task": "research", "tool": "website_reader", "status": "error", "from_cache": false}
+{"seq": 51, "timestamp": "2026-10-15T16:38:02.507832+00:00", "type": "tool_completed", "task": "research", "tool": "website_reader", "status": "ok", "from_cache": false}
+{"seq": 52, "timestamp": "2026-10-15T16:38:02.641426+00:00", "type": "tool_completed", "task": "research", "tool": "website_reader", "status": "ok", "from_cache": false}
+{"seq": 53, "timestamp": "2026-10-15T16:38:02.844637+00:00", "type": "tool_completed", "task": "research", "tool": "website_reader", "status": "ok", "from_cache": false}
+{"seq": 54, "timestamp": "2026-10-15T16:38:03.519873+00:00", "type": "tool_completed", "task": "research", "tool": "website_reader", "status": "error", "from_cache": false}
+{"seq": 55, "timestamp": "2026-10-15T16:38:03.530382+00:00", "type": "llm_request", "task": "research"}
+{"seq": 56, "timestamp": "2026-10-15T16:38:44.682069+00:00", "type": "llm_response", "task": null}
+{"seq": 57, "timestamp": "2026-10-15T16:38:44.689576+00:00", "type": "task_failed", "task": "research"}
+{"seq": 58, "timestamp": "2026-10-15T16:38:44.701738+00:00", "type": "run_failed", "task": null}

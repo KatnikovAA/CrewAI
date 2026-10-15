@@ -97,6 +97,49 @@ def write_result(result: RunResult, path):
         stream.write("\n")
 
 
+def validation_issues(error):
+    """Keep actionable schema explanations, never rejected values or exception context."""
+    return [dict(location=list(item["loc"]), code=item["type"], message=item["msg"][:500])
+            for item in error.errors(include_input=False, include_context=False, include_url=False)[:12]]
+
+
+def calculator_evidence(records, key, costs, trip=None):
+    """Same strict evidence rule at task completion and at final verification."""
+    amounts = sorted(item.amount for item in costs.expenses if item.amount is not None) or [Decimal(0)]
+    return any(event.get("type") == "tool_completed" and event.get("status") == "ok"
+               and not event.get("from_cache", True) and event.get("task") == key
+               and event.get("tool") == "trip_cost_calculator"
+               and event.get("currency") == costs.currency
+               and Decimal(event["total"]) == costs.known_total
+               and (trip is None or Decimal(event.get("budget") or "-1") == trip.budget)
+               and sorted(Decimal(value) for value in event["amounts"]) == amounts
+               for event in records)
+
+
+def install_budget_evidence_guard(task, records, trip, flush):
+    """One bounded repair of an unproven final budget, before planner execution."""
+    original = task.guardrail
+    def checked(output):
+        result = original(output)
+        if not result[0]:
+            return result
+        if not flush():
+            return False, "Не удалось дождаться событий инструментов; расчёт не подтверждён."
+        if not calculator_evidence(records, "budget", output.pydantic, trip):
+            from travel_planner.tasks import calculator_input
+            return False, (
+                "Окончательная смета не подтверждена вызовом trip_cost_calculator. "
+                "Вызови trip_cost_calculator с этим точным JSON входа: "
+                + json.dumps(calculator_input(output.pydantic, trip), ensure_ascii=False)
+                + ". Затем верни смету по схеме, согласованную с этим расчётом. "
+                "Не повторяй поиск. Не заменяй неизвестные расходы нулями."
+            )
+        return result
+    task.guardrail = checked
+    task.guardrail_max_retries = 1
+    task.ensure_guardrail_is_callable()
+
+
 def _mapping(value):
     if isinstance(value, dict):
         return value
@@ -125,7 +168,7 @@ def _worker(connection, data, max_llm_calls):
 
 def _worker_inner(connection, data, max_llm_calls):
     from travel_planner.crew import create_crew
-    from travel_planner.llm import create_llm
+    from travel_planner.llm import create_trip_llm
     from travel_planner.settings import load_settings
     from crewai.events import crewai_event_bus
     from crewai.events.types.task_events import TaskStartedEvent, TaskFailedEvent
@@ -196,7 +239,7 @@ def _worker_inner(connection, data, max_llm_calls):
         settings = load_settings()
         secrets.extend([settings.api_key, os.getenv("TAVILY_API_KEY", "")])
         trip = TripInput.model_validate(data)
-        llm = create_llm(settings, interceptor=Interceptor(), max_tokens=6000, timeout=60)
+        llm = create_trip_llm(settings, interceptor=Interceptor())
         crew = create_crew(trip, llm=llm, task_callback=completed)
         task_ids = {str(task.id): task.name for task in crew.tasks}
 
@@ -207,16 +250,25 @@ def _worker_inner(connection, data, max_llm_calls):
                 if not result[0]:
                     from pydantic import ValidationError
                     issues = []
+                    syntax = dict(raw_json_valid=True, pydantic_present=output.pydantic is not None)
                     try:
-                        candidate = task.output_pydantic.model_validate_json(output.raw)
+                        json.loads(output.raw)
+                    except json.JSONDecodeError as error:
+                        syntax.update(raw_json_valid=False, json_error_line=error.lineno,
+                                      json_error_column=error.colno, json_error_position=error.pos)
+                    from travel_planner.tasks import _read
+                    try:
+                        candidate = _read(output, task.output_pydantic)
                         send(dict(kind="rejected", task=task.name, result=candidate.model_dump(mode="json")))
                     except ValidationError as error:
-                        issues = [dict(location=list(item["loc"]), code=item["type"]) for item in error.errors()[:12]]
+                        issues = validation_issues(error)
                     emit("validation_failed", task.name, issues=issues,
-                         reason=result[1], fenced=output.raw.lstrip().startswith("```"), raw_chars=len(output.raw))
+                         reason=result[1], fenced=output.raw.lstrip().startswith("```"), raw_chars=len(output.raw), **syntax)
                 return result
             return observed
 
+        install_budget_evidence_guard(crew.tasks[1], records, trip,
+                                      lambda: crewai_event_bus.flush(timeout=5))
         for task in crew.tasks:
             task.guardrail = diagnostic_guard(task)
             task.ensure_guardrail_is_callable()  # 1.15.28 caches callable in a private attribute.
@@ -279,7 +331,9 @@ def _worker_inner(connection, data, max_llm_calls):
             cause = cause.__cause__ or cause.__context__
         frames = [dict(file=Path(frame.filename).name, line=frame.lineno, function=frame.name)
                   for frame in traceback.extract_tb(error.__traceback__)[-8:]]
-        emit("run_failed", error="execution_failed", error_type=type(error).__name__, causes=causes, frames=frames)
+        from pydantic import ValidationError
+        details = {"issues": validation_issues(error)} if isinstance(error, ValidationError) else {}
+        emit("run_failed", error="execution_failed", error_type=type(error).__name__, causes=causes, frames=frames, **details)
         send(dict(kind="failure", error="execution_failed"))
     finally:
         crewai_event_bus.flush(timeout=5)
@@ -318,18 +372,14 @@ def verify_execution(crew, output, records, trip=None):
                if event["task"] == "research" and event["tool"] == "website_reader"):
         raise ValueError("Reading a search result unproven")
     costs = crew.tasks[1].output.pydantic
-    amounts = sorted(item.amount for item in costs.expenses if item.amount is not None) or [Decimal(0)]
     for key in ("budget", "itinerary"):
-        if not any(event["task"] == key and event["tool"] == "trip_cost_calculator"
-                   and event.get("currency") == costs.currency and Decimal(event["total"]) == costs.known_total
-                   and (trip is None or Decimal(event.get("budget") or "-1") == trip.budget)
-                   and sorted(Decimal(value) for value in event["amounts"]) == amounts for event in tools):
+        if not calculator_evidence(records, key, costs, trip):
             raise ValueError("Calculator input/output mismatch")
     return dict(task_order=True, context_sent_to_llm=True, required_tools=True,
                 structured_results=True, contracts=True, calculator_amounts=True)
 
 
-def supervise(trip: TripInput, *, timeout=420, max_llm_calls=24, on_event=None, worker=_worker):
+def supervise(trip: TripInput, *, timeout=420, max_llm_calls=24, on_event=None, worker=_worker, cancel_event=None):
     """Hard wall-clock deadline. On return, the worker is joined, with no live SDK thread."""
     trip = TripInput.model_validate(trip.model_dump())
     if isinstance(timeout, bool) or not 0 < timeout <= 900:
@@ -348,10 +398,15 @@ def supervise(trip: TripInput, *, timeout=420, max_llm_calls=24, on_event=None, 
         result.events.append(entry)
         notifier.put(dict(entry))
 
-    process.start()
-    child.close()
+    started = False
     try:
+        process.start()
+        started = True
+        child.close()
         while time.monotonic() < deadline:
+            if cancel_event is not None and cancel_event.is_set():
+                result.error = "cancelled"
+                break
             if notifier.failed.is_set():
                 result.error = "observer_failed"
                 break
@@ -387,14 +442,19 @@ def supervise(trip: TripInput, *, timeout=420, max_llm_calls=24, on_event=None, 
                            for frame in traceback.extract_tb(error.__traceback__)[-4:]]))
         result.error = "supervisor_failed"
     finally:
-        if process.is_alive():
-            process.terminate()
-        process.join(timeout=5)
-        if process.is_alive():
-            process.kill()
+        if not started:
+            child.close()
+        if started:
+            if process.is_alive():
+                process.terminate()
             process.join(timeout=5)
+            if process.is_alive():
+                process.kill()
+                process.join(timeout=5)
         result.worker_stopped = not process.is_alive()
         parent.close()
+        if result.worker_stopped:
+            process.close()
     if done and result.worker_stopped and not result.error and set(result.tasks) == set(SCHEMAS):
         result.status, result.final = "success", result.tasks["itinerary"]
         event(dict(type="run_completed", task=None))
@@ -413,5 +473,5 @@ def supervise(trip: TripInput, *, timeout=420, max_llm_calls=24, on_event=None, 
     return result
 
 
-def run_trip(trip: TripInput, *, on_event=None, timeout=420, max_llm_calls=24) -> RunResult:
-    return supervise(trip, on_event=on_event, timeout=timeout, max_llm_calls=max_llm_calls)
+def run_trip(trip: TripInput, *, on_event=None, timeout=420, max_llm_calls=24, cancel_event=None) -> RunResult:
+    return supervise(trip, on_event=on_event, timeout=timeout, max_llm_calls=max_llm_calls, cancel_event=cancel_event)

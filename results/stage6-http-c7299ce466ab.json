@@ -1,0 +1,1146 @@
+{
+  "real_execution": true,
+  "health_samples": [
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.016
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.015
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.016
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.015
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.016
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "completed",
+      "seconds": 0.0
+    }
+  ],
+  "polls": [
+    {
+      "status": "running",
+      "current_task": null,
+      "events_total": 1
+    },
+    {
+      "status": "running",
+      "current_task": null,
+      "events_total": 1
+    },
+    {
+      "status": "running",
+      "current_task": null,
+      "events_total": 1
+    },
+    {
+      "status": "running",
+      "current_task": "research",
+      "events_total": 4
+    },
+    {
+      "status": "running",
+      "current_task": "research",
+      "events_total": 4
+    },
+    {
+      "status": "running",
+      "current_task": "research",
+      "events_total": 10
+    },
+    {
+      "status": "running",
+      "current_task": "research",
+      "events_total": 14
+    },
+    {
+      "status": "running",
+      "current_task": "research",
+      "events_total": 16
+    },
+    {
+      "status": "running",
+      "current_task": "research",
+      "events_total": 20
+    },
+    {
+      "status": "running",
+      "current_task": "research",
+      "events_total": 20
+    },
+    {
+      "status": "running",
+      "current_task": "research",
+      "events_total": 20
+    },
+    {
+      "status": "running",
+      "current_task": "research",
+      "events_total": 20
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 24
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 24
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 29
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 34
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 34
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 39
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 42
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 42
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 42
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 42
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 42
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 46
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 46
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 50
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 50
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 50
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 50
+    },
+    {
+      "status": "running",
+      "current_task": "itinerary",
+      "events_total": 54
+    },
+    {
+      "status": "running",
+      "current_task": "itinerary",
+      "events_total": 58
+    },
+    {
+      "status": "running",
+      "current_task": "itinerary",
+      "events_total": 58
+    },
+    {
+      "status": "running",
+      "current_task": "itinerary",
+      "events_total": 58
+    },
+    {
+      "status": "running",
+      "current_task": "itinerary",
+      "events_total": 58
+    },
+    {
+      "status": "running",
+      "current_task": "itinerary",
+      "events_total": 58
+    },
+    {
+      "status": "running",
+      "current_task": "itinerary",
+      "events_total": 58
+    },
+    {
+      "status": "running",
+      "current_task": "itinerary",
+      "events_total": 58
+    },
+    {
+      "status": "completed",
+      "current_task": null,
+      "events_total": 61
+    }
+  ],
+  "accepted": {
+    "trip_id": "f171b6561b974b5aa994702b900dfb46",
+    "status_url": "/trips/f171b6561b974b5aa994702b900dfb46",
+    "result_url": "/trips/f171b6561b974b5aa994702b900dfb46/result"
+  },
+  "post_seconds": 0.0,
+  "state": {
+    "trip_id": "f171b6561b974b5aa994702b900dfb46",
+    "status": "completed",
+    "current_task": null,
+    "created_at": "2026-10-15T11:29:58.178724Z",
+    "started_at": "2026-10-15T11:29:58.179725Z",
+    "finished_at": "2026-10-15T11:31:11.415818Z",
+    "events": [
+      {
+        "seq": 1,
+        "timestamp": "2026-10-15T11:29:58.178724Z",
+        "type": "queued",
+        "task": null
+      },
+      {
+        "seq": 2,
+        "timestamp": "2026-10-15T11:30:03.254644Z",
+        "type": "run_started",
+        "task": null
+      },
+      {
+        "seq": 3,
+        "timestamp": "2026-10-15T11:30:03.517693Z",
+        "type": "task_started",
+        "task": "research"
+      },
+      {
+        "seq": 4,
+        "timestamp": "2026-10-15T11:30:03.981190Z",
+        "type": "llm_request",
+        "task": "research"
+      },
+      {
+        "seq": 5,
+        "timestamp": "2026-10-15T11:30:06.194863Z",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 6,
+        "timestamp": "2026-10-15T11:30:06.203570Z",
+        "type": "tool_started",
+        "task": "research",
+        "tool": "internet_search"
+      },
+      {
+        "seq": 7,
+        "timestamp": "2026-10-15T11:30:06.203570Z",
+        "type": "tool_started",
+        "task": "research",
+        "tool": "internet_search"
+      },
+      {
+        "seq": 8,
+        "timestamp": "2026-10-15T11:30:07.772833Z",
+        "type": "tool_completed",
+        "task": "research",
+        "tool": "internet_search",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 9,
+        "timestamp": "2026-10-15T11:30:08.142914Z",
+        "type": "tool_completed",
+        "task": "research",
+        "tool": "internet_search",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 10,
+        "timestamp": "2026-10-15T11:30:08.147936Z",
+        "type": "llm_request",
+        "task": "research"
+      },
+      {
+        "seq": 11,
+        "timestamp": "2026-10-15T11:30:09.805865Z",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 12,
+        "timestamp": "2026-10-15T11:30:09.849564Z",
+        "type": "tool_started",
+        "task": "research",
+        "tool": "website_reader"
+      },
+      {
+        "seq": 13,
+        "timestamp": "2026-10-15T11:30:09.850590Z",
+        "type": "tool_started",
+        "task": "research",
+        "tool": "website_reader"
+      },
+      {
+        "seq": 14,
+        "timestamp": "2026-10-15T11:30:10.055670Z",
+        "type": "tool_completed",
+        "task": "research",
+        "tool": "website_reader",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 15,
+        "timestamp": "2026-10-15T11:30:10.220718Z",
+        "type": "tool_completed",
+        "task": "research",
+        "tool": "website_reader",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 16,
+        "timestamp": "2026-10-15T11:30:10.225919Z",
+        "type": "llm_request",
+        "task": "research"
+      },
+      {
+        "seq": 17,
+        "timestamp": "2026-10-15T11:30:13.623727Z",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 18,
+        "timestamp": "2026-10-15T11:30:13.625261Z",
+        "type": "tool_started",
+        "task": "research",
+        "tool": "website_reader"
+      },
+      {
+        "seq": 19,
+        "timestamp": "2026-10-15T11:30:13.790602Z",
+        "type": "tool_completed",
+        "task": "research",
+        "tool": "website_reader",
+        "status": "error",
+        "from_cache": false
+      },
+      {
+        "seq": 20,
+        "timestamp": "2026-10-15T11:30:13.795664Z",
+        "type": "llm_request",
+        "task": "research"
+      },
+      {
+        "seq": 21,
+        "timestamp": "2026-10-15T11:30:21.657408Z",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 22,
+        "timestamp": "2026-10-15T11:30:21.667701Z",
+        "type": "task_completed",
+        "task": "research"
+      },
+      {
+        "seq": 23,
+        "timestamp": "2026-10-15T11:30:22.011683Z",
+        "type": "task_started",
+        "task": "budget"
+      },
+      {
+        "seq": 24,
+        "timestamp": "2026-10-15T11:30:22.022784Z",
+        "type": "llm_request",
+        "task": "budget"
+      },
+      {
+        "seq": 25,
+        "timestamp": "2026-10-15T11:30:24.538341Z",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 26,
+        "timestamp": "2026-10-15T11:30:24.541135Z",
+        "type": "tool_started",
+        "task": "budget",
+        "tool": "internet_search"
+      },
+      {
+        "seq": 27,
+        "timestamp": "2026-10-15T11:30:24.541135Z",
+        "type": "tool_started",
+        "task": "budget",
+        "tool": "internet_search"
+      },
+      {
+        "seq": 28,
+        "timestamp": "2026-10-15T11:30:24.541135Z",
+        "type": "tool_started",
+        "task": "budget",
+        "tool": "internet_search"
+      },
+      {
+        "seq": 29,
+        "timestamp": "2026-10-15T11:30:24.542141Z",
+        "type": "tool_started",
+        "task": "budget",
+        "tool": "internet_search"
+      },
+      {
+        "seq": 30,
+        "timestamp": "2026-10-15T11:30:26.394970Z",
+        "type": "tool_completed",
+        "task": "budget",
+        "tool": "internet_search",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 31,
+        "timestamp": "2026-10-15T11:30:26.657968Z",
+        "type": "tool_completed",
+        "task": "budget",
+        "tool": "internet_search",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 32,
+        "timestamp": "2026-10-15T11:30:26.674308Z",
+        "type": "tool_completed",
+        "task": "budget",
+        "tool": "internet_search",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 33,
+        "timestamp": "2026-10-15T11:30:26.753059Z",
+        "type": "tool_completed",
+        "task": "budget",
+        "tool": "internet_search",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 34,
+        "timestamp": "2026-10-15T11:30:26.757699Z",
+        "type": "llm_request",
+        "task": "budget"
+      },
+      {
+        "seq": 35,
+        "timestamp": "2026-10-15T11:30:30.695091Z",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 36,
+        "timestamp": "2026-10-15T11:30:30.697654Z",
+        "type": "tool_started",
+        "task": "budget",
+        "tool": "internet_search"
+      },
+      {
+        "seq": 37,
+        "timestamp": "2026-10-15T11:30:30.697654Z",
+        "type": "tool_started",
+        "task": "budget",
+        "tool": "internet_search"
+      },
+      {
+        "seq": 38,
+        "timestamp": "2026-10-15T11:30:30.698169Z",
+        "type": "tool_started",
+        "task": "budget",
+        "tool": "internet_search"
+      },
+      {
+        "seq": 39,
+        "timestamp": "2026-10-15T11:30:32.193888Z",
+        "type": "tool_completed",
+        "task": "budget",
+        "tool": "internet_search",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 40,
+        "timestamp": "2026-10-15T11:30:33.416596Z",
+        "type": "tool_completed",
+        "task": "budget",
+        "tool": "internet_search",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 41,
+        "timestamp": "2026-10-15T11:30:33.598961Z",
+        "type": "tool_completed",
+        "task": "budget",
+        "tool": "internet_search",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 42,
+        "timestamp": "2026-10-15T11:30:33.604574Z",
+        "type": "llm_request",
+        "task": "budget"
+      },
+      {
+        "seq": 43,
+        "timestamp": "2026-10-15T11:30:42.903302Z",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 44,
+        "timestamp": "2026-10-15T11:30:42.904838Z",
+        "type": "tool_started",
+        "task": "budget",
+        "tool": "trip_cost_calculator"
+      },
+      {
+        "seq": 45,
+        "timestamp": "2026-10-15T11:30:42.905348Z",
+        "type": "tool_completed",
+        "task": "budget",
+        "tool": "trip_cost_calculator",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 46,
+        "timestamp": "2026-10-15T11:30:42.910469Z",
+        "type": "llm_request",
+        "task": "budget"
+      },
+      {
+        "seq": 47,
+        "timestamp": "2026-10-15T11:30:48.105546Z",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 48,
+        "timestamp": "2026-10-15T11:30:48.107599Z",
+        "type": "tool_started",
+        "task": "budget",
+        "tool": "trip_cost_calculator"
+      },
+      {
+        "seq": 49,
+        "timestamp": "2026-10-15T11:30:48.107599Z",
+        "type": "tool_completed",
+        "task": "budget",
+        "tool": "trip_cost_calculator",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 50,
+        "timestamp": "2026-10-15T11:30:48.115344Z",
+        "type": "llm_request",
+        "task": "budget"
+      },
+      {
+        "seq": 51,
+        "timestamp": "2026-10-15T11:30:55.017438Z",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 52,
+        "timestamp": "2026-10-15T11:30:55.024635Z",
+        "type": "task_completed",
+        "task": "budget"
+      },
+      {
+        "seq": 53,
+        "timestamp": "2026-10-15T11:30:55.369188Z",
+        "type": "task_started",
+        "task": "itinerary"
+      },
+      {
+        "seq": 54,
+        "timestamp": "2026-10-15T11:30:55.378569Z",
+        "type": "llm_request",
+        "task": "itinerary"
+      },
+      {
+        "seq": 55,
+        "timestamp": "2026-10-15T11:30:57.720090Z",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 56,
+        "timestamp": "2026-10-15T11:30:57.721692Z",
+        "type": "tool_started",
+        "task": "itinerary",
+        "tool": "trip_cost_calculator"
+      },
+      {
+        "seq": 57,
+        "timestamp": "2026-10-15T11:30:57.721692Z",
+        "type": "tool_completed",
+        "task": "itinerary",
+        "tool": "trip_cost_calculator",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 58,
+        "timestamp": "2026-10-15T11:30:57.724783Z",
+        "type": "llm_request",
+        "task": "itinerary"
+      },
+      {
+        "seq": 59,
+        "timestamp": "2026-10-15T11:31:10.983059Z",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 60,
+        "timestamp": "2026-10-15T11:31:10.990332Z",
+        "type": "task_completed",
+        "task": "itinerary"
+      },
+      {
+        "seq": 61,
+        "timestamp": "2026-10-15T11:31:11.357137Z",
+        "type": "run_completed",
+        "task": null
+      }
+    ],
+    "events_total": 61,
+    "error": null
+  },
+  "result_http_status": 200,
+  "result": {
+    "trip_id": "f171b6561b974b5aa994702b900dfb46",
+    "final": {
+      "days": [
+        {
+          "date": "2026-11-14",
+          "place_ids": [
+            "kazan-kremlin"
+          ],
+          "schedule": {
+            "kind": "estimate",
+            "sources": [
+              "https://kazan-kremlin.ru/pravila-poseshheniya",
+              "https://avia.tutu.ru/f/Moskva/Kazan"
+            ],
+            "note": "Время условное: рейсы на 2026-11-14 не проверены. Территория Кремля через Тайницкую и Преображенскую башни открыта 6:00–21:00; часы музеев внутри не подтверждены.",
+            "text": "Вылет из Москвы ~07:00–09:00, прибытие в Казань ~09:00–11:00, Кремль ~12:00–17:00, заселение вечером."
+          },
+          "movements": {
+            "kind": "estimate",
+            "sources": [
+              "https://avia.tutu.ru/f/Moskva/Kazan",
+              "https://tonkosti.ru/%D0%9A%D0%B0%D0%BA_%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D1%8C%D1%81%D1%8F_%D0%B8%D0%B7_%D0%B0%D1%8D%D1%80%D0%BE%D0%BF%D0%BE%D1%80%D1%82%D0%B0_%D0%B2_%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C"
+            ],
+            "note": "Окно отправления задано с запасом на дорогу в аэропорт и регистрацию. Длительность перелёта и трансфера — оценка, требует проверки.",
+            "text": "Отправление из Москвы 14.11 ~05:00–07:00 с запасом ~2 ч до вылета; перелёт ~1,5–2 ч; из аэропорта Казани в центр такси ~700–1500 RUB, далее по центру пешком."
+          }
+        },
+        {
+          "date": "2026-11-15",
+          "place_ids": [
+            "khram-vseh-religiy"
+          ],
+          "schedule": {
+            "kind": "estimate",
+            "sources": [
+              "https://xn--80adjapgfgof0bee3d.xn--p1ai/",
+              "https://www.flypobeda.ru/flights/KZN/MOW"
+            ],
+            "note": "Храм всех религий открыт ежедневно 9:00–18:00 по официальному сайту; время вылета на 2026-11-15 не подтверждено.",
+            "text": "Храм всех религий ~10:00–13:00, обед и выезд в аэропорт, возврат в Москву вечером."
+          },
+          "movements": {
+            "kind": "estimate",
+            "sources": [
+              "https://xn--80adjapgfgof0bee3d.xn--p1ai/",
+              "https://www.flypobeda.ru/flights/KZN/MOW",
+              "https://avia.tutu.ru/f/Moskva/Kazan"
+            ],
+            "note": "Старое Аракчино — пригород, добираться такси или пригородным транспортом; стоимость и время не подтверждены. Возврат задан не позднее 2026-11-15 с запасом.",
+            "text": "Выезд в Старое Аракчино ~09:00, возвращение в центр ~13:30–14:30; выезд в аэропорт с запасом ~2–2,5 ч до вылета, прибытие в Москву ~20:00–23:00."
+          }
+        }
+      ],
+      "currency": "RUB",
+      "known_total": "27600",
+      "complete": false,
+      "budget_status": "undetermined",
+      "over_budget": "0",
+      "sources": [
+        "https://avia.tutu.ru/f/Moskva/Kazan",
+        "https://kazan-kremlin.ru/",
+        "https://kazan-kremlin.ru/pravila-poseshheniya",
+        "https://nowtrip.ru/hotels/places/russia/kazan",
+        "https://ostrovok.ru/hotel/russia/kazan",
+        "https://rasp.yandex.ru/train/moscow--kazan",
+        "https://tonkosti.ru/%D0%9A%D0%B0%D0%BA_%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D1%8C%D1%81%D1%8F_%D0%B8%D0%B7_%D0%B0%D1%8D%D1%80%D0%BE%D0%BF%D0%BE%D1%80%D1%82%D0%B0_%D0%B2_%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C",
+        "https://www.flypobeda.ru/flights/KZN/MOW",
+        "https://www.flypobeda.ru/flights/MOW/KZN",
+        "https://xn--80adjapgfgof0bee3d.xn--p1ai/"
+      ],
+      "caveats": [
+        "Смета неполная: билеты в музеи Казанского Кремля имеют amount=null, поэтому complete=false и status=undetermined; превышение бюджета не доказано.",
+        "Цены и расписания рейсов, отеля и питания на 2026-11-14/15 — оценки без бронирования и подтверждения источниками.",
+        "Храм всех религий: взрослый билет 300 RUB × 2 чел. = 600 RUB (факт); экскурсия 1300 RUB за группу не включена.",
+        "Если подтверждённые цены транспорта, проживания и музеев Кремля окажутся выше, смету и маршрут нужно пересмотреть.",
+        "Границы дат: отправление не ранее 2026-11-14 и возврат не позднее 2026-11-15; ночной поезд 11–14 ч не вписывается."
+      ]
+    },
+    "tasks": {
+      "research": {
+        "places": [
+          {
+            "id": "kazan-kremlin",
+            "name": "Музей-заповедник «Казанский Кремль»",
+            "description": {
+              "kind": "fact",
+              "sources": [
+                "https://kazan-kremlin.ru/pravila-poseshheniya"
+              ],
+              "note": "Официальный сайт музея-заповедника; объект ЮНЕСКО, ключевой архитектурный ансамбль города.",
+              "text": "Историко-архитектурный ансамбль с мечетью Кул-Шариф, Благовещенским собором, башнями и музеями внутри."
+            },
+            "conditions": {
+              "kind": "fact",
+              "sources": [
+                "https://kazan-kremlin.ru/pravila-poseshheniya"
+              ],
+              "note": "Правила посещения опубликованы на официальном сайте; часть объектов может закрываться при мероприятиях.",
+              "text": "Запрещены крупногабаритный багаж, животные (кроме собак-проводников), велосипеды и самокаты; фотосессии требуют согласования."
+            },
+            "hours": {
+              "kind": "fact",
+              "sources": [
+                "https://kazan-kremlin.ru/pravila-poseshheniya"
+              ],
+              "note": "Режим территории по официальным правилам; часы музеев на этой странице не указаны.",
+              "text": "Территория открыта ежедневно: через Спасскую башню круглосуточно, через Тайницкую и Преображенскую — с 6:00 до 21:00."
+            },
+            "price": {
+              "kind": "unknown",
+              "sources": [
+                "https://kazan-kremlin.ru/"
+              ],
+              "note": "Стоимость билетов в музеи и единого билета на официальном сайте не подтверждена; цена за человека неизвестна.",
+              "amount": null,
+              "currency": null
+            }
+          },
+          {
+            "id": "khram-vseh-religiy",
+            "name": "Вселенский храм (Храм всех религий)",
+            "description": {
+              "kind": "fact",
+              "sources": [
+                "https://xn--80adjapgfgof0bee3d.xn--p1ai/"
+              ],
+              "note": "Официальный сайт объекта; службы не проводятся, это культурный центр.",
+              "text": "Архитектурный комплекс в посёлке Старое Аракчино, объединяющий залы разных религий и культур; строительство продолжается."
+            },
+            "conditions": {
+              "kind": "fact",
+              "sources": [
+                "https://xn--80adjapgfgof0bee3d.xn--p1ai/"
+              ],
+              "note": "Экскурсию можно заказать на месте или по телефону +79870023995; часть залов на стадии строительства.",
+              "text": "Адрес: ул. Старо-Аракчинская, 4; есть бесплатная парковка; экскурсия рассчитана на группу до 10 человек."
+            },
+            "hours": {
+              "kind": "fact",
+              "sources": [
+                "https://xn--80adjapgfgof0bee3d.xn--p1ai/"
+              ],
+              "note": "Время работы по официальному сайту; в праздничные дни возможны изменения.",
+              "text": "Ежедневно с 9:00 до 18:00."
+            },
+            "price": {
+              "kind": "fact",
+              "sources": [
+                "https://xn--80adjapgfgof0bee3d.xn--p1ai/"
+              ],
+              "note": "Взрослый входной билет 300 RUB за человека; детский 200 RUB; экскурсия — 1300 RUB за группу до 10 человек.",
+              "amount": "300",
+              "currency": "RUB"
+            }
+          }
+        ],
+        "uncertainties": [
+          "Цена и расписание музеев Казанского Кремля не подтверждены источником; требуется проверка на kazan-kremlin.ru перед поездкой.",
+          "Даты 14–15 ноября 2026 охватывают 2 дня включая дорогу из Москвы и обратно; транспорт и время в пути не исследованы, уложиться в сроки может быть затруднительно.",
+          "График работы Храма всех религий и Кремля на конкретные даты 2026 года не проверен; возможны изменения и сезонные ограничения.",
+          "Бюджет 60 000 RUB на группу из 2 человек не распределялся: стоимость транспорта и проживания не подтверждена источниками."
+        ]
+      },
+      "budget": {
+        "currency": "RUB",
+        "expenses": [
+          {
+            "kind": "estimate",
+            "sources": [
+              "https://avia.tutu.ru/f/Moskva/Kazan",
+              "https://www.flypobeda.ru/flights/MOW/KZN",
+              "https://tonkosti.ru/%D0%9A%D0%B0%D0%BA_%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D1%8C%D1%81%D1%8F_%D0%B8%D0%B7_%D0%B0%D1%8D%D1%80%D0%BE%D0%BF%D0%BE%D1%80%D1%82%D0%B0_%D0%B2_%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C"
+            ],
+            "note": "Состав: 2 пасс. × 2 перелёта × ~3500 RUB (Победа/Аэрофлот, ориентир от 1977–3425 RUB за сегмент) + 2 трансфера ~1000 RUB. Оценка, расписание на 14–15.11.2026 требует проверки.",
+            "id": "transport",
+            "category": "transport",
+            "name": "Перелёты Москва–Казань–Москва, 2 чел. + такси аэропорт–город",
+            "amount": "16000",
+            "place_ids": []
+          },
+          {
+            "kind": "estimate",
+            "sources": [
+              "https://ostrovok.ru/hotel/russia/kazan",
+              "https://nowtrip.ru/hotels/places/russia/kazan"
+            ],
+            "note": "Одна ночь 14–15.11.2026; диапазон 3534–7330 RUB за ночь по агрегаторам, взята средняя оценка. Цена на конкретную дату не подтверждена.",
+            "id": "lodging",
+            "category": "lodging",
+            "name": "Отель в центре Казани, 1 ночь на 2 гостей",
+            "amount": "5000",
+            "place_ids": []
+          },
+          {
+            "kind": "estimate",
+            "sources": [],
+            "note": "Оценка ~1500 RUB на человека в день; источников цен по заведениям нет.",
+            "id": "food",
+            "category": "food",
+            "name": "Питание, 2 чел., 2 дня",
+            "amount": "6000",
+            "place_ids": []
+          },
+          {
+            "kind": "fact",
+            "sources": [
+              "https://xn--80adjapgfgof0bee3d.xn--p1ai/"
+            ],
+            "note": "Официальный сайт: 300 RUB за взрослый билет × 2 чел.; экскурсия 1300 RUB за группу не включена.",
+            "id": "act-khram",
+            "category": "activities",
+            "name": "Храм всех религий, вход, 2 взрослых",
+            "amount": "600",
+            "place_ids": [
+              "khram-vseh-religiy"
+            ]
+          },
+          {
+            "kind": "unknown",
+            "sources": [
+              "https://kazan-kremlin.ru/"
+            ],
+            "note": "Стоимость билетов в музеи и единого билета на официальном сайте не подтверждена; цена неизвестна.",
+            "id": "act-kremlin",
+            "category": "activities",
+            "name": "Музеи Казанского Кремля, билеты",
+            "amount": null,
+            "place_ids": [
+              "kazan-kremlin"
+            ]
+          }
+        ],
+        "known_total": "27600",
+        "complete": false,
+        "logistics": [
+          {
+            "kind": "estimate",
+            "sources": [
+              "https://avia.tutu.ru/f/Moskva/Kazan",
+              "https://www.flypobeda.ru/flights/KZN/MOW",
+              "https://rasp.yandex.ru/train/moscow--kazan"
+            ],
+            "note": "Дорога самолётом ~1,5–2 ч в одну сторону, что позволяет уложиться в 14–15.11.2026. Ночной поезд 11–14 ч не подходит: теряется время на местах и нарушаются границы дат.",
+            "text": "14.11 вылет из Москвы утром, возврат 15.11 вечером; такси аэропорт–центр Казани ~700–1500 RUB."
+          },
+          {
+            "kind": "estimate",
+            "sources": [
+              "https://kazan-kremlin.ru/pravila-poseshheniya",
+              "https://xn--80adjapgfgof0bee3d.xn--p1ai/"
+            ],
+            "note": "Порядок посещения выстроен по времени в пути; точное расписание на 2026 не проверено.",
+            "text": "14.11: Казанский Кремль (центр); 15.11: Храм всех религий (Старое Аракчино, пригород) перед вылетом."
+          }
+        ],
+        "assumptions": [
+          "Расписания и цены рейсов на 14–15.11.2026 не подтверждены — нужна проверка перед покупкой.",
+          "Цены отеля и питания — оценки без бронирования на конкретные даты.",
+          "Стоимость музеев Кремля неизвестна, поэтому activities частично null.",
+          "Курортный сбор/трансферы не учтены отдельно; суммы — по всей группе из 2 человек."
+        ]
+      },
+      "itinerary": {
+        "days": [
+          {
+            "date": "2026-11-14",
+            "place_ids": [
+              "kazan-kremlin"
+            ],
+            "schedule": {
+              "kind": "estimate",
+              "sources": [
+                "https://kazan-kremlin.ru/pravila-poseshheniya",
+                "https://avia.tutu.ru/f/Moskva/Kazan"
+              ],
+              "note": "Время условное: рейсы на 2026-11-14 не проверены. Территория Кремля через Тайницкую и Преображенскую башни открыта 6:00–21:00; часы музеев внутри не подтверждены.",
+              "text": "Вылет из Москвы ~07:00–09:00, прибытие в Казань ~09:00–11:00, Кремль ~12:00–17:00, заселение вечером."
+            },
+            "movements": {
+              "kind": "estimate",
+              "sources": [
+                "https://avia.tutu.ru/f/Moskva/Kazan",
+                "https://tonkosti.ru/%D0%9A%D0%B0%D0%BA_%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D1%8C%D1%81%D1%8F_%D0%B8%D0%B7_%D0%B0%D1%8D%D1%80%D0%BE%D0%BF%D0%BE%D1%80%D1%82%D0%B0_%D0%B2_%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C"
+              ],
+              "note": "Окно отправления задано с запасом на дорогу в аэропорт и регистрацию. Длительность перелёта и трансфера — оценка, требует проверки.",
+              "text": "Отправление из Москвы 14.11 ~05:00–07:00 с запасом ~2 ч до вылета; перелёт ~1,5–2 ч; из аэропорта Казани в центр такси ~700–1500 RUB, далее по центру пешком."
+            }
+          },
+          {
+            "date": "2026-11-15",
+            "place_ids": [
+              "khram-vseh-religiy"
+            ],
+            "schedule": {
+              "kind": "estimate",
+              "sources": [
+                "https://xn--80adjapgfgof0bee3d.xn--p1ai/",
+                "https://www.flypobeda.ru/flights/KZN/MOW"
+              ],
+              "note": "Храм всех религий открыт ежедневно 9:00–18:00 по официальному сайту; время вылета на 2026-11-15 не подтверждено.",
+              "text": "Храм всех религий ~10:00–13:00, обед и выезд в аэропорт, возврат в Москву вечером."
+            },
+            "movements": {
+              "kind": "estimate",
+              "sources": [
+                "https://xn--80adjapgfgof0bee3d.xn--p1ai/",
+                "https://www.flypobeda.ru/flights/KZN/MOW",
+                "https://avia.tutu.ru/f/Moskva/Kazan"
+              ],
+              "note": "Старое Аракчино — пригород, добираться такси или пригородным транспортом; стоимость и время не подтверждены. Возврат задан не позднее 2026-11-15 с запасом.",
+              "text": "Выезд в Старое Аракчино ~09:00, возвращение в центр ~13:30–14:30; выезд в аэропорт с запасом ~2–2,5 ч до вылета, прибытие в Москву ~20:00–23:00."
+            }
+          }
+        ],
+        "currency": "RUB",
+        "known_total": "27600",
+        "complete": false,
+        "budget_status": "undetermined",
+        "over_budget": "0",
+        "sources": [
+          "https://avia.tutu.ru/f/Moskva/Kazan",
+          "https://kazan-kremlin.ru/",
+          "https://kazan-kremlin.ru/pravila-poseshheniya",
+          "https://nowtrip.ru/hotels/places/russia/kazan",
+          "https://ostrovok.ru/hotel/russia/kazan",
+          "https://rasp.yandex.ru/train/moscow--kazan",
+          "https://tonkosti.ru/%D0%9A%D0%B0%D0%BA_%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D1%8C%D1%81%D1%8F_%D0%B8%D0%B7_%D0%B0%D1%8D%D1%80%D0%BE%D0%BF%D0%BE%D1%80%D1%82%D0%B0_%D0%B2_%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C",
+          "https://www.flypobeda.ru/flights/KZN/MOW",
+          "https://www.flypobeda.ru/flights/MOW/KZN",
+          "https://xn--80adjapgfgof0bee3d.xn--p1ai/"
+        ],
+        "caveats": [
+          "Смета неполная: билеты в музеи Казанского Кремля имеют amount=null, поэтому complete=false и status=undetermined; превышение бюджета не доказано.",
+          "Цены и расписания рейсов, отеля и питания на 2026-11-14/15 — оценки без бронирования и подтверждения источниками.",
+          "Храм всех религий: взрослый билет 300 RUB × 2 чел. = 600 RUB (факт); экскурсия 1300 RUB за группу не включена.",
+          "Если подтверждённые цены транспорта, проживания и музеев Кремля окажутся выше, смету и маршрут нужно пересмотреть.",
+          "Границы дат: отправление не ранее 2026-11-14 и возврат не позднее 2026-11-15; ночной поезд 11–14 ч не вписывается."
+        ]
+      }
+    }
+  },
+  "checks": {
+    "task_order": true,
+    "context_sent_to_llm": true,
+    "required_tools": true,
+    "structured_results": true,
+    "contracts": true,
+    "calculator_amounts": true
+  },
+  "duration_seconds": 74.11,
+  "server_stopped": true
+}

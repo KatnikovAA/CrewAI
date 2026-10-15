@@ -1,0 +1,946 @@
+{
+  "real_execution": true,
+  "health_samples": [
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.015
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.016
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.016
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "failed",
+      "seconds": 0.0
+    }
+  ],
+  "polls": [
+    {
+      "status": "running",
+      "current_task": null,
+      "events_total": 1
+    },
+    {
+      "status": "running",
+      "current_task": null,
+      "events_total": 1
+    },
+    {
+      "status": "running",
+      "current_task": null,
+      "events_total": 1
+    },
+    {
+      "status": "running",
+      "current_task": "research",
+      "events_total": 4
+    },
+    {
+      "status": "running",
+      "current_task": "research",
+      "events_total": 4
+    },
+    {
+      "status": "running",
+      "current_task": "research",
+      "events_total": 4
+    },
+    {
+      "status": "running",
+      "current_task": "research",
+      "events_total": 4
+    },
+    {
+      "status": "running",
+      "current_task": "research",
+      "events_total": 7
+    },
+    {
+      "status": "running",
+      "current_task": "research",
+      "events_total": 10
+    },
+    {
+      "status": "running",
+      "current_task": "research",
+      "events_total": 16
+    },
+    {
+      "status": "running",
+      "current_task": "research",
+      "events_total": 20
+    },
+    {
+      "status": "running",
+      "current_task": "research",
+      "events_total": 22
+    },
+    {
+      "status": "running",
+      "current_task": "research",
+      "events_total": 24
+    },
+    {
+      "status": "running",
+      "current_task": "research",
+      "events_total": 24
+    },
+    {
+      "status": "running",
+      "current_task": "research",
+      "events_total": 24
+    },
+    {
+      "status": "running",
+      "current_task": "research",
+      "events_total": 24
+    },
+    {
+      "status": "running",
+      "current_task": "research",
+      "events_total": 24
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 28
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 31
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 34
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 34
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 38
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 40
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 40
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 40
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 43
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 46
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 46
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 49
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 50
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 52
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 52
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 52
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 52
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 52
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 52
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 56
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 56
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 56
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 56
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 56
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 56
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 56
+    },
+    {
+      "status": "running",
+      "current_task": "itinerary",
+      "events_total": 60
+    },
+    {
+      "status": "running",
+      "current_task": "itinerary",
+      "events_total": 64
+    },
+    {
+      "status": "running",
+      "current_task": "itinerary",
+      "events_total": 64
+    },
+    {
+      "status": "running",
+      "current_task": "itinerary",
+      "events_total": 64
+    },
+    {
+      "status": "failed",
+      "current_task": null,
+      "events_total": 70
+    }
+  ],
+  "accepted": {
+    "trip_id": "fcba6edb064f435b9f5a83261941af4d",
+    "status_url": "/trips/fcba6edb064f435b9f5a83261941af4d",
+    "result_url": "/trips/fcba6edb064f435b9f5a83261941af4d/result"
+  },
+  "post_seconds": 0.0,
+  "state": {
+    "trip_id": "fcba6edb064f435b9f5a83261941af4d",
+    "status": "failed",
+    "current_task": null,
+    "created_at": "2026-10-15T10:43:20.358492+00:00",
+    "started_at": "2026-10-15T10:43:20.358492+00:00",
+    "finished_at": "2026-10-15T10:44:54.417472+00:00",
+    "events_total": 70,
+    "error": {
+      "code": "execution_failed",
+      "message": "Команда не завершила проверенный маршрут."
+    },
+    "events": [
+      {
+        "seq": 1,
+        "timestamp": "2026-10-15T10:43:20.358492+00:00",
+        "type": "queued",
+        "task": null
+      },
+      {
+        "seq": 2,
+        "timestamp": "2026-10-15T10:43:25.230592+00:00",
+        "type": "run_started",
+        "task": null
+      },
+      {
+        "seq": 3,
+        "timestamp": "2026-10-15T10:43:25.483121+00:00",
+        "type": "task_started",
+        "task": "research"
+      },
+      {
+        "seq": 4,
+        "timestamp": "2026-10-15T10:43:25.938995+00:00",
+        "type": "llm_request",
+        "task": "research"
+      },
+      {
+        "seq": 5,
+        "timestamp": "2026-10-15T10:43:33.397565+00:00",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 6,
+        "timestamp": "2026-10-15T10:43:33.405861+00:00",
+        "type": "tool_started",
+        "task": "research",
+        "tool": "internet_search"
+      },
+      {
+        "seq": 7,
+        "timestamp": "2026-10-15T10:43:33.405861+00:00",
+        "type": "tool_started",
+        "task": "research",
+        "tool": "internet_search"
+      },
+      {
+        "seq": 8,
+        "timestamp": "2026-10-15T10:43:35.087764+00:00",
+        "type": "tool_completed",
+        "task": "research",
+        "tool": "internet_search",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 9,
+        "timestamp": "2026-10-15T10:43:35.709292+00:00",
+        "type": "tool_completed",
+        "task": "research",
+        "tool": "internet_search",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 10,
+        "timestamp": "2026-10-15T10:43:35.713928+00:00",
+        "type": "llm_request",
+        "task": "research"
+      },
+      {
+        "seq": 11,
+        "timestamp": "2026-10-15T10:43:36.937411+00:00",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 12,
+        "timestamp": "2026-10-15T10:43:36.939254+00:00",
+        "type": "tool_started",
+        "task": "research",
+        "tool": "website_reader"
+      },
+      {
+        "seq": 13,
+        "timestamp": "2026-10-15T10:43:36.939254+00:00",
+        "type": "tool_started",
+        "task": "research",
+        "tool": "website_reader"
+      },
+      {
+        "seq": 14,
+        "timestamp": "2026-10-15T10:43:37.131686+00:00",
+        "type": "tool_completed",
+        "task": "research",
+        "tool": "website_reader",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 15,
+        "timestamp": "2026-10-15T10:43:37.305676+00:00",
+        "type": "tool_completed",
+        "task": "research",
+        "tool": "website_reader",
+        "status": "error",
+        "from_cache": false
+      },
+      {
+        "seq": 16,
+        "timestamp": "2026-10-15T10:43:37.310313+00:00",
+        "type": "llm_request",
+        "task": "research"
+      },
+      {
+        "seq": 17,
+        "timestamp": "2026-10-15T10:43:39.161061+00:00",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 18,
+        "timestamp": "2026-10-15T10:43:39.162600+00:00",
+        "type": "tool_started",
+        "task": "research",
+        "tool": "website_reader"
+      },
+      {
+        "seq": 19,
+        "timestamp": "2026-10-15T10:43:39.873096+00:00",
+        "type": "tool_completed",
+        "task": "research",
+        "tool": "website_reader",
+        "status": "error",
+        "from_cache": false
+      },
+      {
+        "seq": 20,
+        "timestamp": "2026-10-15T10:43:39.878220+00:00",
+        "type": "llm_request",
+        "task": "research"
+      },
+      {
+        "seq": 21,
+        "timestamp": "2026-10-15T10:43:42.214964+00:00",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 22,
+        "timestamp": "2026-10-15T10:43:42.216600+00:00",
+        "type": "tool_started",
+        "task": "research",
+        "tool": "website_reader"
+      },
+      {
+        "seq": 23,
+        "timestamp": "2026-10-15T10:43:42.731845+00:00",
+        "type": "tool_completed",
+        "task": "research",
+        "tool": "website_reader",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 24,
+        "timestamp": "2026-10-15T10:43:42.737006+00:00",
+        "type": "llm_request",
+        "task": "research"
+      },
+      {
+        "seq": 25,
+        "timestamp": "2026-10-15T10:43:53.067216+00:00",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 26,
+        "timestamp": "2026-10-15T10:43:53.077413+00:00",
+        "type": "task_completed",
+        "task": "research"
+      },
+      {
+        "seq": 27,
+        "timestamp": "2026-10-15T10:43:53.400114+00:00",
+        "type": "task_started",
+        "task": "budget"
+      },
+      {
+        "seq": 28,
+        "timestamp": "2026-10-15T10:43:53.410502+00:00",
+        "type": "llm_request",
+        "task": "budget"
+      },
+      {
+        "seq": 29,
+        "timestamp": "2026-10-15T10:43:55.409566+00:00",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 30,
+        "timestamp": "2026-10-15T10:43:55.411622+00:00",
+        "type": "tool_started",
+        "task": "budget",
+        "tool": "internet_search"
+      },
+      {
+        "seq": 31,
+        "timestamp": "2026-10-15T10:43:55.412134+00:00",
+        "type": "tool_started",
+        "task": "budget",
+        "tool": "internet_search"
+      },
+      {
+        "seq": 32,
+        "timestamp": "2026-10-15T10:43:57.007817+00:00",
+        "type": "tool_completed",
+        "task": "budget",
+        "tool": "internet_search",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 33,
+        "timestamp": "2026-10-15T10:43:57.023580+00:00",
+        "type": "tool_completed",
+        "task": "budget",
+        "tool": "internet_search",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 34,
+        "timestamp": "2026-10-15T10:43:57.027689+00:00",
+        "type": "llm_request",
+        "task": "budget"
+      },
+      {
+        "seq": 35,
+        "timestamp": "2026-10-15T10:44:00.511867+00:00",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 36,
+        "timestamp": "2026-10-15T10:44:00.513929+00:00",
+        "type": "tool_started",
+        "task": "budget",
+        "tool": "internet_search"
+      },
+      {
+        "seq": 37,
+        "timestamp": "2026-10-15T10:44:00.513929+00:00",
+        "type": "tool_started",
+        "task": "budget",
+        "tool": "internet_search"
+      },
+      {
+        "seq": 38,
+        "timestamp": "2026-10-15T10:44:02.213559+00:00",
+        "type": "tool_completed",
+        "task": "budget",
+        "tool": "internet_search",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 39,
+        "timestamp": "2026-10-15T10:44:02.673838+00:00",
+        "type": "tool_completed",
+        "task": "budget",
+        "tool": "internet_search",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 40,
+        "timestamp": "2026-10-15T10:44:02.679010+00:00",
+        "type": "llm_request",
+        "task": "budget"
+      },
+      {
+        "seq": 41,
+        "timestamp": "2026-10-15T10:44:09.773692+00:00",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 42,
+        "timestamp": "2026-10-15T10:44:09.775749+00:00",
+        "type": "tool_started",
+        "task": "budget",
+        "tool": "internet_search"
+      },
+      {
+        "seq": 43,
+        "timestamp": "2026-10-15T10:44:09.776264+00:00",
+        "type": "tool_started",
+        "task": "budget",
+        "tool": "internet_search"
+      },
+      {
+        "seq": 44,
+        "timestamp": "2026-10-15T10:44:11.720792+00:00",
+        "type": "tool_completed",
+        "task": "budget",
+        "tool": "internet_search",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 45,
+        "timestamp": "2026-10-15T10:44:11.827694+00:00",
+        "type": "tool_completed",
+        "task": "budget",
+        "tool": "internet_search",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 46,
+        "timestamp": "2026-10-15T10:44:11.834438+00:00",
+        "type": "llm_request",
+        "task": "budget"
+      },
+      {
+        "seq": 47,
+        "timestamp": "2026-10-15T10:44:15.532621+00:00",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 48,
+        "timestamp": "2026-10-15T10:44:15.534663+00:00",
+        "type": "tool_started",
+        "task": "budget",
+        "tool": "internet_search"
+      },
+      {
+        "seq": 49,
+        "timestamp": "2026-10-15T10:44:15.534663+00:00",
+        "type": "tool_started",
+        "task": "budget",
+        "tool": "internet_search"
+      },
+      {
+        "seq": 50,
+        "timestamp": "2026-10-15T10:44:17.966296+00:00",
+        "type": "tool_completed",
+        "task": "budget",
+        "tool": "internet_search",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 51,
+        "timestamp": "2026-10-15T10:44:19.525725+00:00",
+        "type": "tool_completed",
+        "task": "budget",
+        "tool": "internet_search",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 52,
+        "timestamp": "2026-10-15T10:44:19.531327+00:00",
+        "type": "llm_request",
+        "task": "budget"
+      },
+      {
+        "seq": 53,
+        "timestamp": "2026-10-15T10:44:31.289536+00:00",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 54,
+        "timestamp": "2026-10-15T10:44:31.291083+00:00",
+        "type": "tool_started",
+        "task": "budget",
+        "tool": "trip_cost_calculator"
+      },
+      {
+        "seq": 55,
+        "timestamp": "2026-10-15T10:44:31.291597+00:00",
+        "type": "tool_completed",
+        "task": "budget",
+        "tool": "trip_cost_calculator",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 56,
+        "timestamp": "2026-10-15T10:44:31.297214+00:00",
+        "type": "llm_request",
+        "task": "budget"
+      },
+      {
+        "seq": 57,
+        "timestamp": "2026-10-15T10:44:44.681805+00:00",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 58,
+        "timestamp": "2026-10-15T10:44:44.689010+00:00",
+        "type": "task_completed",
+        "task": "budget"
+      },
+      {
+        "seq": 59,
+        "timestamp": "2026-10-15T10:44:45.335753+00:00",
+        "type": "task_started",
+        "task": "itinerary"
+      },
+      {
+        "seq": 60,
+        "timestamp": "2026-10-15T10:44:45.344842+00:00",
+        "type": "llm_request",
+        "task": "itinerary"
+      },
+      {
+        "seq": 61,
+        "timestamp": "2026-10-15T10:44:47.896580+00:00",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 62,
+        "timestamp": "2026-10-15T10:44:47.898178+00:00",
+        "type": "tool_started",
+        "task": "itinerary",
+        "tool": "trip_cost_calculator"
+      },
+      {
+        "seq": 63,
+        "timestamp": "2026-10-15T10:44:47.898694+00:00",
+        "type": "tool_completed",
+        "task": "itinerary",
+        "tool": "trip_cost_calculator",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 64,
+        "timestamp": "2026-10-15T10:44:47.902271+00:00",
+        "type": "llm_request",
+        "task": "itinerary"
+      },
+      {
+        "seq": 65,
+        "timestamp": "2026-10-15T10:44:54.248675+00:00",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 66,
+        "timestamp": "2026-10-15T10:44:54.289037+00:00",
+        "type": "validation_failed",
+        "task": "itinerary"
+      },
+      {
+        "seq": 67,
+        "timestamp": "2026-10-15T10:44:54.289037+00:00",
+        "type": "task_failed",
+        "task": "itinerary"
+      },
+      {
+        "seq": 68,
+        "timestamp": "2026-10-15T10:44:54.315376+00:00",
+        "type": "run_failed",
+        "task": null
+      },
+      {
+        "seq": 69,
+        "timestamp": "2026-10-15T10:44:54.334432+00:00",
+        "type": "run_failed",
+        "task": null
+      },
+      {
+        "seq": 70,
+        "timestamp": "2026-10-15T10:44:54.417472+00:00",
+        "type": "run_failed",
+        "task": null
+      }
+    ]
+  },
+  "result_http_status": 409,
+  "server_stopped": true
+}

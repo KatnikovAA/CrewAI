@@ -87,6 +87,7 @@ class Price(Evidence):
 
 
 class Place(Contract):
+    category: Literal["museum", "architecture", "food", "shopping", "nature", "other"] = "other"
     id: Text
     name: Text
     description: Finding
@@ -101,7 +102,7 @@ def unique(values):
 
 
 class ResearchResult(Contract):
-    places: list[Place] = Field(max_length=4)
+    places: list[Place] = Field(max_length=24)
     uncertainties: list[Text]
 
     @model_validator(mode="after")
@@ -124,8 +125,8 @@ class CostItem(Evidence):
         if (self.kind == "unknown") != (self.amount is None):
             raise ValueError("Неизвестная сумма — null, известная — число")
         unique(self.place_ids)
-        if self.category != "activities" and self.place_ids:
-            raise ValueError("Только статья activities может ссылаться на места")
+        if self.category not in ("activities", "food") and self.place_ids:
+            raise ValueError("Только статьи activities и food могут ссылаться на места")
         return self
 
 

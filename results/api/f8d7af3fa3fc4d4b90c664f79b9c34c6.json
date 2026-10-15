@@ -1,0 +1,252 @@
+{
+  "status": "failed",
+  "trip": {
+    "departure_city": "москва",
+    "destination": "Минск",
+    "start_date": "2026-10-19",
+    "end_date": "2026-10-25",
+    "budget": "100000",
+    "currency": "RUB",
+    "travelers": 2,
+    "interests": [
+      "Музеи",
+      "вкусно покушать и архитектура и ТЦ"
+    ]
+  },
+  "final": null,
+  "tasks": {},
+  "rejected": {},
+  "events": [
+    {
+      "type": "run_started",
+      "task": null,
+      "timestamp": "2026-10-15T15:18:48.254687+00:00",
+      "max_llm_calls": 24
+    },
+    {
+      "type": "task_started",
+      "task": "research",
+      "timestamp": "2026-10-15T15:18:48.506556+00:00",
+      "context_received": {}
+    },
+    {
+      "type": "llm_request",
+      "task": "research",
+      "timestamp": "2026-10-15T15:18:48.833141+00:00",
+      "number": 1,
+      "context_received": {}
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T15:18:50.693875+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 145
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T15:18:50.701887+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T15:18:50.701887+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T15:18:52.431290+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "http://minskcity.museum.by/visitor",
+        "https://minskmuseum.by/posetitelyam",
+        "https://www.instagram.com/minskmuseum?hl=en",
+        "https://www.warmuseum.by/posetitelyam/rezhim-raboty-i-stoimost",
+        "https://rsml.by/ru/museum-history/museum-price"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T15:18:52.617401+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://travelbelka.ru/ekskursii/mesta/nacionalnyy-hudozhestvennyy-muzey-belarusi",
+        "https://travelagency.by/mesta/natsionalnyy-khudozhestvennyy-muzey-respubliki-belarus-minsk.html",
+        "https://belarus365.com/hudozhestvennyj-muzej-minska",
+        "https://artmuseum.by/ru/services",
+        "https://experience.tripster.ru/sights/49529-nacionalnyj-hudozhestvennyj-muzej-respubliki-belarus"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "research",
+      "timestamp": "2026-10-15T15:18:52.622404+00:00",
+      "number": 2,
+      "context_received": {}
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T15:18:54.195758+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 120
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T15:18:54.198262+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T15:18:54.198761+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T15:18:55.229261+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://minskmuseum.by/posetitelyam",
+      "requested_url": "https://minskmuseum.by/posetitelyam",
+      "text_length": 33115
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T15:18:55.682078+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://artmuseum.by/ru/services",
+      "requested_url": "https://artmuseum.by/ru/services",
+      "text_length": 9767
+    },
+    {
+      "type": "llm_request",
+      "task": "research",
+      "timestamp": "2026-10-15T15:18:55.687561+00:00",
+      "number": 3,
+      "context_received": {}
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T15:19:06.391514+00:00",
+      "http_status": 200,
+      "finish_reason": "stop",
+      "completion_tokens": 1678
+    },
+    {
+      "type": "validation_failed",
+      "task": "research",
+      "timestamp": "2026-10-15T15:19:06.435333+00:00",
+      "issues": [
+        {
+          "location": [
+            "places",
+            0,
+            "price",
+            "text"
+          ],
+          "code": "extra_forbidden",
+          "message": "Extra inputs are not permitted"
+        },
+        {
+          "location": [
+            "places",
+            1,
+            "price",
+            "text"
+          ],
+          "code": "extra_forbidden",
+          "message": "Extra inputs are not permitted"
+        }
+      ],
+      "reason": "Исследование не соответствует ResearchResult",
+      "fenced": false,
+      "raw_chars": 3338,
+      "raw_json_valid": true,
+      "pydantic_present": false
+    },
+    {
+      "type": "task_failed",
+      "task": "research",
+      "timestamp": "2026-10-15T15:19:06.435835+00:00",
+      "error": "task_execution_failed"
+    },
+    {
+      "type": "run_failed",
+      "task": null,
+      "timestamp": "2026-10-15T15:19:06.468622+00:00",
+      "error": "execution_failed",
+      "error_type": "Exception",
+      "causes": [
+        "Exception"
+      ],
+      "frames": [
+        {
+          "file": "runner.py",
+          "line": 276,
+          "function": "_worker_inner"
+        },
+        {
+          "file": "crew.py",
+          "line": 1056,
+          "function": "kickoff"
+        },
+        {
+          "file": "crew.py",
+          "line": 1524,
+          "function": "_run_sequential_process"
+        },
+        {
+          "file": "crew.py",
+          "line": 1628,
+          "function": "_execute_tasks"
+        },
+        {
+          "file": "task.py",
+          "line": 593,
+          "function": "execute_sync"
+        },
+        {
+          "file": "task.py",
+          "line": 963,
+          "function": "_execute_core"
+        },
+        {
+          "file": "task.py",
+          "line": 903,
+          "function": "_execute_core"
+        },
+        {
+          "file": "task.py",
+          "line": 1388,
+          "function": "_invoke_guardrail_function"
+        }
+      ]
+    },
+    {
+      "type": "run_failed",
+      "task": null,
+      "error": "execution_failed"
+    }
+  ],
+  "checks": {},
+  "error": "execution_failed",
+  "worker_stopped": true
+}

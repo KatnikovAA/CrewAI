@@ -1,0 +1,102 @@
+{
+  "real_execution": true,
+  "consecutive_successes": 3,
+  "runs": [
+    {
+      "trip_id": "64cc2c3b2af6442aaf2c88d248538f03",
+      "result_http": 200,
+      "input_matches_user": true,
+      "duration_seconds": 168.17,
+      "place_count": 19,
+      "places_per_day": [
+        0,
+        4,
+        4,
+        4,
+        4,
+        3,
+        0
+      ],
+      "food_per_full_day": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "nonfood_per_full_day": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "all_checks": true,
+      "repair_events": 1
+    },
+    {
+      "trip_id": "8a981c073965482c88ec9982d928e73c",
+      "result_http": 200,
+      "input_matches_user": true,
+      "duration_seconds": 122.12,
+      "place_count": 20,
+      "places_per_day": [
+        0,
+        4,
+        4,
+        4,
+        4,
+        4,
+        0
+      ],
+      "food_per_full_day": [
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      "nonfood_per_full_day": [
+        3,
+        3,
+        3,
+        2,
+        2
+      ],
+      "all_checks": true,
+      "repair_events": 1
+    },
+    {
+      "trip_id": "c81222ee1e204e71b3ff60e2cb7ab2e8",
+      "result_http": 200,
+      "input_matches_user": true,
+      "duration_seconds": 184.2,
+      "place_count": 24,
+      "places_per_day": [
+        0,
+        5,
+        5,
+        5,
+        5,
+        4,
+        0
+      ],
+      "food_per_full_day": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "nonfood_per_full_day": [
+        4,
+        4,
+        4,
+        4,
+        3
+      ],
+      "all_checks": true,
+      "repair_events": 2
+    }
+  ]
+}

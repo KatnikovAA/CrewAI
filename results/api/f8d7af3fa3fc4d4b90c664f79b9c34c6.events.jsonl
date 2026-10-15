@@ -1,0 +1,20 @@
+{"seq": 1, "timestamp": "2026-10-15T15:18:43.243293+00:00", "type": "queued", "task": null}
+{"seq": 2, "timestamp": "2026-10-15T15:18:48.254687+00:00", "type": "run_started", "task": null}
+{"seq": 3, "timestamp": "2026-10-15T15:18:48.506556+00:00", "type": "task_started", "task": "research"}
+{"seq": 4, "timestamp": "2026-10-15T15:18:48.833141+00:00", "type": "llm_request", "task": "research"}
+{"seq": 5, "timestamp": "2026-10-15T15:18:50.717046+00:00", "type": "llm_response", "task": null}
+{"seq": 6, "timestamp": "2026-10-15T15:18:50.717046+00:00", "type": "tool_started", "task": "research", "tool": "internet_search"}
+{"seq": 7, "timestamp": "2026-10-15T15:18:50.717046+00:00", "type": "tool_started", "task": "research", "tool": "internet_search"}
+{"seq": 8, "timestamp": "2026-10-15T15:18:52.431290+00:00", "type": "tool_completed", "task": "research", "tool": "internet_search", "status": "ok", "from_cache": false}
+{"seq": 9, "timestamp": "2026-10-15T15:18:52.617902+00:00", "type": "tool_completed", "task": "research", "tool": "internet_search", "status": "ok", "from_cache": false}
+{"seq": 10, "timestamp": "2026-10-15T15:18:52.622404+00:00", "type": "llm_request", "task": "research"}
+{"seq": 11, "timestamp": "2026-10-15T15:18:54.196260+00:00", "type": "llm_response", "task": null}
+{"seq": 12, "timestamp": "2026-10-15T15:18:54.198761+00:00", "type": "tool_started", "task": "research", "tool": "website_reader"}
+{"seq": 13, "timestamp": "2026-10-15T15:18:54.198761+00:00", "type": "tool_started", "task": "research", "tool": "website_reader"}
+{"seq": 14, "timestamp": "2026-10-15T15:18:55.229261+00:00", "type": "tool_completed", "task": "research", "tool": "website_reader", "status": "ok", "from_cache": false}
+{"seq": 15, "timestamp": "2026-10-15T15:18:55.682078+00:00", "type": "tool_completed", "task": "research", "tool": "website_reader", "status": "ok", "from_cache": false}
+{"seq": 16, "timestamp": "2026-10-15T15:18:55.687561+00:00", "type": "llm_request", "task": "research"}
+{"seq": 17, "timestamp": "2026-10-15T15:19:06.391514+00:00", "type": "llm_response", "task": null}
+{"seq": 18, "timestamp": "2026-10-15T15:19:06.435835+00:00", "type": "validation_failed", "task": "research"}
+{"seq": 19, "timestamp": "2026-10-15T15:19:06.435835+00:00", "type": "task_failed", "task": "research"}
+{"seq": 20, "timestamp": "2026-10-15T15:19:06.469126+00:00", "type": "run_failed", "task": null}

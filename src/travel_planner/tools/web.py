@@ -16,9 +16,10 @@ class WebsiteReaderTool(ScrapeWebsiteTool):
     name: str = "website_reader"
     description: str = (
         "Читает текст публичной HTML/текстовой страницы по website_url. "
-        "Возвращает источник и status ok/empty/error. JavaScript не исполняется."
+        "Возвращает источник и status ok/empty/error. truncated=true означает, что доступен только начальный фрагмент, отсутствие данных в нём не доказывает их отсутствие на сайте. JavaScript не исполняется."
     )
     args_schema: type[BaseModel] = WebsiteInput
+    max_text_chars: int = Field(default=0, ge=0, exclude=True)
 
     def _run(self, website_url) -> dict:
         url = str(WebsiteInput.model_validate({"website_url": website_url}).website_url)
@@ -41,7 +42,12 @@ class WebsiteReaderTool(ScrapeWebsiteTool):
                 for element in page(["script", "style", "noscript", "template"]):
                     element.decompose()
                 text = " ".join(page.get_text(" ", strip=True).split())
+            original_length = len(text)
+            truncated = bool(self.max_text_chars and original_length > self.max_text_chars)
+            if truncated:
+                text = text[:self.max_text_chars]
             return {**base, "status": "ok" if text else "empty", "text": text,
+                    "truncated": truncated, "original_text_chars": original_length,
                     "error_code": None, "message": "" if text else "На странице нет доступного текста."}
         except requests.HTTPError as error:
             code = error.response.status_code if error.response is not None else "error"

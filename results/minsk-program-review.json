@@ -1,0 +1,23 @@
+{
+  "trip_id": "8befdfd0d19046d9ba1152bca993e3b4",
+  "real_execution": true,
+  "quality_passed": true,
+  "place_count": 19,
+  "categories": {
+    "museum": 5,
+    "architecture": 6,
+    "food": 5,
+    "shopping": 3
+  },
+  "full_days_have_two_visits_and_food": true,
+  "full_days_have_morning_day_evening": true,
+  "places_per_day": [
+    1,
+    4,
+    3,
+    4,
+    3,
+    4,
+    0
+  ]
+}

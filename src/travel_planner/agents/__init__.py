@@ -21,7 +21,7 @@ def _create(kind, *, llm=None, tools=None):
     definitions = {
         "researcher": (
             "Исследователь направления",
-            "Собрать подтверждённые источниками сведения о местах и условиях посещения.",
+            "Собрать разнообразные места по всем интересам на всю длительность поездки с источниками и условиями посещения.",
             "Ты исследователь путешествий. Проверяй сведения поиском и чтением страниц. "
             "Указывай ссылки, условия посещения и границы достоверности.",
             ("search", "reader")),
@@ -46,7 +46,7 @@ def _create(kind, *, llm=None, tools=None):
     return Agent(role=role, goal=goal, backstory=backstory + COMMON,
                  llm=llm, function_calling_llm=llm, tools=[tools[key] for key in keys],
                  allow_delegation=False, allow_code_execution=False,
-                 max_iter=6, max_execution_time=120, max_retry_limit=0,
+                 max_iter=6, max_execution_time=240 if kind == "researcher" else 180, max_retry_limit=0,
                  memory=None, knowledge_sources=[], reasoning=False,
                  cache=False, verbose=False, respect_context_window=False)
 

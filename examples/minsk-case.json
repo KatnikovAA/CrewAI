@@ -1,0 +1,13 @@
+{
+  "departure_city": "Москва",
+  "destination": "Минск",
+  "start_date": "2026-10-19",
+  "end_date": "2026-10-25",
+  "budget": "100000",
+  "currency": "RUB",
+  "travelers": 2,
+  "interests": [
+    "Музеи",
+    "вкусно покушать и архитектура и ТЦ"
+  ]
+}

@@ -1,0 +1,777 @@
+{
+  "mode": "real_browser",
+  "screens": [
+    "real-filled-form.png",
+    "real-progress.png",
+    "real-wide-result.png",
+    "real-narrow-result.png"
+  ],
+  "checks": [
+    "real wide result no overflow",
+    "real narrow result no overflow",
+    "real form POST202 → polling → completed → result200, no API mocking"
+  ],
+  "errors": [],
+  "posts": 1,
+  "post_status": 202,
+  "result_status": 200,
+  "state": {
+    "trip_id": "44bceebba7fa4ca09079a73850d790c3",
+    "status": "completed",
+    "current_task": null,
+    "created_at": "2026-10-15T14:46:40.130144Z",
+    "started_at": "2026-10-15T14:46:40.209137Z",
+    "finished_at": "2026-10-15T14:48:55.738713Z",
+    "events": [
+      {
+        "seq": 1,
+        "timestamp": "2026-10-15T14:46:40.130656Z",
+        "type": "queued",
+        "task": null
+      },
+      {
+        "seq": 2,
+        "timestamp": "2026-10-15T14:47:08.292320Z",
+        "type": "run_started",
+        "task": null
+      },
+      {
+        "seq": 3,
+        "timestamp": "2026-10-15T14:47:08.610564Z",
+        "type": "task_started",
+        "task": "research"
+      },
+      {
+        "seq": 4,
+        "timestamp": "2026-10-15T14:47:11.300681Z",
+        "type": "llm_request",
+        "task": "research"
+      },
+      {
+        "seq": 5,
+        "timestamp": "2026-10-15T14:47:17.951584Z",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 6,
+        "timestamp": "2026-10-15T14:47:17.959823Z",
+        "type": "tool_started",
+        "task": "research",
+        "tool": "internet_search"
+      },
+      {
+        "seq": 7,
+        "timestamp": "2026-10-15T14:47:17.959823Z",
+        "type": "tool_started",
+        "task": "research",
+        "tool": "internet_search"
+      },
+      {
+        "seq": 8,
+        "timestamp": "2026-10-15T14:47:20.021874Z",
+        "type": "tool_completed",
+        "task": "research",
+        "tool": "internet_search",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 9,
+        "timestamp": "2026-10-15T14:47:20.213386Z",
+        "type": "tool_completed",
+        "task": "research",
+        "tool": "internet_search",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 10,
+        "timestamp": "2026-10-15T14:47:20.217994Z",
+        "type": "llm_request",
+        "task": "research"
+      },
+      {
+        "seq": 11,
+        "timestamp": "2026-10-15T14:47:23.364395Z",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 12,
+        "timestamp": "2026-10-15T14:47:23.366953Z",
+        "type": "tool_started",
+        "task": "research",
+        "tool": "website_reader"
+      },
+      {
+        "seq": 13,
+        "timestamp": "2026-10-15T14:47:23.366953Z",
+        "type": "tool_started",
+        "task": "research",
+        "tool": "website_reader"
+      },
+      {
+        "seq": 14,
+        "timestamp": "2026-10-15T14:47:23.853008Z",
+        "type": "tool_completed",
+        "task": "research",
+        "tool": "website_reader",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 15,
+        "timestamp": "2026-10-15T14:47:24.773214Z",
+        "type": "tool_completed",
+        "task": "research",
+        "tool": "website_reader",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 16,
+        "timestamp": "2026-10-15T14:47:24.777883Z",
+        "type": "llm_request",
+        "task": "research"
+      },
+      {
+        "seq": 17,
+        "timestamp": "2026-10-15T14:47:28.707047Z",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 18,
+        "timestamp": "2026-10-15T14:47:28.709611Z",
+        "type": "tool_started",
+        "task": "research",
+        "tool": "internet_search"
+      },
+      {
+        "seq": 19,
+        "timestamp": "2026-10-15T14:47:28.709611Z",
+        "type": "tool_started",
+        "task": "research",
+        "tool": "website_reader"
+      },
+      {
+        "seq": 20,
+        "timestamp": "2026-10-15T14:47:29.628502Z",
+        "type": "tool_completed",
+        "task": "research",
+        "tool": "website_reader",
+        "status": "error",
+        "from_cache": false
+      },
+      {
+        "seq": 21,
+        "timestamp": "2026-10-15T14:47:31.328536Z",
+        "type": "tool_completed",
+        "task": "research",
+        "tool": "internet_search",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 22,
+        "timestamp": "2026-10-15T14:47:31.333651Z",
+        "type": "llm_request",
+        "task": "research"
+      },
+      {
+        "seq": 23,
+        "timestamp": "2026-10-15T14:47:34.471208Z",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 24,
+        "timestamp": "2026-10-15T14:47:34.472794Z",
+        "type": "tool_started",
+        "task": "research",
+        "tool": "website_reader"
+      },
+      {
+        "seq": 25,
+        "timestamp": "2026-10-15T14:47:35.129684Z",
+        "type": "tool_completed",
+        "task": "research",
+        "tool": "website_reader",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 26,
+        "timestamp": "2026-10-15T14:47:35.135286Z",
+        "type": "llm_request",
+        "task": "research"
+      },
+      {
+        "seq": 27,
+        "timestamp": "2026-10-15T14:47:45.919097Z",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 28,
+        "timestamp": "2026-10-15T14:47:45.963380Z",
+        "type": "task_completed",
+        "task": "research"
+      },
+      {
+        "seq": 29,
+        "timestamp": "2026-10-15T14:47:46.400512Z",
+        "type": "task_started",
+        "task": "budget"
+      },
+      {
+        "seq": 30,
+        "timestamp": "2026-10-15T14:47:46.411623Z",
+        "type": "llm_request",
+        "task": "budget"
+      },
+      {
+        "seq": 31,
+        "timestamp": "2026-10-15T14:47:58.112550Z",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 32,
+        "timestamp": "2026-10-15T14:47:58.115113Z",
+        "type": "tool_started",
+        "task": "budget",
+        "tool": "internet_search"
+      },
+      {
+        "seq": 33,
+        "timestamp": "2026-10-15T14:47:58.115626Z",
+        "type": "tool_started",
+        "task": "budget",
+        "tool": "internet_search"
+      },
+      {
+        "seq": 34,
+        "timestamp": "2026-10-15T14:47:58.116135Z",
+        "type": "tool_started",
+        "task": "budget",
+        "tool": "internet_search"
+      },
+      {
+        "seq": 35,
+        "timestamp": "2026-10-15T14:47:58.116135Z",
+        "type": "tool_started",
+        "task": "budget",
+        "tool": "internet_search"
+      },
+      {
+        "seq": 36,
+        "timestamp": "2026-10-15T14:47:59.715376Z",
+        "type": "tool_completed",
+        "task": "budget",
+        "tool": "internet_search",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 37,
+        "timestamp": "2026-10-15T14:47:59.849145Z",
+        "type": "tool_completed",
+        "task": "budget",
+        "tool": "internet_search",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 38,
+        "timestamp": "2026-10-15T14:47:59.885065Z",
+        "type": "tool_completed",
+        "task": "budget",
+        "tool": "internet_search",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 39,
+        "timestamp": "2026-10-15T14:47:59.895817Z",
+        "type": "tool_completed",
+        "task": "budget",
+        "tool": "internet_search",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 40,
+        "timestamp": "2026-10-15T14:47:59.900856Z",
+        "type": "llm_request",
+        "task": "budget"
+      },
+      {
+        "seq": 41,
+        "timestamp": "2026-10-15T14:48:14.353217Z",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 42,
+        "timestamp": "2026-10-15T14:48:14.355257Z",
+        "type": "tool_started",
+        "task": "budget",
+        "tool": "trip_cost_calculator"
+      },
+      {
+        "seq": 43,
+        "timestamp": "2026-10-15T14:48:14.355257Z",
+        "type": "tool_completed",
+        "task": "budget",
+        "tool": "trip_cost_calculator",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 44,
+        "timestamp": "2026-10-15T14:48:14.360453Z",
+        "type": "llm_request",
+        "task": "budget"
+      },
+      {
+        "seq": 45,
+        "timestamp": "2026-10-15T14:48:23.957918Z",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 46,
+        "timestamp": "2026-10-15T14:48:23.959950Z",
+        "type": "tool_started",
+        "task": "budget",
+        "tool": "trip_cost_calculator"
+      },
+      {
+        "seq": 47,
+        "timestamp": "2026-10-15T14:48:23.960463Z",
+        "type": "tool_completed",
+        "task": "budget",
+        "tool": "trip_cost_calculator",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 48,
+        "timestamp": "2026-10-15T14:48:23.966078Z",
+        "type": "llm_request",
+        "task": "budget"
+      },
+      {
+        "seq": 49,
+        "timestamp": "2026-10-15T14:48:33.981767Z",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 50,
+        "timestamp": "2026-10-15T14:48:33.990006Z",
+        "type": "task_completed",
+        "task": "budget"
+      },
+      {
+        "seq": 51,
+        "timestamp": "2026-10-15T14:48:34.636830Z",
+        "type": "task_started",
+        "task": "itinerary"
+      },
+      {
+        "seq": 52,
+        "timestamp": "2026-10-15T14:48:34.646088Z",
+        "type": "llm_request",
+        "task": "itinerary"
+      },
+      {
+        "seq": 53,
+        "timestamp": "2026-10-15T14:48:43.933198Z",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 54,
+        "timestamp": "2026-10-15T14:48:43.934740Z",
+        "type": "tool_started",
+        "task": "itinerary",
+        "tool": "trip_cost_calculator"
+      },
+      {
+        "seq": 55,
+        "timestamp": "2026-10-15T14:48:43.934740Z",
+        "type": "tool_completed",
+        "task": "itinerary",
+        "tool": "trip_cost_calculator",
+        "status": "ok",
+        "from_cache": false
+      },
+      {
+        "seq": 56,
+        "timestamp": "2026-10-15T14:48:43.938331Z",
+        "type": "llm_request",
+        "task": "itinerary"
+      },
+      {
+        "seq": 57,
+        "timestamp": "2026-10-15T14:48:54.931920Z",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 58,
+        "timestamp": "2026-10-15T14:48:54.939150Z",
+        "type": "task_completed",
+        "task": "itinerary"
+      },
+      {
+        "seq": 59,
+        "timestamp": "2026-10-15T14:48:55.539204Z",
+        "type": "run_completed",
+        "task": null
+      }
+    ],
+    "events_total": 59,
+    "error": null
+  },
+  "accepted": {
+    "trip_id": "44bceebba7fa4ca09079a73850d790c3",
+    "status_url": "/trips/44bceebba7fa4ca09079a73850d790c3",
+    "result_url": "/trips/44bceebba7fa4ca09079a73850d790c3/result"
+  },
+  "result": {
+    "trip_id": "44bceebba7fa4ca09079a73850d790c3",
+    "final": {
+      "days": [
+        {
+          "date": "2026-11-14",
+          "place_ids": [
+            "kazan-kremlin"
+          ],
+          "schedule": {
+            "kind": "estimate",
+            "sources": [
+              "https://rasp.yandex.ru/plane/moscow--kazan",
+              "https://www.aviasales.ru/routes/mow/kzn",
+              "https://go.kzn.ru/places/muzei-zapovednik-kazanskii-kreml"
+            ],
+            "note": "Расписание рейсов и графики музеев на 14.11.2026 не подтверждены; время — допущение для планирования.",
+            "text": "Оценка: вылет из Москвы 14.11 около 08:00–09:00, прибытие в Казань ~10:00, посещение Кремля ~12:00–18:00."
+          },
+          "movements": {
+            "kind": "estimate",
+            "sources": [
+              "https://rasp.yandex.ru/plane/moscow--kazan",
+              "https://www.aviasales.ru/routes/mow/kzn"
+            ],
+            "note": "Расписание на даты не подтверждено; трансфер аэропорт—центр в смету не включён.",
+            "text": "Окно отправления 14.11 утром с запасом ~2 ч на аэропорт; аэропорт Казань — центр ~30–60 мин."
+          }
+        },
+        {
+          "date": "2026-11-15",
+          "place_ids": [
+            "kul-sharif"
+          ],
+          "schedule": {
+            "kind": "estimate",
+            "sources": [
+              "https://www.kul-sharif.com/",
+              "https://go.kzn.ru/places/muzei-zapovednik-kazanskii-kreml"
+            ],
+            "note": "Часы мечети взяты с неофициального сайта (обновлялся до 2017) — требуют проверки.",
+            "text": "Оценка: посещение Кул-Шариф ~10:00–12:00; выезд в аэропорт ~15:00–16:00 при вечернем рейсе."
+          },
+          "movements": {
+            "kind": "estimate",
+            "sources": [
+              "https://rasp.yandex.ru/plane/moscow--kazan",
+              "https://www.aviasales.ru/routes/mow/kzn"
+            ],
+            "note": "Расписание обратных рейсов на 15.11.2026 не подтверждено.",
+            "text": "Окно возвращения 15.11 вечером, прибытие в Москву в тот же день, запас ~2 ч на аэропорт."
+          }
+        }
+      ],
+      "currency": "RUB",
+      "known_total": "29000.00",
+      "complete": false,
+      "budget_status": "undetermined",
+      "over_budget": "0",
+      "sources": [
+        "https://101hotels.com/main/cities/kazan",
+        "https://go.kzn.ru/places/muzei-zapovednik-kazanskii-kreml",
+        "https://kazan-kremlin.ru/",
+        "https://ostrovok.ru/hotel/russia/kazan/centr_goroda",
+        "https://rasp.yandex.ru/plane/moscow--kazan",
+        "https://rasp.yandex.ru/train/moscow--kazan",
+        "https://travelto.ru/blog/kazanskij-kreml",
+        "https://www.aviasales.ru/routes/mow/kzn",
+        "https://www.kul-sharif.com/",
+        "https://www.tutu.ru/poezda/Moskva/Kazan"
+      ],
+      "caveats": [
+        "Смета неполная: статья «Казанский Кремль и мечеть Кул-Шариф» имеет amount=null (платные музеи не подтверждены), поэтому budget_status=undetermined, превышение не доказано.",
+        "Цены авиабилетов и проживания — оценки для планирования, требуют проверки на 14–15.11.2026.",
+        "Трансфер аэропорт—центр и местный транспорт в смету не включены; при их добавлении возможен пересмотр сметы.",
+        "Часы работы мечети Кул-Шариф с неофициального сайта (до 2017) не подтверждены; расписания рейсов и музеев на даты не опубликованы в прочитанных источниках.",
+        "Бюджет 60000 RUB не превышен по известным статьям (остаток 31000.00), но итог не окончательный."
+      ]
+    },
+    "tasks": {
+      "research": {
+        "places": [
+          {
+            "id": "kazan-kremlin",
+            "name": "Музей-заповедник «Казанский Кремль»",
+            "description": {
+              "kind": "fact",
+              "sources": [
+                "https://go.kzn.ru/places/muzei-zapovednik-kazanskii-kreml",
+                "https://kazan-kremlin.ru/"
+              ],
+              "note": "Объект Всемирного наследия ЮНЕСКО; в структуру входят девять музеев и выставочных пространств.",
+              "text": "Историко-архитектурный ансамбль: белокаменные стены и башни XVI века, мечеть Кул-Шариф, Благовещенский собор, башня Сююмбике."
+            },
+            "conditions": {
+              "kind": "fact",
+              "sources": [
+                "https://go.kzn.ru/places/muzei-zapovednik-kazanskii-kreml",
+                "https://travelto.ru/blog/kazanskij-kreml"
+              ],
+              "note": "С 1 октября по 30 апреля понедельник — выходной в музеях и выставочных залах; 14–15.11.2026 — суббота и воскресенье, ограничение не затрагивает.",
+              "text": "Вход на территорию через Спасскую и Тайницкую башни; музеи и экскурсии — только по платным билетам."
+            },
+            "hours": {
+              "kind": "fact",
+              "sources": [
+                "https://go.kzn.ru/places/muzei-zapovednik-kazanskii-kreml"
+              ],
+              "note": "Спасская башня — круглосуточно, Тайницкая — с 06:00 до 20:00; графики музеев уточнять отдельно.",
+              "text": "Территория открыта круглосуточно."
+            },
+            "price": {
+              "kind": "fact",
+              "sources": [
+                "https://go.kzn.ru/places/muzei-zapovednik-kazanskii-kreml"
+              ],
+              "note": "0 RUB — вход на территорию бесплатный за человека; единый билет в музеи по вторичному источнику около 1800 RUB, официально не подтверждено.",
+              "amount": "0",
+              "currency": "RUB"
+            }
+          },
+          {
+            "id": "kul-sharif",
+            "name": "Мечеть Кул-Шариф",
+            "description": {
+              "kind": "fact",
+              "sources": [
+                "https://www.kul-sharif.com/",
+                "https://go.kzn.ru/places/muzei-zapovednik-kazanskii-kreml"
+              ],
+              "note": "Открыта в 2005 году, вместимость молельного зала 1500 человек; в цокольном этаже — Музей исламской культуры.",
+              "text": "Главная мечеть Казанского кремля, символ Казани; высота минаретов 57 м."
+            },
+            "conditions": {
+              "kind": "fact",
+              "sources": [
+                "https://www.kul-sharif.com/"
+              ],
+              "note": "Пятничный намаз и праздники могут ограничивать доступ туристов; платки и накидки выдают на входе.",
+              "text": "Вход открыт людям любого вероисповедания; женщинам нужно покрыть волосы, плечи и колени закрыты."
+            },
+            "hours": {
+              "kind": "unknown",
+              "sources": [
+                "https://www.kul-sharif.com/"
+              ],
+              "note": "Данные неофициального сайта (обновлялся до 2017): 9:00–18:00, выход с 17:30, перерыв на намаз по пятницам 12:00–14:00; требует проверки.",
+              "text": null
+            },
+            "price": {
+              "kind": "fact",
+              "sources": [
+                "https://www.kul-sharif.com/"
+              ],
+              "note": "0 RUB — вход в мечеть бесплатный за человека; Музей исламской культуры и экскурсии платные, актуальные тарифы не подтверждены.",
+              "amount": "0",
+              "currency": "RUB"
+            }
+          }
+        ],
+        "uncertainties": [
+          "Официальный сайт kazan-kremlin.ru не отдал страницу «Цены и льготы» (HTTP 404), поэтому стоимость музеев и единого билета не подтверждена первичным источником.",
+          "Часы работы мечети Кул-Шариф взяты с неофициального сайта, обновлявшегося до 2017 года, и могут быть устаревшими.",
+          "Расписание музеев на конкретные даты 14–15.11.2026 не опубликовано в прочитанных источниках.",
+          "Бюджет 60000 RUB на 2 человек и дорогу Москва—Казань не проверялся: транспорт и проживание в рамках этой задачи не исследовались."
+        ]
+      },
+      "budget": {
+        "currency": "RUB",
+        "expenses": [
+          {
+            "kind": "estimate",
+            "sources": [
+              "https://rasp.yandex.ru/plane/moscow--kazan",
+              "https://www.aviasales.ru/routes/mow/kzn"
+            ],
+            "note": "4 сегмента (2 чел. туда 14.11 утром, обратно 15.11 вечером) по оценке ~5000 RUB за сегмент; тарифы на даты не подтверждены. Сумма — вся поездка и группа.",
+            "id": "transport",
+            "category": "transport",
+            "name": "Авиабилеты Москва—Казань—Москва, 2 чел.",
+            "amount": "20000.00",
+            "place_ids": []
+          },
+          {
+            "kind": "estimate",
+            "sources": [
+              "https://ostrovok.ru/hotel/russia/kazan/centr_goroda",
+              "https://101hotels.com/main/cities/kazan"
+            ],
+            "note": "1 ночь 14–15.11, комната на двоих в центре; оценка 5000 RUB за ночь, конкретный отель не бронировался.",
+            "id": "lodging",
+            "category": "lodging",
+            "name": "Проживание, 1 ночь, 2 чел.",
+            "amount": "5000.00",
+            "place_ids": []
+          },
+          {
+            "kind": "estimate",
+            "sources": [],
+            "note": "Оценка ~2000 RUB в день на двоих за 2 дня; кафе и рестораны не проверялись.",
+            "id": "food",
+            "category": "food",
+            "name": "Питание, 2 дня, 2 чел.",
+            "amount": "4000.00",
+            "place_ids": []
+          },
+          {
+            "kind": "unknown",
+            "sources": [
+              "https://go.kzn.ru/places/muzei-zapovednik-kazanskii-kreml",
+              "https://www.kul-sharif.com/"
+            ],
+            "note": "Вход на территорию Кремля и в мечеть 0 RUB (факт, 2 чел.); платные музеи и единый билет ~1800 RUB не подтверждены (официальный сайт цен отдал 404), поэтому сумма неизвестна.",
+            "id": "activities",
+            "category": "activities",
+            "name": "Казанский Кремль и мечеть Кул-Шариф",
+            "amount": null,
+            "place_ids": [
+              "kazan-kremlin",
+              "kul-sharif"
+            ]
+          }
+        ],
+        "known_total": "29000.00",
+        "complete": false,
+        "logistics": [
+          {
+            "kind": "estimate",
+            "sources": [
+              "https://rasp.yandex.ru/plane/moscow--kazan"
+            ],
+            "note": "Прямой перелёт ~1 ч 35–50 мин; в даты 14–15.11.2026 расписание не подтверждено, время условное.",
+            "text": "Туда 14.11 утром, обратно 15.11 вечером; в пути около 2 ч на плечо, что оставляет почти полтора дня на места."
+          },
+          {
+            "kind": "estimate",
+            "sources": [
+              "https://rasp.yandex.ru/train/moscow--kazan",
+              "https://www.tutu.ru/poezda/Moskva/Kazan"
+            ],
+            "note": "Поезда идут 11–13 ч; отправление 13.11 или прибытие 16.11 выходит за границы поездки, поэтому вариант не выбран.",
+            "text": "Ночной поезд в двухдневное окно не подходит: 11–13 ч в пути съедают время на месте."
+          }
+        ],
+        "assumptions": [
+          "Цены авиабилетов и отеля — оценки для планирования, требуют проверки на 14–15.11.2026.",
+          "Трансфер аэропорт—центр Казани и местный транспорт в смету не включены.",
+          "Даты 14–15.11.2026 — суббота и воскресенье, ограничения музеев Кремля по понедельникам не действуют.",
+          "Перелёт выбран вместо поезда из-за 2-дневного окна; при недоступности рейсов понадобится пересчёт."
+        ]
+      },
+      "itinerary": {
+        "days": [
+          {
+            "date": "2026-11-14",
+            "place_ids": [
+              "kazan-kremlin"
+            ],
+            "schedule": {
+              "kind": "estimate",
+              "sources": [
+                "https://rasp.yandex.ru/plane/moscow--kazan",
+                "https://www.aviasales.ru/routes/mow/kzn",
+                "https://go.kzn.ru/places/muzei-zapovednik-kazanskii-kreml"
+              ],
+              "note": "Расписание рейсов и графики музеев на 14.11.2026 не подтверждены; время — допущение для планирования.",
+              "text": "Оценка: вылет из Москвы 14.11 около 08:00–09:00, прибытие в Казань ~10:00, посещение Кремля ~12:00–18:00."
+            },
+            "movements": {
+              "kind": "estimate",
+              "sources": [
+                "https://rasp.yandex.ru/plane/moscow--kazan",
+                "https://www.aviasales.ru/routes/mow/kzn"
+              ],
+              "note": "Расписание на даты не подтверждено; трансфер аэропорт—центр в смету не включён.",
+              "text": "Окно отправления 14.11 утром с запасом ~2 ч на аэропорт; аэропорт Казань — центр ~30–60 мин."
+            }
+          },
+          {
+            "date": "2026-11-15",
+            "place_ids": [
+              "kul-sharif"
+            ],
+            "schedule": {
+              "kind": "estimate",
+              "sources": [
+                "https://www.kul-sharif.com/",
+                "https://go.kzn.ru/places/muzei-zapovednik-kazanskii-kreml"
+              ],
+              "note": "Часы мечети взяты с неофициального сайта (обновлялся до 2017) — требуют проверки.",
+              "text": "Оценка: посещение Кул-Шариф ~10:00–12:00; выезд в аэропорт ~15:00–16:00 при вечернем рейсе."
+            },
+            "movements": {
+              "kind": "estimate",
+              "sources": [
+                "https://rasp.yandex.ru/plane/moscow--kazan",
+                "https://www.aviasales.ru/routes/mow/kzn"
+              ],
+              "note": "Расписание обратных рейсов на 15.11.2026 не подтверждено.",
+              "text": "Окно возвращения 15.11 вечером, прибытие в Москву в тот же день, запас ~2 ч на аэропорт."
+            }
+          }
+        ],
+        "currency": "RUB",
+        "known_total": "29000.00",
+        "complete": false,
+        "budget_status": "undetermined",
+        "over_budget": "0",
+        "sources": [
+          "https://101hotels.com/main/cities/kazan",
+          "https://go.kzn.ru/places/muzei-zapovednik-kazanskii-kreml",
+          "https://kazan-kremlin.ru/",
+          "https://ostrovok.ru/hotel/russia/kazan/centr_goroda",
+          "https://rasp.yandex.ru/plane/moscow--kazan",
+          "https://rasp.yandex.ru/train/moscow--kazan",
+          "https://travelto.ru/blog/kazanskij-kreml",
+          "https://www.aviasales.ru/routes/mow/kzn",
+          "https://www.kul-sharif.com/",
+          "https://www.tutu.ru/poezda/Moskva/Kazan"
+        ],
+        "caveats": [
+          "Смета неполная: статья «Казанский Кремль и мечеть Кул-Шариф» имеет amount=null (платные музеи не подтверждены), поэтому budget_status=undetermined, превышение не доказано.",
+          "Цены авиабилетов и проживания — оценки для планирования, требуют проверки на 14–15.11.2026.",
+          "Трансфер аэропорт—центр и местный транспорт в смету не включены; при их добавлении возможен пересмотр сметы.",
+          "Часы работы мечети Кул-Шариф с неофициального сайта (до 2017) не подтверждены; расписания рейсов и музеев на даты не опубликованы в прочитанных источниках.",
+          "Бюджет 60000 RUB не превышен по известным статьям (остаток 31000.00), но итог не окончательный."
+        ]
+      }
+    }
+  },
+  "seconds": 138.819,
+  "success": true
+}

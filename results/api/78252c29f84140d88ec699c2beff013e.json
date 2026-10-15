@@ -1,0 +1,971 @@
+{
+  "status": "failed",
+  "trip": {
+    "departure_city": "Москва",
+    "destination": "Минск",
+    "start_date": "2026-10-19",
+    "end_date": "2026-10-25",
+    "budget": "100000",
+    "currency": "RUB",
+    "travelers": 2,
+    "interests": [
+      "Музеи",
+      "вкусно покушать и архитектура и ТЦ"
+    ]
+  },
+  "final": null,
+  "tasks": {},
+  "rejected": {},
+  "events": [
+    {
+      "type": "run_started",
+      "task": null,
+      "timestamp": "2026-10-15T16:14:19.299975+00:00",
+      "max_llm_calls": 24
+    },
+    {
+      "type": "task_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:19.574575+00:00",
+      "context_received": {}
+    },
+    {
+      "type": "llm_request",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:19.911587+00:00",
+      "number": 1,
+      "context_received": {}
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T16:14:22.821903+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 286
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:22.830068+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:22.830571+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:22.831576+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:22.832581+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:24.672633+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://www.tripadvisor.ru/Attractions-g294448-Activities-c26-Minsk_Minsk_Region.html",
+        "https://belarus365.com/torgovye-czentry-v-minske",
+        "https://www.belarus.by/ru/travel/shopping-in-belarus/shopping-in-minsk",
+        "https://tonkosti.ru/%D0%A2%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D1%8B%D0%B5_%D1%86%D0%B5%D0%BD%D1%82%D1%80%D1%8B_%D0%9C%D0%B8%D0%BD%D1%81%D0%BA%D0%B0",
+        "https://komarovka.by"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:24.882238+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://topbrand.media/jurnal/otdykh/5-luchshikh-restoranov-belorusskoy-kukhni-v-minske-gde-poprobovat-traditsionnuyu-belorusskuyu-kukhnyu",
+        "https://minskholidays.by/belarus-minsk-blog/belorusskaya-kuhnya",
+        "https://forum.awd.ru/viewtopic.php?t=69964&start=100",
+        "https://www.relax.by/list/cafe-belorusskaya-kuhnya/minsk",
+        "https://bestbelarus.by/info/blog/top-20-restoranov-belorusskoy-kukhni-v-minske"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:25.786152+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://walker.by/blog/luchshie-muzei-i-galerei-dlya-turista",
+        "https://travelagency.by/mesta/muzei-minska",
+        "https://www.putevka.com/blog/muzei-minska",
+        "https://minsk.museum.by",
+        "https://www.sputnik8.com/ru/minsk/pages/muzei-v-minske"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:25.881564+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://archives.gov.by/home/tematicheskie-razrabotki-arhivnyh-dokumentov-i-bazy-dannyh/kultura-belarusi/arhitekturnyj-ansambl-glavnoj-magistrali-minska-prospekta-nezavisimosti/obzornaya-spravka",
+        "https://www.academia.edu/33677382/%D0%9F%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82_%D0%9D%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8_%D0%9C%D0%B8%D0%BD%D1%81%D0%BA",
+        "https://probelarus.by/belarus/sight/architecture/prospekt-nezavisimosti-v.html",
+        "https://www.belarus.by/ru/travel/top-guide-belarus/prospekt-nezavisimosti-foto-i-fakty-o-glavnoj-ulitse-minska-kotoraja-pretenduet-na-vkljuchenie-v-spisok-vsemirnogo-nasledija-junesko_i_0000117899.html",
+        "https://www.tripadvisor.ru/ShowUserReviews-g294448-d33404770-r1025661320-Arkhitekturny_Ansambl_1947_1955_gg-Minsk_Minsk_Region.html"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:25.888070+00:00",
+      "number": 2,
+      "context_received": {}
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T16:14:45.075873+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 460
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:45.079877+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:45.080376+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:45.080376+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:45.080880+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:45.080880+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:45.081379+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:45.323629+00:00",
+      "tool": "website_reader",
+      "status": "error",
+      "from_cache": false,
+      "source_url": "https://bestbelarus.by/info/blog/top-20-restoranov-belorusskoy-kukhni-v-minske",
+      "requested_url": "https://bestbelarus.by/info/blog/top-20-restoranov-belorusskoy-kukhni-v-minske",
+      "text_length": 0
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:45.896990+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://komarovka.by/",
+      "requested_url": "https://komarovka.by/",
+      "text_length": 2849
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:45.898562+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "http://minskholidays.by/belarus-minsk-blog/belorusskaya-kuhnya/",
+      "requested_url": "https://minskholidays.by/belarus-minsk-blog/belorusskaya-kuhnya",
+      "text_length": 6948
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:45.934212+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://www.belarus.by/ru/travel/shopping-in-belarus/shopping-in-minsk",
+      "requested_url": "https://www.belarus.by/ru/travel/shopping-in-belarus/shopping-in-minsk",
+      "text_length": 11589
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:45.952697+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://www.belarus.by/ru/travel/top-guide-belarus/prospekt-nezavisimosti-foto-i-fakty-o-glavnoj-ulitse-minska-kotoraja-pretenduet-na-vkljuchenie-v-spisok-vsemirnogo-nasledija-junesko_i_0000117899.html",
+      "requested_url": "https://www.belarus.by/ru/travel/top-guide-belarus/prospekt-nezavisimosti-foto-i-fakty-o-glavnoj-ulitse-minska-kotoraja-pretenduet-na-vkljuchenie-v-spisok-vsemirnogo-nasledija-junesko_i_0000117899.html",
+      "text_length": 8959
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:48.231298+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://walker.by/blog/luchshie-muzei-i-galerei-dlya-turista/",
+      "requested_url": "https://walker.by/blog/luchshie-muzei-i-galerei-dlya-turista",
+      "text_length": 24538
+    },
+    {
+      "type": "llm_request",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:48.238450+00:00",
+      "number": 3,
+      "context_received": {}
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T16:14:52.395643+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 397
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:52.398645+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:52.399145+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:52.399145+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:52.399145+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:53.917142+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://titam.ru/belarus/minsk/istoricheskij-centr-minska-verhnij-gorod-nemiga-zamchishhe-i-troickoe-predmeste",
+        "https://www.belarus.by/ru/travel/belarus-life/trinity-suburb",
+        "https://ecotourist.by/ekskursionnye-tury/obzornaya-ekskursiya-po-minskuratusha-2",
+        "https://www.tripadvisor.ru/ShowUserReviews-g294448-d10519966-r631239334-Upper_City-Minsk_Minsk_Region.html",
+        "https://www.youtube.com/watch?v=JAqrbYWNjUk"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:54.105824+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://www.instagram.com/reel/DdS8Uc-IUaT",
+        "https://www.instagram.com/reel/DOdJkS2jFIO?hl=en",
+        "https://gkx.by/novosti/3626-plany-na-vykhodnye-v-minske-aktivnyj-otdykh-na-prirode",
+        "https://nikitasad.ru/grafik-raboty-i-tseny",
+        "https://www.kupibilet.ru/gid/belarus/minsk/tsentralnyi-botanicheskii-sad-natsionalnoi-akademii-nauk-belarusi"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:54.231075+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://yandex.ru/maps/org/vasilki/1185298961",
+        "https://galleria-minsk.by/shops/cafe/belarus/vasilki",
+        "https://www.instagram.com/reel/DbXieS1twcP?hl=en",
+        "https://vasilki.by",
+        "https://www.instagram.com/restoran.vasilki?hl=en"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:54.231574+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://travelbelka.ru/ekskursii/mesta/nacionalnaya-biblioteka-belarusi",
+        "https://www.tourister.ru/world/europe/belarus/city/minsk/placeofinterest/20954",
+        "https://gandliar.com/foto/belarus/minsk/architecture/belarus-national-library/biblioteka-smotrovaya",
+        "https://turistas.me/world/articles/836/natsionalnaja-biblioteka-belorussii-smotrovaja-ploschadka-minska-gde-nahoditsja-kakaja-stantsija-metro-vremja-raboty-i-tseny",
+        "https://www.youtube.com/watch?v=L80tEDl_nxA"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:54.240602+00:00",
+      "number": 4,
+      "context_received": {}
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T16:14:57.922350+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 328
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:57.925455+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:57.925455+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:57.925957+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:57.926456+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:58.480847+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://www.tourister.ru/world/europe/belarus/city/minsk/placeofinterest/20954",
+      "requested_url": "https://www.tourister.ru/world/europe/belarus/city/minsk/placeofinterest/20954",
+      "text_length": 14391
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:58.582653+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://www.belarus.by/ru/travel/belarus-life/trinity-suburb",
+      "requested_url": "https://www.belarus.by/ru/travel/belarus-life/trinity-suburb",
+      "text_length": 7977
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:14:59.382821+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://www.relax.by/list/cafe-belorusskaya-kuhnya/minsk/",
+      "requested_url": "https://www.relax.by/list/cafe-belorusskaya-kuhnya/minsk",
+      "text_length": 8322
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:15:01.509970+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://titam.ru/belarus/minsk/istoricheskij-centr-minska-verhnij-gorod-nemiga-zamchishhe-i-troickoe-predmeste/",
+      "requested_url": "https://titam.ru/belarus/minsk/istoricheskij-centr-minska-verhnij-gorod-nemiga-zamchishhe-i-troickoe-predmeste",
+      "text_length": 19218
+    },
+    {
+      "type": "llm_request",
+      "task": "research",
+      "timestamp": "2026-10-15T16:15:01.518787+00:00",
+      "number": 5,
+      "context_received": {}
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T16:15:08.161066+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 704
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:15:08.163568+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:15:08.164068+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:15:08.164068+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:15:08.164571+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:15:08.554268+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://histmuseum.by/",
+      "requested_url": "https://histmuseum.by/",
+      "text_length": 5851
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:15:09.762636+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://www.youtube.com/watch?v=3F_ED4tPS2w",
+        "https://www.facebook.com/groups/1529326997289661/posts/4254382934784040",
+        "https://a-taurus.by/kostjol-simeona-i-eleny-v-minske",
+        "https://travel.sotrans.ru/objects/kostyol-svyatogo-simeona-i-svyatoj-eleny",
+        "https://www.instagram.com/p/CAm9EownW2K"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:15:09.824668+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://turby.by/restaurant/botanicheskij-sad-v-minske",
+        "https://travelto.ru/blog/botanicheskij-sad-minsk",
+        "https://titam.ru/belarus/minsk/botanicheskij-sad-v-minske-belarus",
+        "https://cbg.org.by",
+        "https://cbg.org.by/informatsiya/stoimost.php"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:15:10.619077+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://www.instagram.com/kamyanitsa.by?hl=en",
+        "https://xn--h1aduee.xn--90ais/putevoditel_item?id=997",
+        "https://yandex.ru/maps/org/kamyan_tsa/1105966752",
+        "https://www.instagram.com/reel/C6oJ8OLNF6B",
+        "https://www.tripadvisor.ru/Restaurant_Review-g294448-d3419085-Reviews-Kamyanitsa-Minsk_Minsk_Region.html"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "research",
+      "timestamp": "2026-10-15T16:15:10.629084+00:00",
+      "number": 6,
+      "context_received": {}
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T16:15:27.189622+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 261
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:15:27.192124+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:15:27.193151+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:15:27.193151+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:15:27.193651+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:15:27.745028+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://cbg.org.by/informatsiya/stoimost.php",
+      "requested_url": "https://cbg.org.by/informatsiya/stoimost.php",
+      "text_length": 8756
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:15:27.755540+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://vasilki.by/",
+      "requested_url": "https://vasilki.by/",
+      "text_length": 2202
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:15:29.007037+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://www.tourister.ru/world/europe/belarus/city/minsk/museum/44992",
+        "https://minskmuseum.by/posetitelyam",
+        "https://travel.ru/belarus/cities/minsk/museums",
+        "https://www.belarus.by/ru/travel/military-history-tourism/great-patriotic-war-museum-minsk",
+        "https://www.warmuseum.by/posetitelyam/rezhim-raboty-i-stoimost"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:15:30.035848+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://titam.ru/belarus/minsk/gum-v-minske-ne-prosto-magazin-a-odna-iz-vizitnyh-kartochek",
+        "https://www.sputnik8.com/ru/minsk/sights/gum/info",
+        "https://www.threads.com/@max_bobarykin/post/DWopOkTjSKC/%D0%B2%D0%BE%D1%80%D0%BE%D1%82%D0%B0-%D0%BC%D0%B8%D0%BD%D1%81%D0%BA%D0%B0-%D0%BE%D0%B4%D0%B8%D0%BD-%D0%B8%D0%B7-%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D1%85-%D0%B0%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%BD%D1%8B%D1%85-%D1%81%D0%B8%D0%BC%D0%B2%D0%BE%D0%BB%D0%BE%D0%B2-%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0-%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%BD%D0%B8%D0%BA-%D0%B0%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D1%8B",
+        "https://www.instagram.com/p/DbsMnqfCAJm",
+        "https://ru.belarus.travel/landmarks/vorota-minska"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "research",
+      "timestamp": "2026-10-15T16:15:30.046356+00:00",
+      "number": 7,
+      "context_received": {}
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T16:15:42.595351+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 1715
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:15:42.598854+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:15:42.598854+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:15:42.599855+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:15:42.599855+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:15:44.026310+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://minskmuseum.by/posetitelyam",
+      "requested_url": "https://minskmuseum.by/posetitelyam",
+      "text_length": 33115
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:15:44.562179+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://your.beer/place/gambrinus",
+        "https://www.gambrinus.by",
+        "https://yandex.ru/maps/org/gambrinus/1190888074",
+        "https://www.tripadvisor.ru/Restaurant_Review-g294448-d4028465-Reviews-or30-Gastro_Pub_Gambrinus-Minsk.html",
+        "https://irecommend.ru/content/vkusnaya-eda-otlichnoe-sortovoe-pivo-chto-eshche-turistu-dlya-schastya-nuzhno"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:15:44.916784+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://yandex.ru/maps/org/kukhmistr/1295125111",
+        "https://www.kupibilet.ru/gid/belarus/minsk/kukhmistr",
+        "https://rest-kuhmistr.relax.by",
+        "https://www.tripadvisor.ru/Restaurant_Review-g294448-d2470206-Reviews-Kuhmistr-Minsk_Minsk_Region.html",
+        "https://www.kuhmistr.by"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:15:45.216068+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://travelagency.by/mesta/natsionalnyy-khudozhestvennyy-muzey-respubliki-belarus-minsk.html",
+        "https://belarus365.com/hudozhestvennyj-muzej-minska",
+        "https://artmuseum.by/ru",
+        "https://www.belarus.by/ru/about-belarus/culture/national-art-museum",
+        "https://artmuseum.by/ru/services"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "research",
+      "timestamp": "2026-10-15T16:15:45.228168+00:00",
+      "number": 8,
+      "context_received": {}
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T16:16:20.069562+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 4726
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:16:20.073096+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:16:20.073596+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:16:20.073596+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:16:20.074098+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:16:20.846580+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://www.gambrinus.by/",
+      "requested_url": "https://www.gambrinus.by/",
+      "text_length": 1351
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:16:21.134526+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://www.warmuseum.by:443/posetitelyam/rezhim-raboty-i-stoimost/",
+      "requested_url": "https://www.warmuseum.by/posetitelyam/rezhim-raboty-i-stoimost",
+      "text_length": 16101
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:16:21.590120+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://ru.belarus.travel/landmarks/vorota-minska",
+      "requested_url": "https://ru.belarus.travel/landmarks/vorota-minska",
+      "text_length": 3660
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:16:21.965283+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://artmuseum.by/ru/services",
+      "requested_url": "https://artmuseum.by/ru/services",
+      "text_length": 9767
+    },
+    {
+      "type": "llm_request",
+      "task": "research",
+      "timestamp": "2026-10-15T16:16:21.979684+00:00",
+      "number": 9,
+      "context_received": {}
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T16:16:29.481239+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 617
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:16:29.484242+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:16:29.484242+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:16:29.484743+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:16:29.484743+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:16:30.974743+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://xn--h1aduee.xn--90ais/putevoditel_item?id=965",
+        "https://daroo.by/minsk/talaka",
+        "https://zoon.by/minsk/restaurants/restoran_talaka/reviews",
+        "https://www.threads.com/@karpuxha/post/DWS500qDHzT/%D0%BC%D0%B8%D0%BD%D1%81%D0%BA-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B9-%D0%BC%D1%8B-%D0%BF%D0%BE%D1%82%D0%B5%D1%80%D1%8F%D0%BB%D0%B8%D1%80%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD-%D1%82%D0%B0%D0%BB%D0%B0%D0%BA%D0%B0-%D0%B4%D0%BE%D0%BB%D0%B3%D0%BE%D0%B5-%D0%B2%D1%80%D0%B5%D0%BC%D1%8F-%D1%80%D0%B0%D0%B4%D0%BE%D0%B2%D0%B0%D0%BB-%D0%BD%D0%B0%D1%81-%D0%B2-%D0%BC%D0%B8%D0%BD%D1%81%D0%BA%D0%B5-%D0%BF%D0%BE-%D0%B0%D0%B4",
+        "https://yandex.ru/maps/org/talaka/1090432825"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:16:31.173007+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://brovar.by",
+        "https://yandex.ru/maps/org/rakovskiy_brovar/1209260725",
+        "https://brovar.by/contacts",
+        "https://www.instagram.com/rakovskij_brovar?hl=en",
+        "https://rakovskij-brovar.relax.by"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:16:31.304117+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://irecommend.ru/content/loshitskii-park-pozdnei-osenyu-prekrasen",
+        "https://www.instagram.com/p/DaSYT2pIrYm",
+        "https://www.putevka.com/belarus/Minskaya-oblast/sight/muzej-loshiczkaya-usadba",
+        "https://tripse.ru/journal/gde-nahoditsya-loshickij-park-v-minske",
+        "https://loshytsa.museum.by"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:16:31.512521+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://dana-mall.com/kontaktyi.html",
+        "https://dana-mall.com",
+        "https://yandex.ru/maps/org/dana_mall/23881345245",
+        "https://www.instagram.com/danamallminsk?hl=en",
+        "https://www.be-in.ru/mall/3689-dana-mall"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "research",
+      "timestamp": "2026-10-15T16:16:31.526276+00:00",
+      "number": 10,
+      "context_received": {}
+    },
+    {
+      "type": "task_failed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:18:01.578234+00:00",
+      "error": "task_execution_failed"
+    },
+    {
+      "type": "run_failed",
+      "task": null,
+      "timestamp": "2026-10-15T16:18:01.590382+00:00",
+      "error": "execution_failed",
+      "error_type": "RuntimeError",
+      "causes": [
+        "RuntimeError",
+        "ConnectionError",
+        "APITimeoutError",
+        "ReadTimeout",
+        "ReadTimeout"
+      ],
+      "frames": [
+        {
+          "file": "task.py",
+          "line": 593,
+          "function": "execute_sync"
+        },
+        {
+          "file": "task.py",
+          "line": 963,
+          "function": "_execute_core"
+        },
+        {
+          "file": "task.py",
+          "line": 853,
+          "function": "_execute_core"
+        },
+        {
+          "file": "core.py",
+          "line": 1025,
+          "function": "execute_task"
+        },
+        {
+          "file": "core.py",
+          "line": 908,
+          "function": "_handle_execution_error"
+        },
+        {
+          "file": "core.py",
+          "line": 888,
+          "function": "_check_execution_error"
+        },
+        {
+          "file": "core.py",
+          "line": 1007,
+          "function": "execute_task"
+        },
+        {
+          "file": "core.py",
+          "line": 1067,
+          "function": "_execute_with_timeout"
+        }
+      ]
+    },
+    {
+      "type": "run_failed",
+      "task": null,
+      "error": "execution_failed"
+    }
+  ],
+  "checks": {},
+  "error": "execution_failed",
+  "worker_stopped": true
+}

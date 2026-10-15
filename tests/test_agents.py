@@ -27,7 +27,7 @@ class AgentFactoryTests(unittest.TestCase):
             self.assertIsNone(agent.memory)
             self.assertEqual(agent.max_retry_limit, 0)
             self.assertLessEqual(agent.max_iter, 6)
-            self.assertEqual(agent.max_execution_time, 120)
+            self.assertEqual(agent.max_execution_time, 240 if name == "researcher" else 180)
             self.assertIn("данные", agent.backstory)
         self.assertEqual(llm.model, "deepseek/deepseek-v4.1-flash")
 

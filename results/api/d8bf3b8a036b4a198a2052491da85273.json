@@ -1,0 +1,281 @@
+{
+  "status": "failed",
+  "trip": {
+    "departure_city": "Москва",
+    "destination": "Казань",
+    "start_date": "2026-11-14",
+    "end_date": "2026-11-15",
+    "budget": "60000.00",
+    "currency": "RUB",
+    "travelers": 2,
+    "interests": [
+      "архитектура"
+    ]
+  },
+  "final": null,
+  "tasks": {
+    "research": {
+      "places": [
+        {
+          "id": "kazan-kremlin",
+          "name": "Казанский кремль",
+          "description": {
+            "kind": "fact",
+            "sources": [
+              "https://kazan-kremlin.ru/"
+            ],
+            "note": "Объект ЮНЕСКО, белокаменные и кирпичные стены, мечеть Кул-Шариф — ключевой архитектурный ансамбль города.",
+            "text": "Историко-архитектурный комплекс в центре Казани, объект Всемирного наследия ЮНЕСКО."
+          },
+          "conditions": {
+            "kind": "fact",
+            "sources": [
+              "https://kazan-kremlin.ru/"
+            ],
+            "note": "Вход на территорию свободный; для отдельных музеев нужны билеты, требуется уточнение на дату.",
+            "text": "Территория открыта для посещения, музеи — по отдельным билетам."
+          },
+          "hours": {
+            "kind": "fact",
+            "sources": [
+              "https://kazan-kremlin.ru/"
+            ],
+            "note": "Территория обычно открыта ежедневно днём; точные часы музеев на 14–15.11.2026 требуют проверки.",
+            "text": "Дневные часы работы; расписание музеев может отличаться."
+          },
+          "price": {
+            "kind": "fact",
+            "sources": [
+              "https://kazan-kremlin.ru/"
+            ],
+            "note": "Цена за вход на территорию — 0 RUB (бесплатно); билеты в музеи не включены.",
+            "amount": "0",
+            "currency": "RUB"
+          }
+        },
+        {
+          "id": "kul-sharif-mosque",
+          "name": "Мечеть Кул-Шариф",
+          "description": {
+            "kind": "fact",
+            "sources": [
+              "https://kazan-kremlin.ru/"
+            ],
+            "note": "Один из крупнейших архитектурных объектов кремля, современная реконструкция исторической мечети.",
+            "text": "Главная мечеть Татарстана на территории Казанского кремля."
+          },
+          "conditions": {
+            "kind": "estimate",
+            "sources": [
+              "https://kazan-kremlin.ru/"
+            ],
+            "note": "Предположительно есть ограничения для посетителей не-мусульман и по одежде; требуется проверка.",
+            "text": "Посещение как туристического объекта, вероятны правила одежды и времени."
+          },
+          "hours": {
+            "kind": "unknown",
+            "sources": [
+              "https://kazan-kremlin.ru/"
+            ],
+            "note": "Источник не сообщал конкретных часов; в дни поездки 14–15.11.2026 нужно уточнить.",
+            "text": null
+          },
+          "price": {
+            "kind": "unknown",
+            "sources": [
+              "https://kazan-kremlin.ru/"
+            ],
+            "note": "Цена входа не подтверждена источником; вход в мечеть может быть бесплатным, требуется уточнение.",
+            "amount": null,
+            "currency": null
+          }
+        }
+      ],
+      "uncertainties": [
+        "Часы работы и билеты музеев кремля на 14–15.11.2026 не подтверждены; указаны как требующие проверки.",
+        "Транспорт Москва–Казань и обратно в даты 14–15.11.2026 не исследован; уложиться в бюджет 60000 RUB на 2 человек не проверено.",
+        "Цены в музеях не подтверждены и не конвертированы; для Кул-Шариф цена неизвестна."
+      ]
+    }
+  },
+  "rejected": {},
+  "events": [
+    {
+      "type": "run_started",
+      "task": null,
+      "timestamp": "2026-10-15T11:16:57.623169+00:00",
+      "max_llm_calls": 24
+    },
+    {
+      "type": "task_started",
+      "task": "research",
+      "timestamp": "2026-10-15T11:16:57.902711+00:00",
+      "context_received": {}
+    },
+    {
+      "type": "llm_request",
+      "task": "research",
+      "timestamp": "2026-10-15T11:16:58.792759+00:00",
+      "number": 1,
+      "context_received": {}
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T11:17:03.265728+00:00",
+      "http_status": 200,
+      "finish_reason": "stop",
+      "completion_tokens": 742
+    },
+    {
+      "type": "task_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T11:17:03.315393+00:00"
+    },
+    {
+      "type": "task_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T11:17:03.602151+00:00",
+      "context_received": {
+        "research": true
+      }
+    },
+    {
+      "type": "llm_request",
+      "task": "budget",
+      "timestamp": "2026-10-15T11:17:03.612223+00:00",
+      "number": 2,
+      "context_received": {
+        "research": true
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T11:17:06.600402+00:00",
+      "http_status": 200,
+      "finish_reason": "stop",
+      "completion_tokens": 330
+    },
+    {
+      "type": "validation_failed",
+      "task": "budget",
+      "timestamp": "2026-10-15T11:17:06.650159+00:00",
+      "issues": [
+        {
+          "location": [
+            "currency"
+          ],
+          "code": "missing"
+        },
+        {
+          "location": [
+            "expenses"
+          ],
+          "code": "missing"
+        },
+        {
+          "location": [
+            "known_total"
+          ],
+          "code": "missing"
+        },
+        {
+          "location": [
+            "complete"
+          ],
+          "code": "missing"
+        },
+        {
+          "location": [
+            "logistics"
+          ],
+          "code": "missing"
+        },
+        {
+          "location": [
+            "assumptions"
+          ],
+          "code": "missing"
+        },
+        {
+          "location": [
+            "tool_calls"
+          ],
+          "code": "extra_forbidden"
+        }
+      ],
+      "reason": "Смета не согласована со схемой, поездкой или исследованием",
+      "fenced": false,
+      "raw_chars": 364,
+      "raw_json_valid": true,
+      "pydantic_present": false
+    },
+    {
+      "type": "task_failed",
+      "task": "budget",
+      "timestamp": "2026-10-15T11:17:06.650159+00:00",
+      "error": "task_execution_failed"
+    },
+    {
+      "type": "run_failed",
+      "task": null,
+      "timestamp": "2026-10-15T11:17:06.682268+00:00",
+      "error": "execution_failed",
+      "error_type": "Exception",
+      "causes": [
+        "Exception"
+      ],
+      "frames": [
+        {
+          "file": "runner.py",
+          "line": 270,
+          "function": "_worker_inner"
+        },
+        {
+          "file": "crew.py",
+          "line": 1056,
+          "function": "kickoff"
+        },
+        {
+          "file": "crew.py",
+          "line": 1524,
+          "function": "_run_sequential_process"
+        },
+        {
+          "file": "crew.py",
+          "line": 1628,
+          "function": "_execute_tasks"
+        },
+        {
+          "file": "task.py",
+          "line": 593,
+          "function": "execute_sync"
+        },
+        {
+          "file": "task.py",
+          "line": 963,
+          "function": "_execute_core"
+        },
+        {
+          "file": "task.py",
+          "line": 903,
+          "function": "_execute_core"
+        },
+        {
+          "file": "task.py",
+          "line": 1388,
+          "function": "_invoke_guardrail_function"
+        }
+      ]
+    },
+    {
+      "type": "run_failed",
+      "task": null,
+      "error": "execution_failed"
+    }
+  ],
+  "checks": {},
+  "error": "execution_failed",
+  "worker_stopped": true
+}

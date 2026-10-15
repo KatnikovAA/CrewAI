@@ -1,0 +1,38 @@
+{
+  "success": true,
+  "checks": [
+    "real API and Vite ready after CMD start from unrelated directory",
+    "repeat CMD reuses running application",
+    "supervisor and child identities unchanged: no duplicate processes",
+    "stop CMD completes successfully",
+    "owned supervisor stopped",
+    "owned API and Vite roots stopped",
+    "both listener ports released",
+    "unrelated Python process remains alive",
+    "API lifespan shutdown completed gracefully",
+    "repeat stop is safe",
+    "occupied port produces clear Russian failure",
+    "foreign listener untouched after failed start",
+    "two simultaneous CMD starts both succeed",
+    "simultaneous starts create one application only",
+    "final application left running and ready",
+    "unrelated process survives all launcher operations"
+  ],
+  "paid_requests": 0,
+  "state": {
+    "pid": 51428,
+    "created": 134365503363240938,
+    "token": "35c8e701f53f423f89c17cf674b185af",
+    "status": "ready",
+    "children": [
+      {
+        "pid": 51700,
+        "created": 134365503365786011
+      },
+      {
+        "pid": 51804,
+        "created": 134365503365942878
+      }
+    ]
+  }
+}

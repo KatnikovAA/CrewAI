@@ -1,0 +1,1885 @@
+{
+  "status": "failed",
+  "trip": {
+    "departure_city": "Москва",
+    "destination": "Минск",
+    "start_date": "2026-10-19",
+    "end_date": "2026-10-25",
+    "budget": "100000",
+    "currency": "RUB",
+    "travelers": 2,
+    "interests": [
+      "Музеи",
+      "вкусно покушать и архитектура и ТЦ"
+    ]
+  },
+  "final": null,
+  "tasks": {
+    "research": {
+      "places": [
+        {
+          "category": "architecture",
+          "id": "minsk-gates",
+          "name": "Ворота Минска (ансамбль)",
+          "description": {
+            "kind": "fact",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/marshruty-minska"
+            ],
+            "note": "Две симметричные сталинские башни у Привокзальной площади.",
+            "text": "Открыточный архитектурный ансамбль на Привокзальной площади напротив ж/д вокзала."
+          },
+          "conditions": {
+            "kind": "estimate",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/marshruty-minska"
+            ],
+            "note": "Осмотр снаружи, рядом с вокзалом и станцией метро.",
+            "text": "Доступно для внешнего осмотра в любое время."
+          },
+          "hours": {
+            "kind": "unknown",
+            "sources": [],
+            "note": "Часы не указаны в источнике.",
+            "text": null
+          },
+          "price": {
+            "kind": "estimate",
+            "sources": [],
+            "note": "Внешний осмотр бесплатный (допущение).",
+            "amount": "0",
+            "currency": "BYN"
+          }
+        },
+        {
+          "category": "architecture",
+          "id": "prospekt-nezavisimosti",
+          "name": "Проспект Независимости",
+          "description": {
+            "kind": "fact",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/marshruty-minska"
+            ],
+            "note": "Главная магистраль с застройкой XX века.",
+            "text": "15-километровый проспект со сталинским ампиром и советской архитектурой."
+          },
+          "conditions": {
+            "kind": "estimate",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/marshruty-minska"
+            ],
+            "note": "Пешеходная прогулка, центр города.",
+            "text": "Прогулка вдоль проспекта возможна в любое время."
+          },
+          "hours": {
+            "kind": "unknown",
+            "sources": [],
+            "note": "Уличный маршрут, часы не применимы.",
+            "text": null
+          },
+          "price": {
+            "kind": "estimate",
+            "sources": [],
+            "note": "Прогулка бесплатная (допущение).",
+            "amount": "0",
+            "currency": "BYN"
+          }
+        },
+        {
+          "category": "architecture",
+          "id": "verhniy-gorod",
+          "name": "Верхний город и Минская ратуша",
+          "description": {
+            "kind": "fact",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/marshruty-minska"
+            ],
+            "note": "Исторический центр, восстановленная ратуша XVII века.",
+            "text": "Площадь Свободы со ратушей, собором и костёлом Девы Марии."
+          },
+          "conditions": {
+            "kind": "fact",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/marshruty-minska"
+            ],
+            "note": "Пешеходная зона с брусчаткой, рядом кафе и музеи.",
+            "text": "Свободный доступ по площади; храмы действующие."
+          },
+          "hours": {
+            "kind": "unknown",
+            "sources": [],
+            "note": "Часы храмов не указаны.",
+            "text": null
+          },
+          "price": {
+            "kind": "estimate",
+            "sources": [],
+            "note": "Площадь бесплатна (допущение).",
+            "amount": "0",
+            "currency": "BYN"
+          }
+        },
+        {
+          "category": "architecture",
+          "id": "troickoe-predmestye",
+          "name": "Троицкое предместье",
+          "description": {
+            "kind": "fact",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/marshruty-minska"
+            ],
+            "note": "Дореволюционные 1–2-этажные домики с брусчаткой.",
+            "text": "Квартал исторической застройки у реки Свислочь."
+          },
+          "conditions": {
+            "kind": "estimate",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/marshruty-minska"
+            ],
+            "note": "Пешеходная прогулка рядом с Верхним городом.",
+            "text": "Свободный доступ."
+          },
+          "hours": {
+            "kind": "unknown",
+            "sources": [],
+            "note": "Уличный квартал.",
+            "text": null
+          },
+          "price": {
+            "kind": "estimate",
+            "sources": [],
+            "note": "Прогулка бесплатная (допущение).",
+            "amount": "0",
+            "currency": "BYN"
+          }
+        },
+        {
+          "category": "architecture",
+          "id": "red-church",
+          "name": "Красный костёл (Святых Симеона и Елены)",
+          "description": {
+            "kind": "fact",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/marshruty-minska"
+            ],
+            "note": "Визитная карточка на площади Независимости.",
+            "text": "Неороманский храм из красного кирпича начала XX века."
+          },
+          "conditions": {
+            "kind": "estimate",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/marshruty-minska"
+            ],
+            "note": "Действующий храм, у метро Площадь Ленина.",
+            "text": "Вход свободный, требуется тишина."
+          },
+          "hours": {
+            "kind": "unknown",
+            "sources": [],
+            "note": "Часы работы не указаны в источнике.",
+            "text": null
+          },
+          "price": {
+            "kind": "estimate",
+            "sources": [],
+            "note": "Вход свободный (допущение).",
+            "amount": "0",
+            "currency": "BYN"
+          }
+        },
+        {
+          "category": "architecture",
+          "id": "national-library",
+          "name": "Национальная библиотека Беларуси",
+          "description": {
+            "kind": "fact",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/marshruty-minska"
+            ],
+            "note": "Знаковое здание-ромбокубооктаэдр на проспекте Независимости.",
+            "text": "Современная архитектурная доминанта со смотровой площадкой."
+          },
+          "conditions": {
+            "kind": "estimate",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/marshruty-minska"
+            ],
+            "note": "Расположена в стороне от центра, доезд на метро.",
+            "text": "Возможен подъём на смотровую площадку."
+          },
+          "hours": {
+            "kind": "unknown",
+            "sources": [],
+            "note": "Часы не указаны.",
+            "text": null
+          },
+          "price": {
+            "kind": "unknown",
+            "sources": [],
+            "note": "Цена не найдена.",
+            "amount": null,
+            "currency": null
+          }
+        },
+        {
+          "category": "museum",
+          "id": "wwii-museum",
+          "name": "Белорусский музей истории Великой Отечественной войны",
+          "description": {
+            "kind": "fact",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/muzei-v-minske"
+            ],
+            "note": "Более 150 000 экспонатов, зал Победы.",
+            "text": "Крупнейший военный музей страны в парке Победы."
+          },
+          "conditions": {
+            "kind": "fact",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/muzei-v-minske"
+            ],
+            "note": "Пр. Победителей, 8; понедельник выходной.",
+            "text": "Вторник–воскресенье, кассы до 18:30."
+          },
+          "hours": {
+            "kind": "fact",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/muzei-v-minske"
+            ],
+            "note": "Вт–Вс 10:00–19:00.",
+            "text": "Вт–Вс: 10:00–19:00."
+          },
+          "price": {
+            "kind": "fact",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/muzei-v-minske"
+            ],
+            "note": "Взрослый билет/человека.",
+            "amount": "15",
+            "currency": "BYN"
+          }
+        },
+        {
+          "category": "museum",
+          "id": "national-history-museum",
+          "name": "Национальный исторический музей Беларуси",
+          "description": {
+            "kind": "fact",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/muzei-v-minske"
+            ],
+            "note": "Фонд около 500 000 экспонатов.",
+            "text": "История белорусской государственности от древности до наших дней."
+          },
+          "conditions": {
+            "kind": "fact",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/muzei-v-minske"
+            ],
+            "note": "Ул. Карла Маркса, 12; в центре.",
+            "text": "Ежедневно, кассы до 18:30."
+          },
+          "hours": {
+            "kind": "fact",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/muzei-v-minske"
+            ],
+            "note": "Ежедневно 10:00–19:00.",
+            "text": "Ежедневно: 10:00–19:00."
+          },
+          "price": {
+            "kind": "fact",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/muzei-v-minske"
+            ],
+            "note": "Взрослый билет/человека.",
+            "amount": "15",
+            "currency": "BYN"
+          }
+        },
+        {
+          "category": "museum",
+          "id": "art-museum",
+          "name": "Национальный художественный музей Беларуси",
+          "description": {
+            "kind": "fact",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/muzei-v-minske"
+            ],
+            "note": "Крупнейшая коллекция национального искусства.",
+            "text": "Живопись, русское и европейское искусство, Восток."
+          },
+          "conditions": {
+            "kind": "estimate",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/muzei-v-minske"
+            ],
+            "note": "Расположен в центре, ул. Ленина.",
+            "text": "Требуется проверка актуальных часов."
+          },
+          "hours": {
+            "kind": "unknown",
+            "sources": [],
+            "note": "Точный режим не подтверждён источником.",
+            "text": null
+          },
+          "price": {
+            "kind": "unknown",
+            "sources": [],
+            "note": "Цена не найдена.",
+            "amount": null,
+            "currency": null
+          }
+        },
+        {
+          "category": "museum",
+          "id": "kupala-museum",
+          "name": "Государственный литературный музей Янки Купалы",
+          "description": {
+            "kind": "fact",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/muzei-v-minske"
+            ],
+            "note": "8 залов, более 40 000 экспонатов.",
+            "text": "Музей жизни и творчества народного поэта Беларуси."
+          },
+          "conditions": {
+            "kind": "fact",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/muzei-v-minske"
+            ],
+            "note": "Ул. Янки Купалы, 4; санитарный день — второй вторник месяца.",
+            "text": "Кассы до 18:30."
+          },
+          "hours": {
+            "kind": "fact",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/muzei-v-minske"
+            ],
+            "note": "Пн–Сб 10:00–19:00, Вс 11:00–19:00.",
+            "text": "Пн–Сб 10:00–19:00; Вс 11:00–19:00."
+          },
+          "price": {
+            "kind": "fact",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/muzei-v-minske"
+            ],
+            "note": "Взрослый билет/человека.",
+            "amount": "12",
+            "currency": "BYN"
+          }
+        },
+        {
+          "category": "food",
+          "id": "kuhmistr",
+          "name": "Ресторан «Кухмистр»",
+          "description": {
+            "kind": "fact",
+            "sources": [
+              "https://koko.by/cafehouse/13484-bel-eda-2025"
+            ],
+            "note": "Белорусско-литвинская кухня, slow food.",
+            "text": "Ресторан традиций шляхетской кухни на ул. Карла Маркса, 40."
+          },
+          "conditions": {
+            "kind": "estimate",
+            "sources": [
+              "https://koko.by/cafehouse/13484-bel-eda-2025"
+            ],
+            "note": "Бронирование желательно, обычно дороже среднего.",
+            "text": "Проверить часы по сайту."
+          },
+          "hours": {
+            "kind": "unknown",
+            "sources": [],
+            "note": "Часы не указаны.",
+            "text": null
+          },
+          "price": {
+            "kind": "unknown",
+            "sources": [],
+            "note": "Цена не найдена; по источнику заведение дорогого сегмента.",
+            "amount": null,
+            "currency": null
+          }
+        },
+        {
+          "category": "food",
+          "id": "bulbashi",
+          "name": "Ресторан «Бульбашы»",
+          "description": {
+            "kind": "fact",
+            "sources": [
+              "https://koko.by/cafehouse/13484-bel-eda-2025"
+            ],
+            "note": "Современный взгляд на белорусскую кухню, две локации.",
+            "text": "Драники и местные блюда на пл. Свободы, 4 и ул. Герцена, 4."
+          },
+          "conditions": {
+            "kind": "estimate",
+            "sources": [
+              "https://koko.by/cafehouse/13484-bel-eda-2025"
+            ],
+            "note": "Populярно у туристов, возможны очереди.",
+            "text": "Проверить часы по сайту."
+          },
+          "hours": {
+            "kind": "unknown",
+            "sources": [],
+            "note": "Часы не указаны.",
+            "text": null
+          },
+          "price": {
+            "kind": "unknown",
+            "sources": [],
+            "note": "Цена не найдена.",
+            "amount": null,
+            "currency": null
+          }
+        },
+        {
+          "category": "food",
+          "id": "kamenica",
+          "name": "Ресторан «Камяніца»",
+          "description": {
+            "kind": "fact",
+            "sources": [
+              "https://koko.by/cafehouse/13484-bel-eda-2025"
+            ],
+            "note": "Средневековая атмосфера, старейший ресторан кухни.",
+            "text": "Ул. Первомайская, 18; драники и мачанка."
+          },
+          "conditions": {
+            "kind": "estimate",
+            "sources": [
+              "https://koko.by/cafehouse/13484-bel-eda-2025"
+            ],
+            "note": "Вечером популярно, бронь желательна.",
+            "text": "Проверить часы по сайту."
+          },
+          "hours": {
+            "kind": "unknown",
+            "sources": [],
+            "note": "Часы не указаны.",
+            "text": null
+          },
+          "price": {
+            "kind": "unknown",
+            "sources": [],
+            "note": "Цена не найдена.",
+            "amount": null,
+            "currency": null
+          }
+        },
+        {
+          "category": "food",
+          "id": "litviny",
+          "name": "Ресторан «Литвины»",
+          "description": {
+            "kind": "fact",
+            "sources": [
+              "https://koko.by/cafehouse/13484-bel-eda-2025"
+            ],
+            "note": "Фольклорная атмосфера, чуть дешевле «Бульбашей».",
+            "text": "Ул. Свердлова, 2; борщ на свекольном квасе, драники."
+          },
+          "conditions": {
+            "kind": "estimate",
+            "sources": [
+              "https://koko.by/cafehouse/13484-bel-eda-2025"
+            ],
+            "note": "Несколько локаций, включая пр. Победителей, 119.",
+            "text": "Проверить часы по сайту."
+          },
+          "hours": {
+            "kind": "unknown",
+            "sources": [],
+            "note": "Часы не указаны.",
+            "text": null
+          },
+          "price": {
+            "kind": "unknown",
+            "sources": [],
+            "note": "Цена не найдена; по источнику средний чек ниже «Бульбашей».",
+            "amount": null,
+            "currency": null
+          }
+        },
+        {
+          "category": "food",
+          "id": "starovilenskaya",
+          "name": "Корчма «Старовиленская»",
+          "description": {
+            "kind": "fact",
+            "sources": [
+              "https://koko.by/cafehouse/13484-bel-eda-2025"
+            ],
+            "note": "Аутентичная домашняя кухня в Троицком предместье.",
+            "text": "Ул. Старовиленская, 2; белорусская деревенская кухня."
+          },
+          "conditions": {
+            "kind": "estimate",
+            "sources": [
+              "https://koko.by/cafehouse/13484-bel-eda-2025"
+            ],
+            "note": "Рядом с Троицким предместьем, удобно совмещать с прогулкой.",
+            "text": "Проверить часы по сайту."
+          },
+          "hours": {
+            "kind": "unknown",
+            "sources": [],
+            "note": "Часы не указаны.",
+            "text": null
+          },
+          "price": {
+            "kind": "unknown",
+            "sources": [],
+            "note": "Цена не найдена.",
+            "amount": null,
+            "currency": null
+          }
+        },
+        {
+          "category": "food",
+          "id": "rakovsky-brovar",
+          "name": "Ресторан «Раковский бровар»",
+          "description": {
+            "kind": "fact",
+            "sources": [
+              "https://koko.by/cafehouse/13484-bel-eda-2025"
+            ],
+            "note": "Старейший ресторан со своей пивоварней.",
+            "text": "Ул. Витебская, 10; белорусские рецепты и живая музыка."
+          },
+          "conditions": {
+            "kind": "estimate",
+            "sources": [
+              "https://koko.by/cafehouse/13484-bel-eda-2025"
+            ],
+            "note": "Вечером музыка, бронь желательна.",
+            "text": "Проверить часы по сайту."
+          },
+          "hours": {
+            "kind": "unknown",
+            "sources": [],
+            "note": "Часы не указаны.",
+            "text": null
+          },
+          "price": {
+            "kind": "unknown",
+            "sources": [],
+            "note": "Цена не найдена.",
+            "amount": null,
+            "currency": null
+          }
+        },
+        {
+          "category": "shopping",
+          "id": "gum",
+          "name": "ГУМ Минский",
+          "description": {
+            "kind": "fact",
+            "sources": [
+              "https://www.belarus.by/ru/travel/shopping-in-belarus/shopping-in-minsk"
+            ],
+            "note": "Универмаг 1951 года, памятник архитектуры XX века.",
+            "text": "Пр. Независимости, 21; сувениры, одежда, косметика."
+          },
+          "conditions": {
+            "kind": "fact",
+            "sources": [
+              "https://www.belarus.by/ru/travel/shopping-in-belarus/shopping-in-minsk"
+            ],
+            "note": "Метро Октябрьская/Купаловская.",
+            "text": "Воскресенье короче на час."
+          },
+          "hours": {
+            "kind": "fact",
+            "sources": [
+              "https://www.belarus.by/ru/travel/shopping-in-belarus/shopping-in-minsk"
+            ],
+            "note": "Ежедневно 9:00–21:00, Вс 10:00–20:00.",
+            "text": "Ежедневно 9:00–21:00; Вс 10:00–20:00."
+          },
+          "price": {
+            "kind": "estimate",
+            "sources": [],
+            "note": "Вход свободный (допущение).",
+            "amount": "0",
+            "currency": "BYN"
+          }
+        },
+        {
+          "category": "shopping",
+          "id": "galleria-minsk",
+          "name": "ТРЦ «Галерея Минск»",
+          "description": {
+            "kind": "fact",
+            "sources": [
+              "https://fh.by/news/top-torgovyh-centrov-v-minske-i-mesta-luchshego-shoppinga"
+            ],
+            "note": "Современный центр в центре города с фудкортом.",
+            "text": "Пр. Победителей, 9; масс-маркет и вид на город."
+          },
+          "conditions": {
+            "kind": "fact",
+            "sources": [
+              "https://bellarus.by/ru/travel/shopping-in-belarus/shopping-in-minsk"
+            ],
+            "note": "Метро Немига, парковка платная.",
+            "text": "Рядом Верхний город."
+          },
+          "hours": {
+            "kind": "fact",
+            "sources": [
+              "https://fh.by/news/top-torgovyh-centrov-v-minske-i-mesta-luchshego-shoppinga"
+            ],
+            "note": "Без выходных.",
+            "text": "Ежедневно 10:00–22:00."
+          },
+          "price": {
+            "kind": "estimate",
+            "sources": [],
+            "note": "Вход свободный (допущение).",
+            "amount": "0",
+            "currency": "BYN"
+          }
+        },
+        {
+          "category": "shopping",
+          "id": "tc-stolica",
+          "name": "ТЦ «Столица»",
+          "description": {
+            "kind": "fact",
+            "sources": [
+              "https://www.belarus.by/ru/travel/shopping-in-belarus/shopping-in-minsk"
+            ],
+            "note": "Подземный комплекс под площадью Независимости.",
+            "text": "Три уровня магазинов, кафе и атриум."
+          },
+          "conditions": {
+            "kind": "fact",
+            "sources": [
+              "https://www.belarus.by/ru/travel/shopping-in-belarus/shopping-in-minsk"
+            ],
+            "note": "Метро Площадь Ленина.",
+            "text": "Ежедневно, включая выходные."
+          },
+          "hours": {
+            "kind": "fact",
+            "sources": [
+              "https://www.belarus.by/ru/travel/shopping-in-belarus/shopping-in-minsk"
+            ],
+            "note": "Ежедневно 10:00–22:00.",
+            "text": "Ежедневно 10:00–22:00."
+          },
+          "price": {
+            "kind": "estimate",
+            "sources": [],
+            "note": "Вход свободный (допущение).",
+            "amount": "0",
+            "currency": "BYN"
+          }
+        },
+        {
+          "category": "shopping",
+          "id": "zhdanovichi",
+          "name": "ТЦ «Ждановичи»",
+          "description": {
+            "kind": "fact",
+            "sources": [
+              "https://www.belarus.by/ru/travel/shopping-in-belarus/shopping-in-minsk"
+            ],
+            "note": "Крупнейший торговый город страны, включая блошиный рынок.",
+            "text": "Район МКАД; рынок «поле чудес», «Мир моды», ТРЦ «Град»."
+          },
+          "conditions": {
+            "kind": "fact",
+            "sources": [
+              "https://www.belarus.by/ru/travel/shopping-in-belarus/shopping-in-minsk"
+            ],
+            "note": "На окраине, доезд на транспорте/такси; выходной понедельник.",
+            "text": "Ул. Тимирязева, 123."
+          },
+          "hours": {
+            "kind": "fact",
+            "sources": [
+              "https://www.belarus.by/ru/travel/shopping-in-belarus/shopping-in-minsk"
+            ],
+            "note": "Ежедневно 9:00–19:00, выходной понедельник.",
+            "text": "Ежедневно 9:00–19:00; Пн выходной."
+          },
+          "price": {
+            "kind": "estimate",
+            "sources": [],
+            "note": "Вход свободный (допущение).",
+            "amount": "0",
+            "currency": "BYN"
+          }
+        },
+        {
+          "category": "shopping",
+          "id": "komarovsky-market",
+          "name": "Комаровский рынок",
+          "description": {
+            "kind": "estimate",
+            "sources": [
+              "https://belarus365.com/torgovye-czentry-v-minske"
+            ],
+            "note": "Упоминается как главный продовольственный рынок Минска.",
+            "text": "Рынок для местных продуктов, сыров, сувениров."
+          },
+          "conditions": {
+            "kind": "unknown",
+            "sources": [
+              "https://belarus365.com/torgovye-czentry-v-minske"
+            ],
+            "note": "Адрес и часы не подтверждены прочитанным источником.",
+            "text": null
+          },
+          "hours": {
+            "kind": "unknown",
+            "sources": [],
+            "note": "Часы не подтверждены.",
+            "text": null
+          },
+          "price": {
+            "kind": "unknown",
+            "sources": [],
+            "note": "Цена не найдена.",
+            "amount": null,
+            "currency": null
+          }
+        }
+      ],
+      "uncertainties": [
+        "Точные часы и цены большинства ресторанов не подтверждены источниками — оставлены unknown.",
+        "Адрес и режим Комаровского рынка и Национального художественного музея требуют проверки на официальных сайтах.",
+        "Транспорт Москва–Минск и расписание на даты 19–25.10.2026 не проверялись; сроки поездки — допущение.",
+        "Некоторые источники (bestbelarus, fh.by) были недоступны для чтения, их данные использованы лишь из поисковой выдачи.",
+        "Цены указаны в BYN, не сконвертированы в RUB."
+      ]
+    },
+    "budget": {
+      "currency": "RUB",
+      "expenses": [
+        {
+          "kind": "estimate",
+          "sources": [
+            "https://www.sravni.ru/text/poezd-moskva-siti-minsk-raspisanie-ceny-vremya-v-puti",
+            "https://www.tutu.ru/poezda/Minsk/Moskva",
+            "https://rasp.yandex.ru/train/minsk--moscow"
+          ],
+          "note": "Сумма = 2 чел. × ~4800 ₽ за круговую поездку сидячими вагонами «Ласточки» (туда 717М 19.10, обратно 720Б 25.10); ориентир «от 1905–2126 ₽» за сегмент на tutu/sravni, на популярные даты выше. Оценка, требует проверки цен на даты бронирования.",
+          "id": "transport",
+          "category": "transport",
+          "name": "«Ласточка» Москва — Минск — Москва, 2 чел., туда-обратно",
+          "amount": "9600",
+          "place_ids": []
+        },
+        {
+          "kind": "estimate",
+          "sources": [
+            "https://101hotels.com/belarus/minsk",
+            "https://nowtrip.ru/hotels/places/belarus/minsk/center",
+            "https://hotel.tutu.ru/c_belarus/minsk"
+          ],
+          "note": "6 ночей (19→25.10) для 2 гостей, отель 3* или апартаменты в центре ~5500 ₽/ночь; диапазон источников — от ~2900 до 10500 ₽/ночь. Оценка среднего сегмента, цена не подтверждена на конкретные даты.",
+          "id": "lodging",
+          "category": "lodging",
+          "name": "Проживание в Минске, 6 ночей на 2 гостей",
+          "amount": "33000",
+          "place_ids": []
+        },
+        {
+          "kind": "estimate",
+          "sources": [
+            "https://koko.by/cafehouse/13484-bel-eda-2025",
+            "https://samokatus.ru/travel-budget/minsk"
+          ],
+          "note": "Питание 2 чел. × ~2500 ₽/чел./день на ~6 дней; ориентиры источников: обед 15–20 BYN (по источнику ~418–557 ₽), обед в ресторане от 60 BYN (~1672 ₽). Единицы пересчитаны внутри самого источника, не нами; стоимости отдельных заведений не найдены.",
+          "id": "food",
+          "category": "food",
+          "name": "Питание в Минске, 2 чел.",
+          "amount": "30000",
+          "place_ids": [
+            "bulbashi",
+            "litviny",
+            "kamenica",
+            "starovilenskaya"
+          ]
+        },
+        {
+          "kind": "estimate",
+          "sources": [
+            "https://www.sputnik8.com/ru/minsk/pages/marshruty-minska",
+            "https://www.belarus.by/ru/travel/shopping-in-belarus/shopping-in-minsk",
+            "https://fh.by/news/top-torgovyh-centrov-v-minske-i-mesta-luchshego-shoppinga"
+          ],
+          "note": "Внешний осмотр архитектуры и вход в ТЦ/универмаг по допущению бесплатны, отдельных билетов источники не приводят; покупки в ТЦ не оценивались и в сумму не входят. Нулевая сумма — обоснованное допущение, не подтверждённый прайс.",
+          "id": "activities-free",
+          "category": "activities",
+          "name": "Архитектура, прогулки и ТЦ — свободный доступ",
+          "amount": "0",
+          "place_ids": [
+            "minsk-gates",
+            "prospekt-nezavisimosti",
+            "verhniy-gorod",
+            "troickoe-predmestye",
+            "red-church",
+            "gum",
+            "galleria-minsk",
+            "tc-stolica",
+            "zhdanovichi"
+          ]
+        },
+        {
+          "kind": "unknown",
+          "sources": [
+            "https://www.sputnik8.com/ru/minsk/pages/muzei-v-minske"
+          ],
+          "note": "Билеты 15 BYN (музей ВОВ, исторический) и 12 BYN (Купалы) за человека; цена в BYN, в RUB не конвертирована, поэтому сумма неизвестна.",
+          "id": "activities-museums-byn",
+          "category": "activities",
+          "name": "Билеты музеев с ценой в BYN",
+          "amount": null,
+          "place_ids": [
+            "wwii-museum",
+            "national-history-museum",
+            "kupala-museum"
+          ]
+        },
+        {
+          "kind": "unknown",
+          "sources": [
+            "https://www.belarus365.com/torgovye-czentry-v-minske",
+            "https://www.sputnik8.com/ru/minsk/pages/muzei-v-minske"
+          ],
+          "note": "Цены входа на смотровую Национальной библиотеки, в художественный музей и на Комаровский рынок источниками не подтверждены. Сумма неизвестна, бесплатность не предполагается.",
+          "id": "activities-unpriced",
+          "category": "activities",
+          "name": "Художественный музей, смотровая библиотеки, рынок",
+          "amount": null,
+          "place_ids": [
+            "national-library",
+            "art-museum",
+            "komarovsky-market"
+          ]
+        }
+      ],
+      "known_total": "72600",
+      "complete": false,
+      "logistics": [
+        {
+          "kind": "fact",
+          "sources": [
+            "https://www.sravni.ru/text/poezd-moskva-siti-minsk-raspisanie-ceny-vremya-v-puti",
+            "https://rasp.yandex.ru/train/minsk--moscow"
+          ],
+          "note": "Расписание подтверждено источниками, цена — ориентир; покупка на 19.10.2026 требует проверки.",
+          "text": "Туда 19.10.2026: «Ласточка» 717М Москва-Сити 06:18 → Минск-Пасс. 13:25 (7 ч 07 мин), отъезд внутри start_date, полдня в городе."
+        },
+        {
+          "kind": "fact",
+          "sources": [
+            "https://rasp.yandex.ru/train/minsk--moscow",
+            "https://www.tutu.ru/poezda/Minsk/Moskva"
+          ],
+          "note": "Дневной рейс выбран вместо ночного 001Б, прибывающего 25.10 утром и съедающего последний день.",
+          "text": "Обратно 25.10.2026: «Ласточка» 720Б Минск-Пасс. 09:50 → Москва Белорусская 17:59 (8 ч 09 мин), возвращение в end_date."
+        }
+      ],
+      "assumptions": [
+        "Проживание — 6 ночей 19→25.10 на 2 гостей в центре Минска, оценка ~5500 ₽/ночь.",
+        "Питание 2 чел. ~2500 ₽/чел./день; билеты музеев номинированы в BYN и в RUB не пересчитаны.",
+        "Все 7 дней включают прогулки по архитектуре, ТЦ и музеям; цены «Ласточки» и отелей — предварительные ориентиры на октябрь 2026."
+      ]
+    }
+  },
+  "rejected": {
+    "itinerary": {
+      "days": [
+        {
+          "date": "2026-10-19",
+          "place_ids": [
+            "minsk-gates",
+            "prospekt-nezavisimosti",
+            "gum"
+          ],
+          "schedule": {
+            "kind": "estimate",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/marshruty-minska",
+              "https://www.belarus.by/ru/travel/shopping-in-belarus/shopping-in-minsk"
+            ],
+            "note": "Полдня из-за дороги; окна и часы осмотра — допущение, не подтверждены.",
+            "text": "Утро: 06:18 отправление «Ласточки» 717М из Москва-Сити (estimate). | День: прибытие Минск-Пасс. ~13:25, заселение 14:00–15:00 (estimate). | Вечер: Ворота Минска 15:20–15:50, прогулка по проспекту Независимости 16:00–17:20, ГУМ 17:30–19:00 (часы по источнику до 21:00)."
+          },
+          "movements": {
+            "kind": "fact",
+            "sources": [
+              "https://rasp.yandex.ru/train/minsk--moscow",
+              "https://www.sravni.ru/text/poezd-moskva-siti-minsk-raspisanie-ceny-vremya-v-puti"
+            ],
+            "note": "Расписание поезда подтверждено; цена — ориентир, требует проверки на дату.",
+            "text": "Москва-Сити 06:18 → Минск-Пасс. 13:25, 7 ч 07 мин (fact). Ворота Минска и ГУМ — пешком от вокзала, 5–15 мин (estimate)."
+          }
+        },
+        {
+          "date": "2026-10-20",
+          "place_ids": [
+            "verhniy-gorod",
+            "troickoe-predmestye",
+            "starovilenskaya",
+            "galleria-minsk"
+          ],
+          "schedule": {
+            "kind": "estimate",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/marshruty-minska",
+              "https://koko.by/cafehouse/13484-bel-eda-2025",
+              "https://fh.by/news/top-torgovyh-centrov-v-minske-i-mesta-luchshego-shoppinga"
+            ],
+            "note": "Часы храмов, корчмы и ТРЦ не подтверждены; окна — допущение.",
+            "text": "Утро: Верхний город и ратуша 09:30–11:30. | День: Троицкое предместье 11:45–13:15, обед корчма «Старовиленская» 13:30–14:45 (estimate). | Вечер: ТРЦ «Галерея Минск» 15:30–18:30 (по источнику до 22:00)."
+          },
+          "movements": {
+            "kind": "estimate",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/marshruty-minska",
+              "https://bellarus.by/ru/travel/shopping-in-belarus/shopping-in-minsk"
+            ],
+            "note": "Районы рядом, переходы пешие; конкретное время — допущение.",
+            "text": "Верхний город → Троицкое предместье ~15 мин пешком; ТРЦ у метро Немига. Возврат в отель вечером."
+          }
+        },
+        {
+          "date": "2026-10-21",
+          "place_ids": [
+            "red-church",
+            "national-history-museum",
+            "bulbashi",
+            "tc-stolica"
+          ],
+          "schedule": {
+            "kind": "estimate",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/muzei-v-minske",
+              "https://koko.by/cafehouse/13484-bel-eda-2025",
+              "https://www.belarus.by/ru/travel/shopping-in-belarus/shopping-in-minsk"
+            ],
+            "note": "Музей по источнику ежедневно до 19:00; часы храма и ресторана не подтверждены.",
+            "text": "Утро: Красный костёл 09:30–10:30. | День: Национальный исторический музей 10:45–13:00 (ежедн. 10:00–19:00), обед «Бульбашы» на пл. Свободы 13:15–14:45 (estimate). | Вечер: ТЦ «Столица» 15:30–18:00 (по источнику до 22:00)."
+          },
+          "movements": {
+            "kind": "estimate",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/muzei-v-minske"
+            ],
+            "note": "Всё в центре, короткие пешие переходы и метро Площадь Ленина; время — допущение.",
+            "text": "Костёл и ТЦ «Столица» у одной площади; музей на ул. Карла Маркса в 10–15 мин пешком."
+          }
+        },
+        {
+          "date": "2026-10-22",
+          "place_ids": [
+            "wwii-museum",
+            "litviny",
+            "national-library"
+          ],
+          "schedule": {
+            "kind": "estimate",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/muzei-v-minske",
+              "https://koko.by/cafehouse/13484-bel-eda-2025"
+            ],
+            "note": "Музей ВОВ по источнику Вт–Вс 10:00–19:00 (пн — выходной); часы библиотеки и ресторана не подтверждены.",
+            "text": "Утро: Музей истории Великой Отечественной войны 10:00–13:00. | День: обед «Литвины» на пр. Победителей 13:15–14:30 (estimate). | Вечер: Национальная библиотека и смотровая площадка 16:00–18:00 (часы и цена не подтверждены)."
+          },
+          "movements": {
+            "kind": "estimate",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/muzei-v-minske"
+            ],
+            "note": "Музей и ресторан рядом на пр. Победителей; до библиотеки метро и короткая прогулка; время — допущение.",
+            "text": "Доезд на метро от пр. Победителей до библиотеки; отдых в отеле между днём и вечером. Возврат вечером."
+          }
+        },
+        {
+          "date": "2026-10-23",
+          "place_ids": [
+            "art-museum",
+            "kupala-museum",
+            "kamenica"
+          ],
+          "schedule": {
+            "kind": "estimate",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/muzei-v-minske",
+              "https://koko.by/cafehouse/13484-bel-eda-2025"
+            ],
+            "note": "Часы художественного музея не подтверждены; музей Купалы по источнику Пн–Сб 10:00–19:00, санитарный день — второй вторник месяца.",
+            "text": "Утро: Национальный художественный музей 10:00–12:30 (часы не подтверждены). | День: Литературный музей Янки Купалы 13:00–15:00. | Вечер: ужин «Камяніца» 18:00–20:00 (estimate, бронь желательна)."
+          },
+          "movements": {
+            "kind": "estimate",
+            "sources": [
+              "https://www.sputnik8.com/ru/minsk/pages/muzei-v-minske"
+            ],
+            "note": "Музеи в центре (ул. Ленина и Янки Купалы), ресторан на Первомайской; время — допущение.",
+            "text": "Переходы пешие 10–20 мин; между музеями и рестораном возможен отдых в отеле."
+          }
+        },
+        {
+          "date": "2026-10-24",
+          "place_ids": [
+            "komarovsky-market",
+            "zhdanovichi",
+            "tc-stolica"
+          ],
+          "schedule": {
+            "kind": "estimate",
+            "sources": [
+              "https://www.belarus.by/ru/travel/shopping-in-belarus/shopping-in-minsk",
+              "https://belarus365.com/torgovye-czentry-v-minske",
+              "https://fh.by/news/top-torgovyh-centrov-v-minske-i-mesta-luchshego-shoppinga"
+            ],
+            "note": "Часы рынка не подтверждены; у «Ждановичей» по источнику 9:00–19:00, пн — выходной. Отдельного ресторана на этот день в списке нет — еда на рынке (estimate).",
+            "text": "Утро: Комаровский рынок 10:00–12:30, еда на рынке (estimate, часы и цены не подтверждены). | День: переезд на МКАД и ТЦ «Ждановичи» 13:30–17:00 (9:00–19:00). | Вечер: возврат в центр, ТЦ «Столица» 18:00–19:30 (по источнику до 22:00), подготовка к отъезду."
+          },
+          "movements": {
+            "kind": "estimate",
+            "sources": [
+              "https://www.belarus.by/ru/travel/shopping-in-belarus/shopping-in-minsk"
+            ],
+            "note": "«Ждановичи» на окраине, доезд транспортом или такси; затраты не учтены в смете.",
+            "text": "Дорога до «Ждановичей» ~40–60 мин (estimate); обратный путь в центр вечером."
+          }
+        },
+        {
+          "date": "2026-10-25",
+          "place_ids": [],
+          "schedule": {
+            "kind": "estimate",
+            "sources": [
+              "https://rasp.yandex.ru/train/minsk--moscow",
+              "https://www.tutu.ru/poezda/Minsk/Moskva"
+            ],
+            "note": "День подчинён дороге; завтрак и выезд — допущение.",
+            "text": "Утро: 07:50 выезд на вокзал, 08:50 на перроне (запас ~1 час, estimate). | День: 09:50 отправление «Ласточки» 720Б (fact). | Вечер: прибытие Москва Белорусская 17:59; посещения в городе не планируются."
+          },
+          "movements": {
+            "kind": "fact",
+            "sources": [
+              "https://rasp.yandex.ru/train/minsk--moscow",
+              "https://www.tutu.ru/poezda/Minsk/Moskva"
+            ],
+            "note": "Расписание подтверждено источниками; цена — ориентир, покупка на 25.10.2026 требует проверки.",
+            "text": "Окно возвращения в город отправления: Минск-Пасс. 09:50 → Москва Белорусская 17:59, в пределах end_date. Запас на вокзал ~1 час (estimate)."
+          }
+        }
+      ],
+      "currency": "RUB",
+      "known_total": "72600",
+      "complete": false,
+      "budget_status": "undetermined",
+      "over_budget": "0",
+      "sources": [
+        "https://101hotels.com/belarus/minsk",
+        "https://belarus365.com/torgovye-czentry-v-minske",
+        "https://bellarus.by/ru/travel/shopping-in-belarus/shopping-in-minsk",
+        "https://fh.by/news/top-torgovyh-centrov-v-minske-i-mesta-luchshego-shoppinga",
+        "https://hotel.tutu.ru/c_belarus/minsk",
+        "https://koko.by/cafehouse/13484-bel-eda-2025",
+        "https://nowtrip.ru/hotels/places/belarus/minsk/center",
+        "https://rasp.yandex.ru/train/minsk--moscow",
+        "https://samokatus.ru/travel-budget/minsk",
+        "https://www.belarus.by/ru/travel/shopping-in-belarus/shopping-in-minsk",
+        "https://www.belarus365.com/torgovye-czentry-v-minske",
+        "https://www.sputnik8.com/ru/minsk/pages/marshruty-minska",
+        "https://www.sputnik8.com/ru/minsk/pages/muzei-v-minske",
+        "https://www.sravni.ru/text/poezd-moskva-siti-minsk-raspisanie-ceny-vremya-v-puti",
+        "https://www.tutu.ru/poezda/Minsk/Moskva"
+      ],
+      "caveats": [
+        "Известный подытог 72 600 ₽ ниже бюджета 100 000 ₽, но смета неполная: билеты музеев в BYN не пересчитаны, цены смотровой библиотеки, художественного музея и рынка не подтверждены — статус undetermined, не положительный остаток.",
+        "На 24.10 отдельного ресторана нет: в выбранном списке только 4 заведения на 5 полных дней, поэтому еда отмечена как рынок (estimate); при желании полноценного обеда смету и список мест нужно пересмотреть.",
+        "Часы ресторанов, Комаровского рынка, Национального художественного музея и смотровой площадки библиотеки не подтверждены источниками — проверить перед поездкой.",
+        "Такси до «Ждановичей», покупки в ТЦ и входные билеты в BYN в смете не учтены — при их появлении смету пересчитать.",
+        "Все временные окна в schedule/movements — estimate; расписание и цены «Ласточки» и отелей на 19–25.10.2026 требуют проверки при бронировании; валюта не конвертировалась."
+      ]
+    }
+  },
+  "events": [
+    {
+      "type": "run_started",
+      "task": null,
+      "timestamp": "2026-10-15T16:26:15.796271+00:00",
+      "max_llm_calls": 24
+    },
+    {
+      "type": "task_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:26:16.103739+00:00",
+      "context_received": {}
+    },
+    {
+      "type": "llm_request",
+      "task": "research",
+      "timestamp": "2026-10-15T16:26:16.424101+00:00",
+      "number": 1,
+      "context_received": {}
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T16:26:19.080761+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 232
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:26:19.088767+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:26:19.089768+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:26:19.089768+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:26:19.090269+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:26:19.668654+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://www.belarus.by/ru/travel/shopping-in-belarus/shopping-in-minsk",
+        "https://fh.by/news/top-torgovyh-centrov-v-minske-i-mesta-luchshego-shoppinga",
+        "https://pizhon.by/blog/luchshie-torgovyie-czentryi-minska-dlya-pokupki-muzhskoj-i-zhenskoj-odezhdyi.html",
+        "https://yandex.ru/maps/157/minsk/category/shopping_mall/184108083",
+        "https://belarus365.com/torgovye-czentry-v-minske"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:26:20.991304+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://topbrand.media/jurnal/otdykh/5-luchshikh-restoranov-belorusskoy-kukhni-v-minske-gde-poprobovat-traditsionnuyu-belorusskuyu-kukhnyu",
+        "https://minskholidays.by/belarus-minsk-blog/belorusskaya-kuhnya",
+        "https://bestbelarus.by/info/blog/top-20-restoranov-belorusskoy-kukhni-v-minske",
+        "https://www.relax.by/list/cafe-belorusskaya-kuhnya/minsk",
+        "https://koko.by/cafehouse/13484-bel-eda-2025"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:26:21.292750+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://walker.by/blog/luchshie-muzei-i-galerei-dlya-turista",
+        "https://www.sputnik8.com/ru/minsk/pages/muzei-v-minske",
+        "https://guruturizma.ru/20-luchshix-muzeev-minska",
+        "https://minsk.museum.by",
+        "https://www.tripadvisor.ru/Attractions-g294448-Activities-c49-Minsk_Minsk_Region.html"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:26:21.551418+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://ru.trip.com/moments/theme/destination-minsk-1858-itinerary-999195",
+        "https://www.sputnik8.com/ru/minsk/pages/marshruty-minska",
+        "https://www.aviasales.ru/psgr/article/den-v-minske",
+        "https://korteg.by/polezno-znat/luchshikh-marshrut-dlya-znakomstva-s-minskom-ot-vokzala-do-komarovki-cherez-verkhnij-gorod",
+        "https://rijayasonya.ru/posts/marshrut-po-minsku-kak-uvidet-vsyo-samoe-interesnoe-za-2-dnya"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "research",
+      "timestamp": "2026-10-15T16:26:21.556421+00:00",
+      "number": 2,
+      "context_received": {}
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T16:26:26.882890+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 344
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:26:26.885893+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:26:26.885893+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:26:26.885893+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:26:26.886395+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:26:26.886395+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:26:26.911152+00:00",
+      "tool": "website_reader",
+      "status": "error",
+      "from_cache": false,
+      "source_url": "https://bestbelarus.by/info/blog/top-20-restoranov-belorusskoy-kukhni-v-minske",
+      "requested_url": "https://bestbelarus.by/info/blog/top-20-restoranov-belorusskoy-kukhni-v-minske",
+      "text_length": 0
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:26:27.663443+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://www.belarus.by/ru/travel/shopping-in-belarus/shopping-in-minsk",
+      "requested_url": "https://www.belarus.by/ru/travel/shopping-in-belarus/shopping-in-minsk",
+      "text_length": 6000
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:26:27.702495+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://www.sputnik8.com/ru/minsk/pages/muzei-v-minske",
+      "requested_url": "https://www.sputnik8.com/ru/minsk/pages/muzei-v-minske",
+      "text_length": 6000
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:26:27.707507+00:00",
+      "tool": "website_reader",
+      "status": "error",
+      "from_cache": false,
+      "source_url": "https://fh.by/news/top-torgovyh-centrov-v-minske-i-mesta-luchshego-shoppinga",
+      "requested_url": "https://fh.by/news/top-torgovyh-centrov-v-minske-i-mesta-luchshego-shoppinga",
+      "text_length": 0
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:26:28.018598+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://www.sputnik8.com/ru/minsk/pages/marshruty-minska",
+      "requested_url": "https://www.sputnik8.com/ru/minsk/pages/marshruty-minska",
+      "text_length": 6000
+    },
+    {
+      "type": "llm_request",
+      "task": "research",
+      "timestamp": "2026-10-15T16:26:28.024985+00:00",
+      "number": 3,
+      "context_received": {}
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T16:26:32.309524+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 227
+    },
+    {
+      "type": "tool_started",
+      "task": "research",
+      "timestamp": "2026-10-15T16:26:32.311526+00:00",
+      "tool": "website_reader"
+    },
+    {
+      "type": "tool_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:26:32.914637+00:00",
+      "tool": "website_reader",
+      "status": "ok",
+      "from_cache": false,
+      "source_url": "https://koko.by/cafehouse/13484-bel-eda-2025",
+      "requested_url": "https://koko.by/cafehouse/13484-bel-eda-2025",
+      "text_length": 6000
+    },
+    {
+      "type": "llm_request",
+      "task": "research",
+      "timestamp": "2026-10-15T16:26:32.920689+00:00",
+      "number": 4,
+      "context_received": {}
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T16:27:09.289631+00:00",
+      "http_status": 200,
+      "finish_reason": "stop",
+      "completion_tokens": 6698
+    },
+    {
+      "type": "task_completed",
+      "task": "research",
+      "timestamp": "2026-10-15T16:27:09.301327+00:00"
+    },
+    {
+      "type": "task_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:27:09.867411+00:00",
+      "context_received": {
+        "research": true
+      }
+    },
+    {
+      "type": "llm_request",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:27:09.877534+00:00",
+      "number": 5,
+      "context_received": {
+        "research": true
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T16:27:13.499507+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 680
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:27:13.502699+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:27:13.502699+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:27:13.502699+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:27:13.503201+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:27:15.141689+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://www.sravni.ru/text/poezd-moskva-siti-minsk-raspisanie-ceny-vremya-v-puti",
+        "https://www.tutu.ru/poezda/Moskva/Minsk",
+        "https://www.onetwotrip.com/ru/poezda/moskva_minsk",
+        "https://rasp.yandex.ru/train/moscow--minsk",
+        "https://www.ufs-online.ru/kupit-zhd-bilety/moskva/minsk"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:27:15.185930+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://rasp.yandex.ru/bus/moscow--minsk",
+        "https://www.intercars-tickets.com/ticket_moscow_minsk",
+        "https://www.blablacar.ru/bus/routes/moskva-1/minsk-2",
+        "https://bus.tutu.ru/raspisanie/gorod_Moskva/gorod_Minsk",
+        "https://ecolines.ru/ru/ru/predlozhenie/mezhdunarodnie/avtobus-moskva-minsk"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:27:15.384962+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://hotel.tutu.ru/c_belarus/minsk",
+        "https://nowtrip.ru/hotels/places/belarus/minsk/center",
+        "https://101hotels.com/belarus/minsk",
+        "https://ostrovok.ru/hotel/belarus/minsk/price/2000",
+        "https://www.travelleo.ru/oteli-v-minske-v-centre-goroda"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:27:15.433894+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://biletyplus.by/raspisanie/moskva-mow/minsk-msq",
+        "https://uniticket.by/aviabilety/moscow/minsk",
+        "https://www.tbank.ru/travel/flights/routes/MOW/MSQ",
+        "https://rasp.yandex.ru/plane/moscow--minsk",
+        "https://avia.tutu.ru/f/Minsk/Moskva"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:27:15.438896+00:00",
+      "number": 6,
+      "context_received": {
+        "research": true
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T16:27:29.920227+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 3327
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:27:29.922932+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:27:29.922932+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:27:31.725019+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://www.tutu.ru/poezda/Minsk/Moskva",
+        "https://poezda.biletyplus.ru/poezd/lastochka/minsk/moskva",
+        "https://www.sravni.ru/text/poezd-moskva-siti-minsk-raspisanie-ceny-vremya-v-puti",
+        "https://sakvoyazhik.by/blog-dlya-puteshestvenika/skorostnye-poezda-lastochki-iz-minska-v-moskvu",
+        "https://rasp.yandex.ru/train/minsk--moscow"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:27:32.128508+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://russian.tours/gde-poest-v-minske-kafe-restorany-i-ceny-na-edu",
+        "https://samokatus.ru/travel-budget/minsk",
+        "https://howtrip.ru/ceny-v-minske-belarus",
+        "https://ru.trip.com/moments/type-destination-minsk-1858-restaurant-2",
+        "https://www.instagram.com/reel/C9vGjCUO55U"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:27:32.134021+00:00",
+      "number": 7,
+      "context_received": {
+        "research": true
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T16:27:49.846609+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 3830
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:27:49.848618+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:27:49.849118+00:00",
+      "tool": "internet_search"
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:27:51.484331+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://sputnik.by/20260326/minchanin-khotel-kupit-srazu-tri-tysyachi-zhetonov-dlya-proezda-v-metro-1105629920.html",
+        "https://belarus365.com/metro-v-minske-karta",
+        "https://vgmbuh.by/novosti/skolko-stoit-talon-zheton-i-proezdnoj-bilet-v-minske",
+        "https://vgmbuh.by/novosti/stoimost-proezdnyx-v-minske",
+        "https://metropoliten.by/information/fare/tarif"
+      ]
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:27:51.558387+00:00",
+      "tool": "internet_search",
+      "status": "ok",
+      "from_cache": false,
+      "urls": [
+        "https://www.onetwotrip.com/ru/hotels/search/belarus/minsk",
+        "https://minsk.sutochno.ru/hotels",
+        "https://hotel.tutu.ru/c_belarus/minsk",
+        "https://101hotels.com/belarus/minsk",
+        "https://ostrovok.ru/hotel/belarus/minsk"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:27:51.564895+00:00",
+      "number": 8,
+      "context_received": {
+        "research": true
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T16:28:15.148610+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 5348
+    },
+    {
+      "type": "tool_started",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:28:15.150611+00:00",
+      "tool": "trip_cost_calculator"
+    },
+    {
+      "type": "tool_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:28:15.150611+00:00",
+      "tool": "trip_cost_calculator",
+      "status": "ok",
+      "from_cache": false,
+      "total": "72600",
+      "currency": "RUB",
+      "budget": "100000",
+      "over_budget": "0",
+      "amounts": [
+        "9600",
+        "33000",
+        "30000",
+        "0"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:28:15.157117+00:00",
+      "number": 9,
+      "context_received": {
+        "research": true
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T16:28:32.834590+00:00",
+      "http_status": 200,
+      "finish_reason": "stop",
+      "completion_tokens": 4496
+    },
+    {
+      "type": "task_completed",
+      "task": "budget",
+      "timestamp": "2026-10-15T16:28:32.842605+00:00"
+    },
+    {
+      "type": "task_started",
+      "task": "itinerary",
+      "timestamp": "2026-10-15T16:28:33.394319+00:00",
+      "context_received": {
+        "research": true,
+        "budget": true
+      }
+    },
+    {
+      "type": "llm_request",
+      "task": "itinerary",
+      "timestamp": "2026-10-15T16:28:33.403895+00:00",
+      "number": 10,
+      "context_received": {
+        "research": true,
+        "budget": true
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T16:28:57.323938+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 5601
+    },
+    {
+      "type": "tool_started",
+      "task": "itinerary",
+      "timestamp": "2026-10-15T16:28:57.325970+00:00",
+      "tool": "trip_cost_calculator"
+    },
+    {
+      "type": "tool_completed",
+      "task": "itinerary",
+      "timestamp": "2026-10-15T16:28:57.325970+00:00",
+      "tool": "trip_cost_calculator",
+      "status": "ok",
+      "from_cache": false,
+      "total": "72600",
+      "currency": "RUB",
+      "budget": "100000",
+      "over_budget": "0",
+      "amounts": [
+        "9600",
+        "33000",
+        "30000",
+        "0"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "itinerary",
+      "timestamp": "2026-10-15T16:28:57.329518+00:00",
+      "number": 11,
+      "context_received": {
+        "research": true,
+        "budget": true
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T16:29:37.300474+00:00",
+      "http_status": 200,
+      "finish_reason": "stop",
+      "completion_tokens": 8557
+    },
+    {
+      "type": "validation_failed",
+      "task": "itinerary",
+      "timestamp": "2026-10-15T16:29:37.308481+00:00",
+      "issues": [],
+      "reason": "День 2026-10-24 недостаточно наполнен. Распредели выбранные места: минимум 3 места в полный день, включая еду, утром/днём/вечером, с дорогой и отдыхом.",
+      "fenced": false,
+      "raw_chars": 8097,
+      "raw_json_valid": true,
+      "pydantic_present": false
+    },
+    {
+      "type": "llm_request",
+      "task": "itinerary",
+      "timestamp": "2026-10-15T16:29:37.318107+00:00",
+      "number": 12,
+      "context_received": {
+        "research": false,
+        "budget": false
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T16:29:43.216128+00:00",
+      "http_status": 200,
+      "finish_reason": "tool_calls",
+      "completion_tokens": 1419
+    },
+    {
+      "type": "tool_started",
+      "task": "itinerary",
+      "timestamp": "2026-10-15T16:29:43.217642+00:00",
+      "tool": "trip_cost_calculator"
+    },
+    {
+      "type": "tool_completed",
+      "task": "itinerary",
+      "timestamp": "2026-10-15T16:29:43.217642+00:00",
+      "tool": "trip_cost_calculator",
+      "status": "ok",
+      "from_cache": false,
+      "total": "72600",
+      "currency": "RUB",
+      "budget": "100000",
+      "over_budget": "0",
+      "amounts": [
+        "9600",
+        "33000",
+        "30000",
+        "0"
+      ]
+    },
+    {
+      "type": "llm_request",
+      "task": "itinerary",
+      "timestamp": "2026-10-15T16:29:43.221645+00:00",
+      "number": 13,
+      "context_received": {
+        "research": false,
+        "budget": false
+      }
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T16:29:58.152947+00:00",
+      "http_status": 200,
+      "finish_reason": "stop",
+      "completion_tokens": 4622
+    },
+    {
+      "type": "validation_failed",
+      "task": "itinerary",
+      "timestamp": "2026-10-15T16:29:58.160953+00:00",
+      "issues": [],
+      "reason": "Маршрут и оплаченные активности расходятся",
+      "fenced": false,
+      "raw_chars": 8363,
+      "raw_json_valid": true,
+      "pydantic_present": true
+    },
+    {
+      "type": "task_failed",
+      "task": "itinerary",
+      "timestamp": "2026-10-15T16:29:58.161455+00:00",
+      "error": "task_execution_failed"
+    },
+    {
+      "type": "run_failed",
+      "task": null,
+      "timestamp": "2026-10-15T16:29:58.172570+00:00",
+      "error": "execution_failed",
+      "error_type": "Exception",
+      "causes": [
+        "Exception"
+      ],
+      "frames": [
+        {
+          "file": "runner.py",
+          "line": 315,
+          "function": "_worker_inner"
+        },
+        {
+          "file": "crew.py",
+          "line": 1056,
+          "function": "kickoff"
+        },
+        {
+          "file": "crew.py",
+          "line": 1524,
+          "function": "_run_sequential_process"
+        },
+        {
+          "file": "crew.py",
+          "line": 1628,
+          "function": "_execute_tasks"
+        },
+        {
+          "file": "task.py",
+          "line": 593,
+          "function": "execute_sync"
+        },
+        {
+          "file": "task.py",
+          "line": 963,
+          "function": "_execute_core"
+        },
+        {
+          "file": "task.py",
+          "line": 903,
+          "function": "_execute_core"
+        },
+        {
+          "file": "task.py",
+          "line": 1388,
+          "function": "_invoke_guardrail_function"
+        }
+      ]
+    },
+    {
+      "type": "run_failed",
+      "task": null,
+      "error": "execution_failed"
+    }
+  ],
+  "checks": {},
+  "error": "execution_failed",
+  "worker_stopped": true
+}

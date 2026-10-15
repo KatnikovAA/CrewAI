@@ -1,10 +1,12 @@
 """Определения задач; выполнение и общая Crew относятся к этапу 5."""
 from collections.abc import Mapping
 from decimal import Decimal
+import json
 from pydantic import ValidationError
 
 from travel_planner.models import TripInput, ResearchResult, BudgetResult, ItineraryResult
 from travel_planner.runtime import configure_runtime
+from travel_planner.planning import place_target, requested_categories, research_quality, budget_quality, itinerary_quality, itinerary_feedback
 
 
 def _read(output, schema):
@@ -14,6 +16,16 @@ def _read(output, schema):
     if output.pydantic is not None:
         return schema.model_validate(output.pydantic.model_dump())
     return schema.model_validate_json(output.raw)
+
+
+def schema_feedback(error, name):
+    issues = [dict(location=list(item["loc"]), code=item["type"], message=item["msg"][:500])
+              for item in error.errors(include_input=False, include_context=False, include_url=False)[:12]]
+    return ("Исправь полный JSON " + name + " по ошибкам: "
+            + json.dumps(issues, ensure_ascii=False)
+            + ". Удали лишние поля, используй только поля схемы. В price нет text: пояснения в note. "
+            "Для unknown текст/сумма должны быть null; оценки с текстом обозначай estimate и поясняй в note. "
+            "Не выдумывай факты, часы и цены. Сохрани содержательные данные, верни только JSON.")
 
 
 def _sources(model):
@@ -31,6 +43,14 @@ def _sources(model):
     return set(walk(model.model_dump(mode="json")))
 
 
+def calculator_input(costs: BudgetResult, trip: TripInput):
+    """Exact tool input: unknown costs are absent, genuine known zero is retained."""
+    known = [dict(name=item.id, amount=format(item.amount, "f"))
+             for item in costs.expenses if item.amount is not None]
+    return dict(expenses=known or [dict(name="Нет известных расходов", amount="0")],
+                currency=costs.currency, budget=format(trip.budget, "f"))
+
+
 def create_tasks(trip: TripInput, agents: Mapping):
     """Return research/budget/itinerary Tasks using the supplied Agent instances."""
     trip = TripInput.model_validate(trip.model_dump())
@@ -38,7 +58,7 @@ def create_tasks(trip: TripInput, agents: Mapping):
         if key not in agents:
             raise ValueError(f"Отсутствует агент {key}")
     configure_runtime()
-    from crewai import Task
+    from travel_planner.structured_task import StructuredTask as Task
     from travel_planner.tools.calculator import TripCostCalculatorTool
 
     parameters = trip.model_dump_json()
@@ -60,34 +80,52 @@ def create_tasks(trip: TripInput, agents: Mapping):
 
     def research_guard(output):
         try:
-            output.pydantic = _read(output, ResearchResult)
+            candidate = _read(output, ResearchResult)
+            issue = research_quality(candidate, trip)
+            if issue: return False, issue
+            output.pydantic = candidate
             return True, output
+        except ValidationError as error:
+            return False, schema_feedback(error, "ResearchResult")
         except (ValueError, TypeError, AttributeError):
             return False, "Исследование не соответствует ResearchResult"
 
     research = Task(
         description=("Исследуй направление по интересам, датам и составу группы. "
                      "Выполни internet_search, затем обязательно website_reader для найденного источника. "
-                     "Для небольшой поездки достаточно 1–2 мест; максимум 4 места; "
-                     "не стремись заполнить максимум: выбери 1–2 места одной территории. "
-                     "Обычно достаточно 1–2 поисков и 1–2 чтений; после этого дай результат "
-                     "с честными пробелами, не трать все итерации на дополнительные места. "
+                     f"Подбери {place_target(trip)}–{min(24, place_target(trip)+3)} разных мест на {trip.days} дней, максимум 24. "
+                     f"Обязательно покрой категории интересов: {', '.join(sorted(requested_categories(trip))) or 'разнообразные интересы пользователя'}. "
+                     "Разбирай также несколько интересов внутри одной строки (например кухня и архитектура и ТЦ). "
+                     "Сначала выполни отдельный поисковый запрос по КАЖДОЙ категории интересов; "
+                     "затем читай 4–6 релевантных источников, включая обзорные страницы с несколькими местами. Всего максимум 6 поисков и 6 чтений; затем немедленно дай окончательный JSON. Не ищи отдельно цену каждого места: неизвестная цена допустима. "
+                     "Планируй параллельные tool_calls в одном ответе, чтобы не расходовать итерации по одному месту. "
+                     "Дай конкретные названия: не только музеи, но архитектурные ансамбли, районы, "
+                     "рестораны местной кухни, рынки и торговые центры по интересам. Для еды подбери "
+                     f"минимум {min(8,max(1,trip.days-2))} разных заведений, если интересна кухня. "
+                     "category каждого места: museum/architecture/food/shopping/nature/other. "
+                     "Группируй места по близким районам в conditions.note, укажи ориентир длительности визита "
+                     "как estimate и сезонные/недельные ограничения. На полный день нужны 2–3 посещения и еда. "
+                     "Проверяй существование и адрес/район источником; неизвестные часы и цены оставляй unknown. "
+                     "Каждое text/note предельно кратко (одна фраза), не дублируй источники и оговорки. "
                      "если источников нет, допустим пустой список с объяснением. Для каждого сохрани "
                      "краткое описание, условия посещения, доступные часы и цену с исходной валютой. "
                      "Не требуй точного расписания или цены от источника, который их не сообщает. "
-                     "Укажи единицу исходной цены в note (за билет/человека и т.п.), URL и неопределённости." + common),
+                     "Укажи единицу исходной цены в note (за билет/человека и т.п.), URL и неопределённости. "
+                     "Различай два формата: description/conditions/hours — Finding с полем text; "
+                     "price — Price, только amount, currency, kind, sources, note. "
+                     "В price нет поля text: пояснение цены и единицы помещай в price.note. "
+                     "Не копируй структуру Finding в price. "
+                     "Пример неизвестной цены (пример формата, не данные поездки): "
+                     '{"amount":null,"currency":null,"kind":"unknown","sources":[],"note":"Цена не найдена"}. '
+                     "Для известной цены amount — десятичная строка, currency — код валюты, "
+                     "kind — fact с источником либо estimate с допущением в note." + common),
         expected_output="ResearchResult: places с уникальными id, description/conditions/hours как Finding, "
                         "price как Price; uncertainties. Пустые сведения не заменяются нулями.",
         agent=agents["researcher"], context=[], output_pydantic=ResearchResult,
-        guardrail=research_guard, guardrail_max_retries=0)
+        guardrail=research_guard, guardrail_max_retries=1)
 
     def calculate(data):
-        expenses = [dict(name=item.id, amount=format(item.amount, "f"))
-                    for item in data.expenses if item.amount is not None]
-        # The tool requires at least one row. A sentinel verifies an empty known subtotal only.
-        return TripCostCalculatorTool()._run(
-            expenses=expenses or [dict(name="Нет известных расходов", amount="0")],
-            currency=data.currency, budget=format(trip.budget, "f"))
+        return TripCostCalculatorTool()._run(**calculator_input(data, trip))
 
     def budget_guard(output):
         try:
@@ -98,11 +136,15 @@ def create_tasks(trip: TripInput, agents: Mapping):
             ids = {place.id for place in places.places}
             if any(p not in ids for item in data.expenses for p in item.place_ids):
                 raise ValueError("Неизвестное место")
+            issue = budget_quality(data, places, trip)
+            if issue: return False, issue
             if Decimal(calculate(data)["total"]) != data.known_total:
                 raise ValueError("Итог калькулятора не совпадает")
             output.pydantic = data
             return True, output
-        except (ValidationError, TypeError, AttributeError):
+        except ValidationError as error:
+            return False, schema_feedback(error, "BudgetResult")
+        except (TypeError, AttributeError):
             return False, "Смета не согласована со схемой, поездкой или исследованием"
         except ValueError as error:
             return False, str(error)
@@ -118,7 +160,14 @@ def create_tasks(trip: TripInput, agents: Mapping):
                      "объяснив состав суммы в note; не перечисляй невыбранные варианты. "
                      "Дай не более 2 logistics и 4 кратких assumptions. "
                      "Включи transport, lodging, food, activities (при неизвестных расходах amount=null). "
-                     "Для activities укажи place_ids выбранных мест; одно место учитывается ровно в одной статье. "
+                     "Выбери достаточно мест на каждый полный день по всем интересам; не сокращай недельную программу до двух музеев. "
+                     "Для activities укажи place_ids музеев, архитектуры, прогулочных объектов и ТЦ. "
+                     "Для food укажи place_ids ресторанов/кафе внутри общего бюджета питания; "
+                     "не добавляй стоимость этих обедов вторично в activities. "
+                     "Бесплатные места включай в статью activities с amount=0 и обоснованием; покупки в ТЦ необязательны. "
+                     "Группируй несколько place_ids в одну статью по категории и известности цены, "
+                     "чтобы уложиться в 12 строк; известные и неизвестные расходы не смешивай. "
+                     "Одно место учитывается ровно в одной статье. "
                      "Если активности не выбраны, оставь place_ids пустым и объясни это в note; "
                      "нулевая сумма допустима только при явном обосновании, неизвестная — null. "
                      "Не включай стоимость активности ещё раз в транспорт, пакеты или другие статьи. "
@@ -126,7 +175,9 @@ def create_tasks(trip: TripInput, agents: Mapping):
                      "Иная валюта источника без конвертации означает неизвестную сумму. "
                      "known_total — только известные расходы, complete=false при пробелах; "
                      "оценки допустимы с оговорками. Вызови trip_cost_calculator с известными полными "
-                     "статьями, общей валютой и бюджетом; если все цены неизвестны, проверь нулевой "
+                     "статьями, общей валютой и бюджетом. Не передавай строки amount=null, не подменяй "
+                     "их нулями. После последнего изменения сметы повтори расчёт на окончательных "
+                     "известных статьях, без объединения строк. Если все цены неизвестны, проверь нулевой "
                      "известный подытог отдельной строкой 0, не объявляя поездку бесплатной." + common),
         expected_output="BudgetResult: expenses (до 12 строк), known_total, complete, currency, "
                         "logistics и assumptions. Ссылки и основания цен сохранены.",
@@ -143,26 +194,46 @@ def create_tasks(trip: TripInput, agents: Mapping):
             if (data.days[0].date != trip.start_date or data.days[-1].date != trip.end_date
                     or len(data.days) != trip.days):
                 raise ValueError("Маршрут не покрывает даты поездки")
-            visited = [p for day in data.days for p in day.place_ids]
-            selected = {p for item in costs.expenses for p in item.place_ids}
-            if len(visited) != len(set(visited)) or set(visited) != selected:
-                raise ValueError("Маршрут и оплаченные активности расходятся")
+            issue = itinerary_feedback(data, costs, places, trip)
+            if issue: return False, issue
+            issue = itinerary_quality(data, places, trip)
+            if issue: return False, issue
             checked = calculate(costs)
             status = checked["budget_status"] if costs.complete or Decimal(checked["over_budget"]) > 0 else "undetermined"
             if (data.known_total != Decimal(checked["total"]) or data.complete != costs.complete
                     or data.budget_status != status or data.over_budget != Decimal(checked["over_budget"])):
                 raise ValueError("Неверный бюджет маршрута")
-            if not (_sources(places) | _sources(costs)) <= set(map(str, data.sources)):
-                raise ValueError("Утеряны источники")
+            # Provenance is known application data, not a generative copying task.
+            # Preserve all validated dependency URLs and any valid additional route URLs.
+            data = ItineraryResult.model_validate({**data.model_dump(), "sources": sorted(
+                _sources(places) | _sources(costs) | set(map(str, data.sources)))})
             output.pydantic = data
             return True, output
-        except (ValidationError, TypeError, AttributeError):
+        except ValidationError as error:
+            issues = [dict(location=list(item["loc"]), code=item["type"], message=item["msg"][:500])
+                      for item in error.errors(include_input=False, include_context=False, include_url=False)[:12]]
+            return False, (
+                "Исправь JSON маршрута по этим ошибкам схемы: "
+                + json.dumps(issues, ensure_ascii=False)
+                + ". Удали лишние поля (extra_forbidden). Для unknown значение text должно быть null; "
+                "предлагаемое расписание с текстом обозначай estimate и поясняй допущение в note. "
+                "Не объявляй неизвестные часы подтверждёнными. Сохрани проверенные суммы, даты и источники. "
+                "Верни полный исправленный JSON по схеме."
+            )
+        except (TypeError, AttributeError):
             return False, "Маршрут не согласован с датами, активностями, источниками или сметой"
         except ValueError as error:
             return False, str(error)
 
     itinerary = Task(
-        description=("Составь маршрут на каждый день включительно. "
+        description=("Составь наполненный маршрут на каждый день включительно: утро, день, вечер "
+                     "с приблизительными окнами времени, 2–3 посещения плюс конкретное место для еды "
+                     "в каждый полный день. Первый и последний дни подчинены времени дороги. "
+                     "Не заменяй полный день общей свободной прогулкой при доступных выбранных местах. "
+                     "Чередуй музеи, архитектуру, еду и ТЦ по интересам; учитывай близость районов, "
+                     "время переходов, отдых, дни закрытия и длительность посещений. "
+                     "Внутри schedule.text перечисляй утро/день/вечер с названиями, "
+                     "не используй ограничение 1–2 предложений для всего плана дня; допустимы 3–5 кратких пунктов. "
                      "Согласуй начало первой активности с прибытием, а последнюю — с отъездом. "
                      "В schedule/movements явно предложи окна отправления и возвращения в город "
                      "отправления в рамках входных дат, с запасом на вокзал/аэропорт. "
@@ -172,7 +243,11 @@ def create_tasks(trip: TripInput, agents: Mapping):
                      "неизвестные часы не объявляй подтверждёнными. Сохрани смету без новых расходов "
                      "и повторного учёта активностей. Если маршрут требует других расходов, отметь "
                      "необходимость пересмотра в caveats. Вызови trip_cost_calculator на тех же "
-                     "полных статьях, валюте и бюджете; скопируй known_total и complete. "
+                     "ИЗВЕСТНЫХ полных статьях, валюте и бюджете; скопируй known_total и complete. "
+                     "Статьи amount=null НЕ передавай калькулятору и НЕ заменяй нулями. "
+                     "Реальный известный ноль сохраняй; служебная строка 0 допустима ТОЛЬКО "
+                     "если вообще нет известных статей. Используй точный calculator_input из "
+                     "expected_output без добавления, объединения или удаления строк. "
                      "Если известный подытог выше бюджета, budget_status=exceeded и over_budget>0; "
                      "прямо сообщи о превышении в caveats, не выдумывай дешёвые цены. "
                      "При неполной смете без доказанного превышения status=undetermined. "
@@ -180,7 +255,19 @@ def create_tasks(trip: TripInput, agents: Mapping):
                      "Не добавляй достоверных фактов без источников." + common),
         expected_output="ItineraryResult: days с датами по порядку, place_ids, schedule, movements; "
                         "currency, known_total, complete, budget_status, over_budget, sources, caveats. "
-                        "Общие расходы не повторяются по дням.",
+                        "Общие расходы не повторяются по дням. Верни один JSON-объект, не текстовый отчёт. "
+                        "schedule и movements — объекты Finding с text/kind/sources/note, не строки. "
+                        "Не добавляй обёртки, Markdown, пояснения вне объекта или calculator_input "
+                        "в результат. Все JSON-строки должны быть корректно экранированы.",
         agent=agents["planner"], context=[research, budget], output_pydantic=ItineraryResult,
-        guardrail=itinerary_guard, guardrail_max_retries=0)
+        guardrail=itinerary_guard, guardrail_max_retries=1)
+    for task, schema in ((research, ResearchResult), (budget, BudgetResult),
+                         (itinerary, ItineraryResult)):
+        task.expected_output += (
+            "\nСначала выполни назначенные инструменты через native tool_calls. "
+            "Схема ниже относится ТОЛЬКО к окончательному ответу после инструментов. "
+            "Верни JSON-объект данных по этой схеме, не саму схему. "
+            "additionalProperties=false: запрещены любые лишние поля, включая "
+            "text_en и amount_note; пояснения цены храни в существующем note.\n"
+            "JSON Schema: " + json.dumps(schema.model_json_schema(mode="serialization"), ensure_ascii=False))
     return {"research": research, "budget": budget, "itinerary": itinerary}

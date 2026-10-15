@@ -90,6 +90,21 @@ class CrewTests(unittest.TestCase):
         with patch.object(Agent, "execute_task", fake_execute): crew.kickoff()
         self.assertIn('"budget_status": "undetermined"', crew.tasks[2].expected_output)
 
+    def test_spawn_start_failure_is_safe_and_closes_channels(self):
+        from unittest.mock import MagicMock
+        context = MagicMock()
+        parent, child = context.Pipe.return_value = (MagicMock(), MagicMock())
+        process = context.Process.return_value
+        process.start.side_effect = OSError('PRIVATE SDK exception')
+        process.is_alive.return_value = False
+        with patch('travel_planner.runner.multiprocessing.get_context', return_value=context):
+            result = supervise(TripInput(**trip_data()), timeout=1)
+        self.assertEqual(result.status, 'failed')
+        self.assertEqual(result.error, 'supervisor_failed')
+        self.assertTrue(result.worker_stopped)
+        parent.close.assert_called_once()
+        child.close.assert_called_once()
+
     def test_request_budget_and_deadline(self):
         from travel_planner.runner import LimitReached
         budget = RequestBudget(1, time.monotonic() + 20)

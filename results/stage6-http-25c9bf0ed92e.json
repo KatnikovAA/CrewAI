@@ -1,0 +1,210 @@
+{
+  "real_execution": true,
+  "health_samples": [
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "running",
+      "seconds": 0.016
+    },
+    {
+      "status": "running",
+      "seconds": 0.0
+    },
+    {
+      "status": "failed",
+      "seconds": 0.0
+    }
+  ],
+  "polls": [
+    {
+      "status": "running",
+      "current_task": null,
+      "events_total": 1
+    },
+    {
+      "status": "running",
+      "current_task": null,
+      "events_total": 1
+    },
+    {
+      "status": "running",
+      "current_task": null,
+      "events_total": 1
+    },
+    {
+      "status": "running",
+      "current_task": null,
+      "events_total": 1
+    },
+    {
+      "status": "running",
+      "current_task": null,
+      "events_total": 1
+    },
+    {
+      "status": "running",
+      "current_task": null,
+      "events_total": 1
+    },
+    {
+      "status": "running",
+      "current_task": null,
+      "events_total": 1
+    },
+    {
+      "status": "running",
+      "current_task": "research",
+      "events_total": 4
+    },
+    {
+      "status": "running",
+      "current_task": "research",
+      "events_total": 4
+    },
+    {
+      "status": "running",
+      "current_task": null,
+      "events_total": 6
+    },
+    {
+      "status": "running",
+      "current_task": "budget",
+      "events_total": 8
+    },
+    {
+      "status": "failed",
+      "current_task": null,
+      "events_total": 12
+    }
+  ],
+  "accepted": {
+    "trip_id": "d8bf3b8a036b4a198a2052491da85273",
+    "status_url": "/trips/d8bf3b8a036b4a198a2052491da85273",
+    "result_url": "/trips/d8bf3b8a036b4a198a2052491da85273/result"
+  },
+  "post_seconds": 0.016,
+  "state": {
+    "trip_id": "d8bf3b8a036b4a198a2052491da85273",
+    "status": "failed",
+    "current_task": null,
+    "created_at": "2026-10-15T11:16:45.514654Z",
+    "started_at": "2026-10-15T11:16:45.515660Z",
+    "finished_at": "2026-10-15T11:17:06.763260Z",
+    "events": [
+      {
+        "seq": 1,
+        "timestamp": "2026-10-15T11:16:45.514654Z",
+        "type": "queued",
+        "task": null
+      },
+      {
+        "seq": 2,
+        "timestamp": "2026-10-15T11:16:57.623169Z",
+        "type": "run_started",
+        "task": null
+      },
+      {
+        "seq": 3,
+        "timestamp": "2026-10-15T11:16:57.902711Z",
+        "type": "task_started",
+        "task": "research"
+      },
+      {
+        "seq": 4,
+        "timestamp": "2026-10-15T11:16:58.792759Z",
+        "type": "llm_request",
+        "task": "research"
+      },
+      {
+        "seq": 5,
+        "timestamp": "2026-10-15T11:17:03.265728Z",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 6,
+        "timestamp": "2026-10-15T11:17:03.315906Z",
+        "type": "task_completed",
+        "task": "research"
+      },
+      {
+        "seq": 7,
+        "timestamp": "2026-10-15T11:17:03.602151Z",
+        "type": "task_started",
+        "task": "budget"
+      },
+      {
+        "seq": 8,
+        "timestamp": "2026-10-15T11:17:03.612223Z",
+        "type": "llm_request",
+        "task": "budget"
+      },
+      {
+        "seq": 9,
+        "timestamp": "2026-10-15T11:17:06.600905Z",
+        "type": "llm_response",
+        "task": null
+      },
+      {
+        "seq": 10,
+        "timestamp": "2026-10-15T11:17:06.650159Z",
+        "type": "validation_failed",
+        "task": "budget"
+      },
+      {
+        "seq": 11,
+        "timestamp": "2026-10-15T11:17:06.651162Z",
+        "type": "task_failed",
+        "task": "budget"
+      },
+      {
+        "seq": 12,
+        "timestamp": "2026-10-15T11:17:06.682268Z",
+        "type": "run_failed",
+        "task": null
+      }
+    ],
+    "events_total": 12,
+    "error": {
+      "code": "execution_failed",
+      "message": "Команда не завершила проверенный маршрут."
+    }
+  },
+  "result_http_status": 409,
+  "server_stopped": true
+}

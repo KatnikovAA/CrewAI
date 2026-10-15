@@ -9,6 +9,6 @@ def create_tools():
 
     return {
         "search": InternetSearchTool(),
-        "reader": WebsiteReaderTool(),
+        "reader": WebsiteReaderTool(max_text_chars=6000),
         "calculator": TripCostCalculatorTool(),
     }

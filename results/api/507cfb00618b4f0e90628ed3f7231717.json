@@ -1,0 +1,161 @@
+{
+  "status": "failed",
+  "trip": {
+    "departure_city": "Москва",
+    "destination": "Казань",
+    "start_date": "2026-11-14",
+    "end_date": "2026-11-15",
+    "budget": "60000.00",
+    "currency": "RUB",
+    "travelers": 2,
+    "interests": [
+      "архитектура"
+    ]
+  },
+  "final": null,
+  "tasks": {},
+  "rejected": {},
+  "events": [
+    {
+      "type": "run_started",
+      "task": null,
+      "timestamp": "2026-10-15T11:01:32.955072+00:00",
+      "max_llm_calls": 24
+    },
+    {
+      "type": "task_started",
+      "task": "research",
+      "timestamp": "2026-10-15T11:01:33.218566+00:00",
+      "context_received": {}
+    },
+    {
+      "type": "llm_request",
+      "task": "research",
+      "timestamp": "2026-10-15T11:01:33.673181+00:00",
+      "number": 1,
+      "context_received": {}
+    },
+    {
+      "type": "llm_response",
+      "task": null,
+      "timestamp": "2026-10-15T11:01:36.613569+00:00",
+      "http_status": 200,
+      "finish_reason": "stop",
+      "completion_tokens": 394
+    },
+    {
+      "type": "validation_failed",
+      "task": "research",
+      "timestamp": "2026-10-15T11:01:36.627348+00:00",
+      "issues": [
+        {
+          "location": [
+            "places",
+            0,
+            "description",
+            "text_en"
+          ],
+          "code": "extra_forbidden"
+        },
+        {
+          "location": [
+            "places",
+            0,
+            "conditions",
+            "text_en"
+          ],
+          "code": "extra_forbidden"
+        },
+        {
+          "location": [
+            "places",
+            0,
+            "hours",
+            "text_en"
+          ],
+          "code": "extra_forbidden"
+        },
+        {
+          "location": [
+            "places",
+            0,
+            "price",
+            "amount_note"
+          ],
+          "code": "extra_forbidden"
+        }
+      ],
+      "reason": "Исследование не соответствует ResearchResult",
+      "fenced": false,
+      "raw_chars": 1265,
+      "raw_json_valid": true,
+      "pydantic_present": false
+    },
+    {
+      "type": "task_failed",
+      "task": "research",
+      "timestamp": "2026-10-15T11:01:36.628351+00:00",
+      "error": "task_execution_failed"
+    },
+    {
+      "type": "run_failed",
+      "task": null,
+      "timestamp": "2026-10-15T11:01:36.639462+00:00",
+      "error": "execution_failed",
+      "error_type": "Exception",
+      "causes": [
+        "Exception"
+      ],
+      "frames": [
+        {
+          "file": "runner.py",
+          "line": 270,
+          "function": "_worker_inner"
+        },
+        {
+          "file": "crew.py",
+          "line": 1056,
+          "function": "kickoff"
+        },
+        {
+          "file": "crew.py",
+          "line": 1524,
+          "function": "_run_sequential_process"
+        },
+        {
+          "file": "crew.py",
+          "line": 1628,
+          "function": "_execute_tasks"
+        },
+        {
+          "file": "task.py",
+          "line": 593,
+          "function": "execute_sync"
+        },
+        {
+          "file": "task.py",
+          "line": 963,
+          "function": "_execute_core"
+        },
+        {
+          "file": "task.py",
+          "line": 903,
+          "function": "_execute_core"
+        },
+        {
+          "file": "task.py",
+          "line": 1388,
+          "function": "_invoke_guardrail_function"
+        }
+      ]
+    },
+    {
+      "type": "run_failed",
+      "task": null,
+      "error": "execution_failed"
+    }
+  ],
+  "checks": {},
+  "error": "execution_failed",
+  "worker_stopped": true
+}

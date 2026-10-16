@@ -33,7 +33,7 @@ class OutputReliabilityTests(unittest.TestCase):
         self.assertEqual(args['expenses'], [{'name':'transport', 'amount':'0.00'}])
 
     def test_full_trip_keeps_tools_separate_from_json_mode(self):
-        settings = Settings('openai','deepseek/deepseek-v4.1-flash','offline-test-key','https://polza.ai/api/v1')
+        settings = Settings('openai','provider/model-id','offline-test-key','https://api.example.com/v1')
         llm = create_trip_llm(settings)
         captured = []
         def respond(transport, request):
@@ -97,7 +97,7 @@ class OutputReliabilityTests(unittest.TestCase):
             async def aon_inbound(self, response):
                 calls.append('async-in')
                 return response
-        settings=Settings('openai','deepseek/deepseek-v4.1-flash','offline','https://polza.ai/api/v1')
+        settings=Settings('openai','provider/model-id','offline','https://api.example.com/v1')
         llm=create_trip_llm(settings,interceptor=Observer())
         request=httpx.Request('POST','https://example.com/',json={'messages':[], 'tools':[{'type':'function'}], 'response_format':{'type':'json_object'}})
         wrapped=llm.interceptor
@@ -119,7 +119,7 @@ class OutputReliabilityTests(unittest.TestCase):
         from crewai import Agent
         from test_tasks import research_data
         from travel_planner.crew import create_crew
-        settings = Settings('openai','deepseek/deepseek-v4.1-flash','offline','https://polza.ai/api/v1')
+        settings = Settings('openai','provider/model-id','offline','https://api.example.com/v1')
         crew = create_crew(TripInput(**trip_data()), llm=create_trip_llm(settings))
         costs = budget_data()
         costs['expenses'][-1].update(amount=None, kind='unknown')

@@ -23,7 +23,7 @@ def main() -> int:
     if not settings.api_key:
         missing.append("LLM_API_KEY (API-ключ)")
     if not settings.base_url:
-        missing.append("LLM_BASE_URL (адрес API Polza AI)")
+        missing.append("LLM_BASE_URL (адрес API LLM-провайдер)")
     if missing:
         print("Заполните локальный .env: " + ", ".join(missing), file=sys.stderr)
         print("Не отправляйте API-ключ в чат. Запрос к модели не выполнялся.", file=sys.stderr)

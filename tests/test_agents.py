@@ -9,7 +9,7 @@ class AgentFactoryTests(unittest.TestCase):
         with patch("socket.socket.connect", side_effect=AssertionError("Network forbidden")):
             from travel_planner.agents import create_agents
             from travel_planner.llm import create_llm
-            llm = create_llm(Settings("openai", "deepseek/deepseek-v4.1-flash", "local-test", "https://polza.ai/api/v1"))
+            llm = create_llm(Settings("openai", "provider/model-id", "local-test", "https://api.example.com/v1"))
             agents = create_agents(llm=llm)
         expected = {"researcher": {"internet_search", "website_reader"},
                     "budget": {"internet_search", "website_reader", "trip_cost_calculator"},
@@ -29,7 +29,7 @@ class AgentFactoryTests(unittest.TestCase):
             self.assertLessEqual(agent.max_iter, 6)
             self.assertEqual(agent.max_execution_time, 240 if name == "researcher" else 180)
             self.assertIn("данные", agent.backstory)
-        self.assertEqual(llm.model, "deepseek/deepseek-v4.1-flash")
+        self.assertEqual(llm.model, "provider/model-id")
 
     def test_missing_settings_rejected(self):
         from travel_planner.llm import create_llm

@@ -26,9 +26,9 @@ def research_data():
 
 def budget_data():
     return dict(currency="RUB", expenses=[dict(id=k, category=k, name=k, amount="0.10",
-                kind="estimate", sources=[], note="Учебное допущение", place_ids=["p1"] if k == "activities" else [])
+                kind="estimate", sources=[], note="Тестовое допущение", place_ids=["p1"] if k == "activities" else [])
                 for k in ["transport", "lodging", "food", "activities"]],
-                known_total="0.40", complete=True, logistics=[finding()], assumptions=["Учебные суммы"])
+                known_total="0.40", complete=True, logistics=[finding()], assumptions=["Тестовые суммы"])
 
 
 def itinerary_data():
@@ -102,7 +102,7 @@ class TaskTests(unittest.TestCase):
         from travel_planner.tasks import create_tasks
         self.trip = TripInput(**trip_data())
         with patch("socket.socket.connect", side_effect=AssertionError("Network forbidden")):
-            llm = create_llm(Settings("openai", "deepseek/deepseek-v4.1-flash", "test", "https://polza.ai/api/v1"))
+            llm = create_llm(Settings("openai", "provider/model-id", "test", "https://api.example.com/v1"))
             self.agents = create_agents(llm=llm)
             self.tasks = create_tasks(self.trip, self.agents)
 

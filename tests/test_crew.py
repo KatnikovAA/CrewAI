@@ -36,7 +36,7 @@ class CrewTests(unittest.TestCase):
         from travel_planner.llm import create_llm
         from travel_planner.settings import Settings
         with patch("socket.socket.connect", side_effect=AssertionError("No network")):
-            llm = create_llm(Settings("openai", "deepseek/deepseek-v4.1-flash", "test", "https://polza.ai/api/v1"))
+            llm = create_llm(Settings("openai", "provider/model-id", "test", "https://api.example.com/v1"))
             crew = create_crew(TripInput(**trip_data()), llm=llm)
         return crew
 
@@ -81,7 +81,7 @@ class CrewTests(unittest.TestCase):
         from travel_planner.llm import create_llm
         from travel_planner.settings import Settings
         data = trip_data(); data["budget"] = "0.40"
-        llm = create_llm(Settings("openai", "deepseek/deepseek-v4.1-flash", "test", "https://polza.ai/api/v1"))
+        llm = create_llm(Settings("openai", "provider/model-id", "test", "https://api.example.com/v1"))
         crew = create_crew(TripInput(**data), llm=llm)
         costs = budget_data(); costs["complete"] = False
         route = itinerary_data(); route.update(complete=False, budget_status="undetermined")

@@ -52,3 +52,11 @@ React → FastAPI → run_trip → CrewAI (Process.sequential).
   не гарантируют фактическую актуальность сведений. Бронирование и оплата отсутствуют.
 
 Подробности сопровождения: [руководство разработчика](docs/DEVELOPMENT.md).
+
+## Автоматические проверки
+
+GitHub Actions (.github/workflows/ci.yml): push, pull_request и ручной запуск.
+Python 3.12 на Windows: установка приложения с test extra, pip check и unittest.
+Node.js 26 на Ubuntu: npm ci, frontend-тесты, TypeScript и production build.
+Секреты и реальные запросы к LLM/поиску не используются. Workflow имеет права
+только на чтение содержимого репозитория; Actions закреплены по SHA.

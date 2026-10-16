@@ -4,6 +4,7 @@
 
 ### Планировщик путешествий с командой AI-агентов
 
+[![CI](https://github.com/KatnikovAA/CrewAI/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/KatnikovAA/CrewAI/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
 ![CrewAI](https://img.shields.io/badge/CrewAI-1.15.28-111827)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.143.1-009688?logo=fastapi&logoColor=white)
@@ -221,7 +222,11 @@ npm.cmd --prefix frontend run build
 | TypeScript + production build | Успешно |
 | Совместимость Python-зависимостей | `pip check`: без конфликтов |
 
-Эти результаты получены локально; автоматический CI в репозитории пока не настроен.
+GitHub Actions автоматически выполняет Python-тесты на Windows/Python 3.12 и тесты
+интерфейса со сборкой на Ubuntu/Node.js 26 при push и pull request. Также доступен
+ручной запуск. [Статус CI](https://github.com/KatnikovAA/CrewAI/actions/workflows/ci.yml)
+показывает результат конкретного коммита; значок выше относится к ветке main.
+Проверки не используют API-ключи и не запускают реальные поездки.
 Выборочное [code-review](docs/CODE_REVIEW.md) описывает область проверки и открытые предложения.
 
 Результаты интеграционных проверок сохранены в `results/`.
